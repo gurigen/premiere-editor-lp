@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>宵闇の占い館 ― 影の占い師 ―</title>
+<meta name="description" content="仮想空間の占い館。実体を持たない影の占い師が、30枚のトランプであなたの運命を読み解きます。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔮</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+<script type="importmap">
+{
+  "imports": {
+    "three": "./lib/three.module.min.js"
+  }
+}
+</script>
+</head>
+<body>
+
+<div id="app">
+  <canvas id="stage"></canvas>
+
+  <!-- 画面全体の質感(ビネット・粒子) -->
+  <div id="vignette" aria-hidden="true"></div>
+  <div id="grain" aria-hidden="true"></div>
+
+  <!-- タイトル画面 -->
+  <div id="title-screen">
+    <div class="title-inner">
+      <p class="title-sub">仮想占い館へようこそ</p>
+      <h1 class="title-main">宵闇の占い館</h1>
+      <p class="title-teller">― 影の占い師 ―</p>
+      <p class="title-desc">
+        実体を持たない「影」が、卓上のトランプであなたの運命を読み解きます。<br>
+        導かれるままに、3枚のカードをお選びください。
+      </p>
+      <button id="enter-btn" type="button">入室する</button>
+      <p class="title-note">※ 音が流れます。静かな場所でどうぞ。</p>
+    </div>
+  </div>
+
+  <!-- 暗転フェード -->
+  <div id="fader"></div>
+
+  <!-- 会話ウィンドウ -->
+  <div id="dialogue" class="hidden">
+    <div class="dialogue-name" id="dialogue-name">影の占い師</div>
+    <div class="dialogue-text"><span id="dialogue-text"></span><span id="dialogue-caret">▼</span></div>
+  </div>
+
+  <!-- 選択肢 -->
+  <div id="choices" class="hidden"></div>
+
+  <!-- 進行ヒント -->
+  <div id="hint" class="hidden"></div>
+
+  <!-- 鑑定結果 -->
+  <div id="result-panel" class="hidden">
+    <h2 class="result-title">鑑 定 結 果</h2>
+    <div class="result-topic" id="result-topic"></div>
+    <div class="result-cards" id="result-cards"></div>
+    <div class="result-stars" id="result-stars"></div>
+    <div class="result-summary" id="result-summary"></div>
+    <div class="result-actions">
+      <button id="retry-btn" type="button">もう一度占う</button>
+    </div>
+  </div>
+
+  <!-- 右上コントロール -->
+  <div id="top-controls" class="hidden">
+    <button id="mute-btn" type="button" title="音の切り替え" aria-label="音の切り替え">♪</button>
+  </div>
+
+  <noscript>
+    <div class="noscript">このアプリの実行には JavaScript が必要です。</div>
+  </noscript>
+</div>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
