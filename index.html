@@ -1,1250 +1,741 @@
 <!doctype html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>プレミアエディター | クリックスch監修 動画編集実践プログラム</title>
-    <meta
-      name="description"
-      content="土日2日で、カット、BGM、SE、提出前チェック、添削、営業導線まで整える。クリックスch監修の動画編集実践プログラム、プレミアエディター。"
-    >
-    <link rel="canonical" href="https://gurigen.github.io/premiere-editor-lp/">
-    <meta property="og:locale" content="ja_JP">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Premiere Editor">
-    <meta property="og:title" content="プレミアエディター | クリックスch監修 動画編集実践プログラム">
-    <meta property="og:description" content="土日2日で、カット、BGM、SE、提出前チェック、添削、営業導線まで整える。クリックスch監修の動画編集実践プログラム。">
-    <meta property="og:url" content="https://gurigen.github.io/premiere-editor-lp/">
-    <meta property="og:image" content="https://gurigen.github.io/premiere-editor-lp/assets/generated-hero-studio.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="プレミアエディター | クリックスch監修 動画編集実践プログラム">
-    <meta name="twitter:description" content="土日2日で、編集を案件に出せる工程へ。カット、BGM、SE、添削、営業導線まで整える実践型プログラム。">
-    <meta name="twitter:image" content="https://gurigen.github.io/premiere-editor-lp/assets/generated-hero-studio.png">
-    <link rel="stylesheet" href="styles.css?v=20260515-diagnosis-report">
-  </head>
-  <body>
-    <header class="site-header" aria-label="サイトヘッダー">
-      <div class="header-scene-rail" data-scene-rail>
-        <a class="brand scene-brand" href="#top" aria-label="プレミアエディター トップへ">
-          <img class="brand-logo brand-mini-logo" src="assets/premiere-editor-pe-monogram-sparkle-transparent.png" alt="Premiere Editor">
-        </a>
-        <button class="rail-arrow rail-arrow-left" type="button" aria-label="目次を左へ送る" data-scene-prev>←</button>
-        <nav class="scene-strip" aria-label="シーン目次" data-scene-nav>
-          <a class="scene-cue active" href="#top" aria-current="true"><span>00:00</span><strong>TOP</strong></a>
-          <a class="scene-cue" href="#offer"><span>00:12</span><strong>QUICK</strong></a>
-          <a class="scene-cue" href="#philosophy"><span>00:24</span><strong>PHILO</strong></a>
-          <a class="scene-cue" href="#why"><span>00:36</span><strong>WHY</strong></a>
-          <a class="scene-cue" href="#strength"><span>00:48</span><strong>STRENGTH</strong></a>
-          <a class="scene-cue" href="#schedule"><span>01:00</span><strong>SCHEDULE</strong></a>
-          <a class="scene-cue" href="#review"><span>01:12</span><strong>REVIEW</strong></a>
-          <a class="scene-cue" href="#present"><span>01:24</span><strong>PRESENT</strong></a>
-          <a class="scene-cue" href="#price"><span>01:36</span><strong>PRICE</strong></a>
-          <a class="scene-cue" href="#recommended"><span>01:48</span><strong>VOICE</strong></a>
-          <a class="scene-cue" href="#contact"><span>02:00</span><strong>LINE</strong></a>
-          <a class="scene-cue" href="#faq"><span>02:12</span><strong>Q&amp;A</strong></a>
-        </nav>
-        <button class="rail-arrow rail-arrow-right" type="button" aria-label="目次を右へ送る" data-scene-next>→</button>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>プレミアエディター | クリックスch監修 動画編集実践プログラム</title>
+  <meta
+    name="description"
+    content="土日2日で、カット、BGM、SE、提出前チェック、添削、営業導線まで整える。クリックスch監修の動画編集実践プログラム、プレミアエディター。"
+  >
+  <link rel="canonical" href="https://gurigen.github.io/premiere-editor-lp/">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Premiere Editor">
+  <meta property="og:title" content="プレミアエディター | クリックスch監修 動画編集実践プログラム">
+  <meta property="og:description" content="土日2日で、カット、BGM、SE、提出前チェック、添削、営業導線まで整える。クリックスch監修の動画編集実践プログラム。">
+  <meta property="og:url" content="https://gurigen.github.io/premiere-editor-lp/">
+  <meta property="og:image" content="https://gurigen.github.io/premiere-editor-lp/assets/generated-hero-studio.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="プレミアエディター | クリックスch監修 動画編集実践プログラム">
+  <meta name="twitter:description" content="土日2日で、編集を案件に出せる工程へ。カット、BGM、SE、添削、営業導線まで整える実践型プログラム。">
+  <meta name="twitter:image" content="https://gurigen.github.io/premiere-editor-lp/assets/generated-hero-studio.png">
+  <link rel="icon" href="assets/premiere-editor-pe-monogram-sparkle-transparent.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=20260704">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "./lib/three.module.min.js"
+    }
+  }
+  </script>
+  <noscript>
+    <style>
+      #boot, #render-ui, #hud-scrub-wrap { display: none !important; }
+      body { overflow-y: auto !important; }
+      .panel, .hero-inner { opacity: 1 !important; transform: none !important; }
+    </style>
+  </noscript>
+</head>
+<body class="no-scroll">
+
+<!-- ===== 3D ステージ(タイムライン宇宙) ===== -->
+<canvas id="stage" aria-hidden="true"></canvas>
+
+<!-- 画面全体の質感 -->
+<div id="vignette" aria-hidden="true"></div>
+<div id="grain" aria-hidden="true"></div>
+
+<!-- ===== 起動画面 ===== -->
+<div id="boot" role="dialog" aria-label="プロジェクト起動">
+  <div class="boot-scan" aria-hidden="true"></div>
+  <div class="boot-inner">
+    <img class="boot-logo" src="assets/premiere-editor-wordmark-sparkle-transparent.png" alt="Premiere Editor">
+    <p class="boot-sub">クリックスch監修 / 動画編集実践プログラム</p>
+    <div class="boot-file">
+      <span>PROJECT FILE</span>
+      <strong>PremiereEditor_master.prproj</strong>
+      <em>READY</em>
+    </div>
+    <button id="boot-btn" type="button"><i aria-hidden="true">▶</i> プロジェクトを起動する</button>
+    <p class="boot-note">※ 演出音が流れます。音量にご注意ください。</p>
+  </div>
+</div>
+
+<!-- ===== 書き出しワープ UI ===== -->
+<div id="render-ui" class="hidden" aria-hidden="true">
+  <div class="render-box">
+    <p class="render-label"><span class="rec-dot"></span>RENDERING… <span id="render-pct">0%</span></p>
+    <div class="render-bar"><i id="render-fill"></i></div>
+    <p class="render-file">PremiereEditor_master.prproj &nbsp;→&nbsp; editor_you_final.mp4</p>
+  </div>
+  <button id="warp-skip" type="button">SKIP ▸</button>
+</div>
+<div id="flash" aria-hidden="true"></div>
+<div id="fader" aria-hidden="true"></div>
+
+<!-- ===== HUD ===== -->
+<header id="hud" class="hud-hidden">
+  <div class="hud-top">
+    <a class="hud-brand" href="#top" aria-label="プレミアエディター トップへ">
+      <img src="assets/premiere-editor-pe-monogram-sparkle-transparent.png" alt="">
+      <span>PREMIERE&nbsp;EDITOR</span>
+    </a>
+    <div class="hud-seq" aria-hidden="true">
+      <span class="rec-dot"></span>
+      <span class="hud-seq-label">SEQ 01</span>
+      <em id="hud-scene">TOP</em>
+    </div>
+    <div class="hud-right">
+      <div class="hud-tc" aria-hidden="true">TC <span id="hud-tc">00:00:00</span></div>
+      <button id="mute-btn" type="button" aria-pressed="false" aria-label="音を消す">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path class="spk" d="M4 9v6h4l5 4V5L8 9H4z"/><path class="wave" d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12"/><path class="mute-x" d="M16 9l6 6M22 9l-6 6"/></svg>
+      </button>
+    </div>
+  </div>
+  <div id="hud-scrub-wrap">
+    <nav class="hud-scrub" aria-label="シーン目次">
+      <div class="scrub-line" aria-hidden="true"><i id="scrub-fill"></i></div>
+      <div class="scrub-cues" id="scrub-cues"></div>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== 本編(タイムライン上のクリップ群) ===== -->
+<main id="top">
+
+  <!-- SCENE 01 / HERO -->
+  <section class="scene scene-hero" id="hero" data-scene="TOP" data-cue="00:00" data-clip="SCENE 01|PREMIERE EDITOR">
+    <div class="hero-inner">
+      <img class="hero-logo" src="assets/premiere-editor-wordmark-sparkle-transparent.png" alt="Premiere Editor">
+      <p class="scene-label">SCENE 01 / PREMIERE EDITOR</p>
+      <p class="supervision">クリックスch監修 / PC編集者向け</p>
+      <h1>土日2日で、編集を<br>案件に出せる工程へ。</h1>
+      <p class="hero-lead">
+        カット、BGM、SE、提出前チェック、添削、営業導線まで。<br class="pc-only">
+        作品を作って終わらせず、OK後の案件紹介コミュニティまで見据える実践型プログラム。
+      </p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="#contact">LINEで無料説明会へ</a>
+        <a class="btn-ghost" href="#schedule">スケジュールを見る</a>
       </div>
-    </header>
 
-    <main id="top">
-      <section class="hero section-dark hero-startup">
-        <div class="hero-bg" aria-hidden="true">
-          <img src="assets/generated-hero-studio.png" alt="">
+      <div class="hero-project" aria-label="講座の進行工程">
+        <div class="hero-project-top">
+          <span>PROJECT FILE</span>
+          <strong>PremiereEditor_master.prproj</strong>
+          <em>READY</em>
         </div>
-        <div class="hero-inner">
-          <div class="hero-copy">
-            <img class="hero-logo" src="assets/premiere-editor-wordmark-sparkle-transparent.png" alt="Premiere Editor">
-            <p class="scene-label">SCENE 01 / PREMIERE EDITOR</p>
-            <p class="supervision">クリックスch監修 / PC編集者向け</p>
-            <h1>土日2日で、編集を<br class="mobile-title-break">案件に出せる工程へ。</h1>
-            <p class="hero-lead">
-              カット、BGM、SE、提出前チェック、添削、営業導線まで。
-              作品を作って終わらせず、OK後の案件紹介コミュニティまで見据える実践型プログラム。
-            </p>
-            <div class="hero-actions" aria-label="主要アクション">
-              <a class="primary-btn" href="#contact">LINEで無料説明会へ</a>
-              <a class="secondary-btn" href="#schedule">スケジュールを見る</a>
-            </div>
-            <div class="hero-project-card" aria-label="講座の進行工程">
-              <div class="hero-project-top">
-                <span>PROJECT FILE</span>
-                <strong>PremiereEditor_master.prproj</strong>
-                <em>READY</em>
-              </div>
-              <div class="hero-project-timeline" aria-label="編集工程の流れ">
-                <div class="hero-step active" style="--delay: 120ms;">
-                  <small>01 / CUT</small>
-                  <strong>不要部分を切る</strong>
-                  <span>1H / 1CUT</span>
-                </div>
-                <div class="hero-step" style="--delay: 240ms;">
-                  <small>02 / SOUND</small>
-                  <strong>BGMとSEを整える</strong>
-                  <span>AUDIO CHECK</span>
-                </div>
-                <div class="hero-step" style="--delay: 360ms;">
-                  <small>03 / REVIEW</small>
-                  <strong>提出前に添削</strong>
-                  <span>REVIEW OK</span>
-                </div>
-                <div class="hero-step" style="--delay: 480ms;">
-                  <small>04 / NEXT</small>
-                  <strong>案件導線へ進む</strong>
-                  <span>COMMUNITY</span>
-                </div>
-              </div>
-              <div class="hero-render-check" aria-label="信頼チェック">
-                <span class="hero-check" style="--delay: 620ms;">工程化</span>
-                <span class="hero-check" style="--delay: 760ms;">添削OK</span>
-                <span class="hero-check" style="--delay: 900ms;">土日受講</span>
-                <span class="hero-check" style="--delay: 1040ms;">LINE確認</span>
-              </div>
-            </div>
-            <div class="hero-proof" aria-label="講座の要点">
-              <span>2DAYS</span>
-              <span>1H / 1CUT</span>
-              <span>REVIEW OK</span>
-              <span>COMMUNITY</span>
-            </div>
-          </div>
-
-          <div class="hero-stage" aria-label="クリックスch監修ビジュアル">
-            <img class="asset-kit hero-kit-monitor" src="assets/generated-kit-01/cutouts/01-editing-monitor-cluster.png" alt="" aria-hidden="true">
-            <img class="asset-kit hero-kit-sparkle" src="assets/generated-kit-01/cutouts/15-red-sparkle-motif.png" alt="" aria-hidden="true">
-            <div class="monitor-frame">
-              <img src="assets/generated-3d-monitor.png" alt="編集画面のイメージ">
-            </div>
-            <div class="standee-frame">
-              <img src="assets/clicks-standee-1400.png" alt="クリックスch監修キャラクター">
-              <div class="name-plate">
-                <span>SUPERVISED BY</span>
-                <strong>クリックスch</strong>
-              </div>
-            </div>
-            <div class="hero-side-console" aria-hidden="true">
-              <span>OUTPUT CHECK</span>
-              <strong>REVIEW OK</strong>
-              <p>添削後、案件紹介コミュニティ導線へ。</p>
-              <div class="hero-side-meter"><span></span></div>
-            </div>
-          </div>
+        <ol class="hero-steps">
+          <li><small>01 / CUT</small><strong>不要部分を切る</strong><span>1H / 1CUT</span></li>
+          <li><small>02 / SOUND</small><strong>BGMとSEを整える</strong><span>AUDIO CHECK</span></li>
+          <li><small>03 / REVIEW</small><strong>提出前に添削</strong><span>REVIEW OK</span></li>
+          <li><small>04 / NEXT</small><strong>案件導線へ進む</strong><span>COMMUNITY</span></li>
+        </ol>
+        <div class="hero-stats" aria-label="プログラム指標">
+          <div><strong>2DAYS</strong><span>土日受講</span></div>
+          <div><strong>1H / 1CUT</strong><span>工程化</span></div>
+          <div><strong>REVIEW OK</strong><span>添削OK</span></div>
+          <div><strong>COMMUNITY</strong><span>LINE確認</span></div>
         </div>
-      </section>
-
-      <section class="offer section-band" id="offer">
-        <div class="section-inner offer-grid">
-          <div>
-            <p class="scene-label">SCENE 02 / QUICK JUDGE</p>
-            <h2>まず、この講座で何が進むかを4つで確認。</h2>
-            <p>細かい説明に入る前に、受講後の判断材料を先に見せる。</p>
-          </div>
-          <ul class="check-list decision-list">
-            <li><span>01</span><strong>1時間ごとの工程</strong><small>カット、BGM、SE、提出前チェックまで順番に進める。</small></li>
-            <li><span>02</span><strong>作った動画を添削</strong><small>作品を作って終わらせず、OK基準まで確認する。</small></li>
-            <li><span>03</span><strong>OK後コミュニティ</strong><small>添削OK後、案件紹介コミュニティへの参加導線を案内。</small></li>
-            <li><span>04</span><strong>月額4,900円で継続</strong><small>卒業後は入会金カット、継続参加しやすい月額設計。</small></li>
-          </ul>
+        <div class="hero-output">
+          <span class="chip-ok">OUTPUT CHECK ─ REVIEW OK</span>
+          <p>添削後、案件紹介コミュニティ導線へ。</p>
         </div>
-      </section>
+      </div>
 
-      <section class="editorial-philosophy section-light" id="philosophy" aria-labelledby="philosophy-title">
-        <div class="section-inner philosophy-paper">
-          <div class="philosophy-title-block">
-            <p class="philosophy-scene">SCENE 03 / PHILOSOPHY</p>
-            <h2 id="philosophy-title">PHILOSOPHY</h2>
-            <p>プレミアエディター開校への想い</p>
-          </div>
+      <p class="hero-supervised">SUPERVISED BY <strong>クリックスch</strong></p>
+      <div class="scroll-cue" aria-hidden="true"><span></span>SCRUB TO PLAY</div>
+    </div>
+  </section>
 
-          <span class="philosophy-divider" aria-hidden="true"></span>
+  <!-- SCENE 02 / QUICK JUDGE -->
+  <section class="scene" id="offer" data-scene="QUICK" data-cue="00:12" data-clip="SCENE 02|QUICK JUDGE">
+    <div class="panel">
+      <p class="scene-label">SCENE 02 / QUICK JUDGE</p>
+      <h2>まず、この講座で何が進むかを4つで確認。</h2>
+      <p class="lead">細かい説明に入る前に、受講後の判断材料を先に見せる。</p>
+      <div class="quick-grid">
+        <article class="quick-card d1">
+          <span class="q-num">01</span>
+          <h3>1時間ごとの工程</h3>
+          <p>カット、BGM、SE、提出前チェックまで順番に進める。</p>
+        </article>
+        <article class="quick-card d2">
+          <span class="q-num">02</span>
+          <h3>作った動画を添削</h3>
+          <p>作品を作って終わらせず、OK基準まで確認する。</p>
+        </article>
+        <article class="quick-card d3">
+          <span class="q-num">03</span>
+          <h3>OK後コミュニティ</h3>
+          <p>添削OK後、案件紹介コミュニティへの参加導線を案内。</p>
+        </article>
+        <article class="quick-card d4">
+          <span class="q-num">04</span>
+          <h3>月額4,900円で継続</h3>
+          <p>卒業後は入会金カット、継続参加しやすい月額設計。</p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-          <div class="philosophy-body">
-            <p>
-              はじめまして、プレミアエディターです。私たちは、動画編集を
-              <mark>「作れる」で終わらせない</mark>ために、この講座を設計しています。
-              カット、BGM、SE、提出前チェック、添削、案件導線までを、
-              <mark>案件に出せる工程</mark>として一本のタイムラインにまとめます。
-            </p>
-            <p>
-              独学で止まる理由は、センス不足ではありません。
-              <br>
-              ・何から直せばいいか分からない
-              <br>
-              ・音の大きさや余白の基準がない
-              <br>
-              ・添削OK後にどこへ進むかが見えない
-              <br>
-              こうした不安を、プレミアエディターでは
-              <mark>1時間ごとの工程</mark>と
-              <mark>添削OK基準</mark>で見える形にします。
-            </p>
-            <p>
-              お待たせしました。動画を作って終わりではなく、
-              <mark>卒業後コミュニティ</mark>や
-              <mark>LINEでの条件確認</mark>まで含めて、次に進む準備を整えます。
-            </p>
-            <p class="philosophy-closing">
-              <mark>土日2日で、一気に整える。</mark>
-              <br>
-              <mark>月曜から、提出前チェックにかけられる編集者へ。</mark>
-            </p>
-            <p class="philosophy-note">成果には個人差があります。料金、参加条件、コミュニティ導線はLINE説明会で確認してください。</p>
-          </div>
+  <!-- SCENE 03 / PHILOSOPHY -->
+  <section class="scene" id="philosophy" data-scene="PHILO" data-cue="00:24" data-clip="SCENE 03|PHILOSOPHY">
+    <div class="panel panel-letter">
+      <p class="scene-label">SCENE 03 / PHILOSOPHY</p>
+      <p class="philosophy-mark">PHILOSOPHY</p>
+      <h2>プレミアエディター開校への想い</h2>
+      <div class="letter-body">
+        <p>はじめまして、プレミアエディターです。私たちは、動画編集を<strong>「作れる」で終わらせない</strong>ために、この講座を設計しています。</p>
+        <p>カット、BGM、SE、提出前チェック、添削、案件導線までを、<strong>案件に出せる工程</strong>として一本のタイムラインにまとめます。</p>
+        <p>独学で止まる理由は、センス不足ではありません。</p>
+        <ul>
+          <li>何から直せばいいか分からない</li>
+          <li>音の大きさや余白の基準がない</li>
+          <li>添削OK後にどこへ進むかが見えない</li>
+        </ul>
+        <p>こうした不安を、プレミアエディターでは<strong>1時間ごとの工程</strong>と<strong>添削OK基準</strong>で見える形にします。</p>
+        <p>お待たせしました。動画を作って終わりではなく、<strong>卒業後コミュニティ</strong>や<strong>LINEでの条件確認</strong>まで含めて、次に進む準備を整えます。</p>
+        <p class="letter-close">土日2日で、一気に整える。<br>月曜から、提出前チェックにかけられる編集者へ。</p>
+      </div>
+      <p class="note">成果には個人差があります。料金、参加条件、コミュニティ導線はLINE説明会で確認してください。</p>
+    </div>
+  </section>
+
+  <!-- SCENE 04 / DIAGNOSIS -->
+  <section class="scene" id="why" data-scene="WHY" data-cue="00:36" data-clip="SCENE 04|DIAGNOSIS">
+    <div class="panel">
+      <p class="scene-label">SCENE 04 / DIAGNOSIS</p>
+      <h2>案件に出せない理由を、提出前チェックで可視化する。</h2>
+      <p class="lead">
+        独学で止まりやすいのは、操作不足だけではなく、OK基準、音、第三者チェック、案件導線が分断されるところ。<br class="pc-only">
+        プレミアエディターでは、止まりやすい原因を編集前のエラーチェックとして扱う。
+      </p>
+
+      <div class="console-head"><span class="rec-dot"></span>PRE-SUBMIT CHECK</div>
+
+      <article class="check-featured d1">
+        <header>
+          <span class="check-tag">CHECK 01</span>
+          <span class="check-kind">QUALITY CHECK</span>
+        </header>
+        <h3>案件に出せる基準が見えない。</h3>
+        <p>カットやテロップは触れても、どこまで整えば提出できるのか判断できず、完成直前で止まってしまう。</p>
+      </article>
+
+      <div class="check-grid">
+        <article class="check-card d1">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h7"/><circle cx="18" cy="15" r="3.4"/><path d="M18 13.4v1.8l1.2.8"/></svg>
+          <small>CHECK 01 / QUALITY</small>
+          <strong>OK基準がない</strong>
+          <span>提出前で迷う</span>
+        </article>
+        <article class="check-card d2">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14v-4M8 17V7M12 20V4M16 16V8M20 13v-2"/></svg>
+          <small>CHECK 02 / AUDIO</small>
+          <strong>BGM/SEが不安</strong>
+          <span>空気感が作れない</span>
+        </article>
+        <article class="check-card d3">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2.5"/><path d="M8 12l2.6 2.6L16 9.4"/></svg>
+          <small>CHECK 03 / REVIEW</small>
+          <strong>添削がない</strong>
+          <span>直し方が曖昧</span>
+        </article>
+        <article class="check-card d4">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="6" r="2.6"/><circle cx="18" cy="6" r="2.6"/><circle cx="12" cy="18" r="2.6"/><path d="M7.8 7.8L10.4 16M16.2 7.8L13.6 16M8.6 6h6.8"/></svg>
+          <small>CHECK 04 / ROUTE</small>
+          <strong>案件導線がない</strong>
+          <span>作って終わる</span>
+        </article>
+      </div>
+
+      <div class="fix-flow">
+        <article class="fix-step d1">
+          <small>01 / CUT INTO TASKS</small>
+          <strong>1時間ごとに工程化</strong>
+          <p>作業を分解し、迷う時間を減らす。</p>
+        </article>
+        <article class="fix-step d2">
+          <small>02 / REVIEW STANDARD</small>
+          <strong>添削でOK基準へ</strong>
+          <p>提出前の違和感を、直す順番まで見える形にする。</p>
+        </article>
+        <article class="fix-step d3">
+          <small>03 / NEXT ROUTE</small>
+          <strong>OK後コミュニティへ</strong>
+          <p>作品を作って終わらせず、案件紹介導線へ接続する。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCENE 05 / STRENGTH -->
+  <section class="scene" id="strength" data-scene="STRENGTH" data-cue="00:48" data-clip="SCENE 05|STRENGTH" data-gates="3">
+    <div class="panel">
+      <p class="scene-label">SCENE 05 / STRENGTH</p>
+      <h2>案件に出す前に、編集を3ゲートで締める。</h2>
+      <p class="lead">
+        プレミアエディターの強みは、学習内容を並べることではなく、提出できる状態まで工程を固定すること。<br class="pc-only">
+        カット、音、添削、案件導線を別々に語らず、1本の編集プロジェクトとして通す。
+        初心者向けのやさしい説明より、提出前の判断基準を明確にする。
+      </p>
+
+      <div class="console-head"><span class="rec-dot"></span>QUALITY GATE / BEFORE SUBMIT</div>
+
+      <article class="gate-featured d1">
+        <header>
+          <span class="check-tag">GATE 01</span>
+          <span class="check-kind">TIME LOCK</span>
+        </header>
+        <h3>1時間ごとの工程設計</h3>
+        <p>カット、テロップ、BGM、SE、添削を時間で区切り、何をいつ終えるかを曖昧にしない。</p>
+        <div class="gate-chips" aria-label="工程チップ">
+          <span>CUT</span><span>BGM</span><span>SE</span><span>REVIEW</span><span>COMMUNITY</span>
         </div>
-      </section>
+        <div class="gate-meter" aria-label="SUBMIT READINESS">
+          <small>SUBMIT READINESS</small>
+          <div class="meter-track"><i></i></div>
+        </div>
+      </article>
 
-      <section class="diagnosis section-dark" id="why" data-diagnosis>
-        <div class="section-inner diagnosis-inner">
-          <div class="section-head diagnosis-head">
-            <div>
-              <p class="scene-label">SCENE 04 / DIAGNOSIS</p>
-              <h2>案件に出せない理由を、提出前チェックで可視化する。</h2>
-            </div>
-            <p>
-              独学で止まりやすいのは、操作不足だけではなく、OK基準、音、第三者チェック、案件導線が分断されるところ。
-              プレミアエディターでは、止まりやすい原因を編集前のエラーチェックとして扱う。
-            </p>
-          </div>
+      <div class="gate-grid">
+        <article class="gate-card d1">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13" r="7.5"/><path d="M12 9.5V13l2.6 1.8M9.5 3h5"/></svg>
+          <small>GATE 01 / TIME</small>
+          <strong>1時間ごとの工程設計</strong>
+          <p>編集工程を順番と時間で固定し、迷って止まる時間を減らす。</p>
+        </article>
+        <article class="gate-card d2">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14v-4M8 17V7M12 20V4M16 16V8M20 13v-2"/></svg>
+          <small>GATE 02 / AUDIO</small>
+          <strong>BGM / SEまで実践</strong>
+          <p>見た目だけでなく、音の違和感まで提出前に整える。</p>
+        </article>
+        <article class="gate-card d3">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2.5"/><path d="M8 12l2.6 2.6L16 9.4"/></svg>
+          <small>GATE 03 / REVIEW</small>
+          <strong>制作物を添削</strong>
+          <p>OK基準に届いているかを、添削で確認してから次へ進む。</p>
+        </article>
+        <article class="gate-card d4">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2.4"/><circle cx="5" cy="18" r="2.4"/><circle cx="19" cy="18" r="2.4"/><path d="M10.8 6.9L6.4 15.9M13.2 6.9l4.4 9M7.4 18h9.2"/></svg>
+          <small>GATE 04 / ROUTE</small>
+          <strong>OK後コミュニティ</strong>
+          <p>添削OK後の案件導線まで、講座設計の中に入れる。</p>
+        </article>
+      </div>
 
-          <div class="diagnosis-stage">
-            <div class="diagnosis-monitor" aria-live="polite">
-              <div class="diagnosis-monitor-top">
-                <span>PRE-SUBMIT CHECK</span>
-                <strong data-diagnosis-counter>CHECK 01</strong>
-              </div>
-              <div class="diagnosis-preview">
-                <img class="asset-kit diagnosis-kit-panel" src="assets/generated-kit-01/cutouts/14-diagnosis-monitor-panel.png" alt="" aria-hidden="true">
-                <span class="diagnosis-playhead" aria-hidden="true"></span>
-                <div class="diagnosis-frame-row" aria-hidden="true">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <div class="diagnosis-alert">
-                  <span data-diagnosis-label>QUALITY CHECK</span>
-                  <strong data-diagnosis-title>案件に出せる基準が見えない。</strong>
-                  <p data-diagnosis-copy>カットやテロップは触れても、どこまで整えば提出できるのか判断できず、完成直前で止まってしまう。</p>
-                </div>
-              </div>
-              <div class="diagnosis-meter" aria-hidden="true"><span></span></div>
-            </div>
+      <div class="result-banner">
+        <small>PROJECT RESULT</small>
+        <p>土日2日で編集工程を通し、添削OK後の案件導線まで見える状態へ。</p>
+      </div>
+    </div>
+  </section>
 
-            <div class="diagnosis-queue" aria-label="提出前に止まりやすい原因">
-              <button
-                class="diagnosis-clip is-active"
-                type="button"
-                data-index="01"
-                data-label="QUALITY CHECK"
-                data-title="案件に出せる基準が見えない。"
-                data-copy="カットやテロップは触れても、どこまで整えば提出できるのか判断できず、完成直前で止まってしまう。"
-              >
-                <span class="material-symbols-outlined" aria-hidden="true">rule_settings</span>
-                <small>CHECK 01 / QUALITY</small>
-                <strong>OK基準がない</strong>
-                <em>提出前で迷う</em>
-              </button>
-              <button
-                class="diagnosis-clip"
-                type="button"
-                data-index="02"
-                data-label="AUDIO CHECK"
-                data-title="音だけが素人っぽく浮いてしまう。"
-                data-copy="BGMやSEの音量、入れる位置、抜く判断が曖昧だと、映像全体の完成度が急に下がって見える。"
-              >
-                <span class="material-symbols-outlined" aria-hidden="true">graphic_eq</span>
-                <small>CHECK 02 / AUDIO</small>
-                <strong>BGM/SEが不安</strong>
-                <em>空気感が作れない</em>
-              </button>
-              <button
-                class="diagnosis-clip"
-                type="button"
-                data-index="03"
-                data-label="REVIEW CHECK"
-                data-title="直し方が分からず、作品が止まる。"
-                data-copy="自分だけで確認していると、テンポ、見せ方、音量、書き出しの違和感に気づきにくい。"
-              >
-                <span class="material-symbols-outlined" aria-hidden="true">fact_check</span>
-                <small>CHECK 03 / REVIEW</small>
-                <strong>添削がない</strong>
-                <em>直し方が曖昧</em>
-              </button>
-              <button
-                class="diagnosis-clip"
-                type="button"
-                data-index="04"
-                data-label="ROUTE CHECK"
-                data-title="作品の次に、案件へ進む道がない。"
-                data-copy="動画を作っても、営業文、応募先、コミュニティ導線が切れていると、受講後の行動が止まりやすい。"
-              >
-                <span class="material-symbols-outlined" aria-hidden="true">route</span>
-                <small>CHECK 04 / ROUTE</small>
-                <strong>案件導線がない</strong>
-                <em>作って終わる</em>
-              </button>
-            </div>
-          </div>
+  <!-- SCENE 06 / SCHEDULE -->
+  <section class="scene" id="schedule" data-scene="SCHEDULE" data-cue="01:00" data-clip="SCENE 06|SCHEDULE">
+    <div class="panel panel-wide">
+      <p class="scene-label">SCENE 06 / SCHEDULE</p>
+      <h2>1時間を1コマとして、編集工程を進める。</h2>
+      <p class="lead">
+        映画フィルムのコマを進めるように、DAY1は編集の基礎、DAY2は提出と案件導線へ。<br class="pc-only">
+        カット、BGM、SE、添削までを時間割で可視化する。
+      </p>
 
-          <div class="diagnosis-resolve" aria-label="プレミアエディターで解決する流れ">
-            <div>
-              <span>01 / CUT INTO TASKS</span>
-              <strong>1時間ごとに工程化</strong>
-              <p>作業を分解し、迷う時間を減らす。</p>
-            </div>
-            <div>
-              <span>02 / REVIEW STANDARD</span>
-              <strong>添削でOK基準へ</strong>
-              <p>提出前の違和感を、直す順番まで見える形にする。</p>
-            </div>
-            <div>
-              <span>03 / NEXT ROUTE</span>
-              <strong>OK後コミュニティへ</strong>
-              <p>作品を作って終わらせず、案件紹介導線へ接続する。</p>
+      <article class="now-card d1">
+        <header><span class="check-tag">NOW 01</span><span class="check-kind">DAY 1 / SETUP</span></header>
+        <h3>ORIENTATION</h3>
+        <p>編集環境、素材管理、完成形を確認して、2日間の編集プロジェクトを開く。</p>
+      </article>
+
+      <div class="sequence" aria-label="2日間の時間割">
+        <div class="sequence-head">
+          <span>PROJECT / PREMIERE EDITOR COURSE</span>
+          <strong>SEQUENCE 01</strong>
+          <em class="autoplay-chip">AUTO PLAY</em>
+        </div>
+
+        <div class="seq-day">
+          <div class="seq-day-label">DAY 1 / BUILD</div>
+          <div class="seq-scroll">
+            <div class="seq-row" data-seq-row>
+              <div class="seq-koma k-setup"><time>10:00</time><small>01 / SETUP</small><strong>ORIENTATION</strong></div>
+              <div class="seq-koma k-cut"><time>11:00</time><small>02 / CUT</small><strong>カット1</strong></div>
+              <div class="seq-koma k-cut"><time>12:00</time><small>03 / CUT</small><strong>カット2</strong></div>
+              <div class="seq-koma k-text"><time>13:50</time><small>04 / TEXT</small><strong>テロップ1</strong></div>
+              <div class="seq-koma k-text"><time>14:50</time><small>05 / TEXT</small><strong>テロップ2</strong></div>
+              <div class="seq-koma k-audio"><time>15:50</time><small>06 / AUDIO</small><strong>BGM</strong></div>
+              <div class="seq-koma k-audio"><time>16:50</time><small>07 / AUDIO</small><strong>SE</strong></div>
+              <div class="seq-koma k-check"><time>17:40</time><small>08 / CHECK</small><strong>CHECK</strong></div>
+              <i class="seq-playhead" aria-hidden="true"></i>
             </div>
           </div>
         </div>
-      </section>
 
-      <section class="strength section-band" id="strength" data-strength-suite>
-        <div class="section-inner">
-          <p class="scene-label">SCENE 05 / STRENGTH</p>
-          <div class="section-head strength-head">
-            <div>
-              <h2>案件に出す前に、編集を3ゲートで締める。</h2>
-              <p>プレミアエディターの強みは、学習内容を並べることではなく、提出できる状態まで工程を固定すること。</p>
-            </div>
-            <p>
-              カット、音、添削、案件導線を別々に語らず、1本の編集プロジェクトとして通す。
-              初心者向けのやさしい説明より、提出前の判断基準を明確にする。
-            </p>
-          </div>
-
-          <div class="strength-suite">
-            <div class="strength-console" aria-live="polite">
-              <div class="strength-console-top">
-                <span>QUALITY GATE / BEFORE SUBMIT</span>
-                <strong data-strength-counter>GATE 01</strong>
-              </div>
-              <div class="strength-preview">
-                <img class="asset-kit strength-kit-strip" src="assets/generated-kit-01/cutouts/05-timeline-clip-blocks.png" alt="" aria-hidden="true">
-                <img class="asset-kit strength-kit-wave" src="assets/generated-kit-01/cutouts/09-audio-waveform-icon.png" alt="" aria-hidden="true">
-                <span class="strength-preview-label" data-strength-label>TIME LOCK</span>
-                <h3 data-strength-title>1時間ごとの工程設計</h3>
-                <p data-strength-copy>カット、テロップ、BGM、SE、添削を時間で区切り、何をいつ終えるかを曖昧にしない。</p>
-                <div class="strength-checks" aria-label="強みの確認項目">
-                  <span class="is-on">CUT</span>
-                  <span>BGM</span>
-                  <span>SE</span>
-                  <span>REVIEW</span>
-                  <span>COMMUNITY</span>
-                </div>
-              </div>
-              <div class="strength-console-bottom">
-                <span>SUBMIT READINESS</span>
-                <div class="strength-progress" aria-hidden="true"><span></span></div>
-              </div>
-            </div>
-
-            <div class="strength-gates" aria-label="プレミアエディターの強み">
-              <button
-                class="strength-gate is-active"
-                type="button"
-                data-index="01"
-                data-label="TIME LOCK"
-                data-title="1時間ごとの工程設計"
-                data-copy="カット、テロップ、BGM、SE、添削を時間で区切り、何をいつ終えるかを曖昧にしない。"
-                data-on="CUT"
-              >
-                <span class="material-symbols-outlined" aria-hidden="true">timer</span>
-                <small>GATE 01 / TIME</small>
-                <strong>1時間ごとの工程設計</strong>
-                <p>編集工程を順番と時間で固定し、迷って止まる時間を減らす。</p>
-              </button>
-              <button
-                class="strength-gate"
-                type="button"
-                data-index="02"
-                data-label="SOUND CHECK"
-                data-title="BGM / SEまで実践"
-                data-copy="映像の質感を左右する音量、入り方、間の作り方まで触り、編集の完成度を底上げする。"
-                data-on="BGM,SE"
-              >
-                <span class="material-symbols-outlined" aria-hidden="true">graphic_eq</span>
-                <small>GATE 02 / AUDIO</small>
-                <strong>BGM / SEまで実践</strong>
-                <p>見た目だけでなく、音の違和感まで提出前に整える。</p>
-              </button>
-              <button
-                class="strength-gate"
-                type="button"
-                data-index="03"
-                data-label="REVIEW OK"
-                data-title="制作物を添削"
-                data-copy="作った動画を見てもらい、提出前に直すべきポイントを明確にする。自己判断だけで終わらせない。"
-                data-on="REVIEW"
-              >
-                <span class="material-symbols-outlined" aria-hidden="true">fact_check</span>
-                <small>GATE 03 / REVIEW</small>
-                <strong>制作物を添削</strong>
-                <p>OK基準に届いているかを、添削で確認してから次へ進む。</p>
-              </button>
-              <button
-                class="strength-gate route"
-                type="button"
-                data-index="04"
-                data-label="NEXT ROUTE"
-                data-title="OK後コミュニティ"
-                data-copy="基準を満たした後、案件紹介コミュニティへの参加導線を案内。作って終わりにしない。"
-                data-on="COMMUNITY"
-              >
-                <span class="material-symbols-outlined" aria-hidden="true">hub</span>
-                <small>GATE 04 / ROUTE</small>
-                <strong>OK後コミュニティ</strong>
-                <p>添削OK後の案件導線まで、講座設計の中に入れる。</p>
-              </button>
-            </div>
-          </div>
-
-          <div class="strength-proof-line" aria-label="強みの結論">
-            <span>PROJECT RESULT</span>
-            <strong>土日2日で編集工程を通し、添削OK後の案件導線まで見える状態へ。</strong>
-          </div>
-        </div>
-      </section>
-
-      <section class="schedule section-dark" id="schedule">
-        <div class="section-inner">
-          <div class="section-head schedule-head">
-            <div>
-              <p class="scene-label">SCENE 06 / SCHEDULE</p>
-              <h2>1時間を1コマとして、編集工程を進める。</h2>
-            </div>
-            <p>
-              映画フィルムのコマを進めるように、DAY1は編集の基礎、DAY2は提出と案件導線へ。
-              カット、BGM、SE、添削までを時間割で可視化する。
-            </p>
-          </div>
-
-          <div class="course-timeline" data-course-timeline>
-            <div class="course-monitor" aria-live="polite">
-              <span class="course-monitor-counter" data-course-counter>NOW 01</span>
-              <span class="course-monitor-track" data-course-track>DAY 1 / SETUP</span>
-              <strong data-course-title>ORIENTATION</strong>
-              <p data-course-copy>編集環境、素材管理、完成形を確認して、2日間の編集プロジェクトを開く。</p>
-            </div>
-
-            <div class="course-editor">
-              <div class="course-editor-top">
-                <span>PROJECT / PREMIERE EDITOR COURSE</span>
-                <strong>SEQUENCE 01</strong>
-                <span>AUTO PLAY</span>
-              </div>
-
-              <div class="course-scroll" aria-label="講座進行を編集タイムラインとして表示">
-                <div class="course-grid">
-                  <div class="course-day course-day-build">DAY 1 / BUILD</div>
-                  <div class="course-day course-day-review">DAY 2 / REVIEW</div>
-
-                  <span class="course-time" style="grid-column: 1;">10:00</span>
-                  <span class="course-time" style="grid-column: 2;">11:00</span>
-                  <span class="course-time" style="grid-column: 3;">12:00</span>
-                  <span class="course-time" style="grid-column: 4;">13:50</span>
-                  <span class="course-time" style="grid-column: 5;">14:50</span>
-                  <span class="course-time" style="grid-column: 6;">15:50</span>
-                  <span class="course-time" style="grid-column: 7;">16:50</span>
-                  <span class="course-time" style="grid-column: 8;">17:40</span>
-                  <span class="course-time" style="grid-column: 9;">10:00</span>
-                  <span class="course-time" style="grid-column: 10;">11:00</span>
-                  <span class="course-time" style="grid-column: 11;">12:50</span>
-                  <span class="course-time" style="grid-column: 12;">13:50</span>
-                  <span class="course-time" style="grid-column: 13;">14:50</span>
-                  <span class="course-time" style="grid-column: 14;">15:50</span>
-                  <span class="course-time" style="grid-column: 15;">16:50</span>
-                  <span class="course-time" style="grid-column: 16;">17:40</span>
-
-                  <div class="course-playhead" aria-hidden="true"></div>
-                  <img class="asset-kit course-kit-playhead" src="assets/generated-kit-01/cutouts/04-red-playhead-marker.png" alt="" aria-hidden="true">
-
-                  <button class="course-clip setup is-active" type="button" style="grid-column: 1;" data-index="01" data-track="DAY 1 / SETUP" data-title="ORIENTATION" data-copy="編集環境、素材管理、完成形を確認して、2日間の編集プロジェクトを開く。">
-                    <span>01 / SETUP</span><strong>ORIENTATION</strong>
-                  </button>
-                  <button class="course-clip hot" id="cut-01" type="button" style="grid-column: 2;" data-index="02" data-track="DAY 1 / CUT" data-title="カット1" data-copy="不要部分を整理し、素材をタイムラインに並べる。">
-                    <span>02 / CUT</span><strong>カット1</strong>
-                  </button>
-                  <button class="course-clip hot" id="cut-02" type="button" style="grid-column: 3;" data-index="03" data-track="DAY 1 / CUT" data-title="カット2" data-copy="テンポ、間、視聴維持を調整して、動画の流れを作る。">
-                    <span>03 / CUT</span><strong>カット2</strong>
-                  </button>
-                  <button class="course-clip visual" type="button" style="grid-column: 4;" data-index="04" data-track="DAY 1 / TEXT" data-title="テロップ1" data-copy="読みやすい字幕、サイズ、位置を作る。">
-                    <span>04 / TEXT</span><strong>テロップ1</strong>
-                  </button>
-                  <button class="course-clip visual" type="button" style="grid-column: 5;" data-index="05" data-track="DAY 1 / TEXT" data-title="テロップ2" data-copy="強調、色、視線誘導を整えて、情報を伝わりやすくする。">
-                    <span>05 / TEXT</span><strong>テロップ2</strong>
-                  </button>
-                  <button class="course-clip audio" id="bgm" type="button" style="grid-column: 6;" data-index="06" data-track="DAY 1 / AUDIO" data-title="BGM" data-copy="曲選び、音量、場面ごとの使い分けで映像の空気を作る。">
-                    <span>06 / AUDIO</span><strong>BGM</strong>
-                  </button>
-                  <button class="course-clip audio" id="se" type="button" style="grid-column: 7;" data-index="07" data-track="DAY 1 / AUDIO" data-title="SE" data-copy="効果音、間の作り方、やりすぎ防止を実践する。">
-                    <span>07 / AUDIO</span><strong>SE</strong>
-                  </button>
-                  <button class="course-clip check" type="button" style="grid-column: 8;" data-index="08" data-track="DAY 1 / CHECK" data-title="提出前CHECK" data-copy="提出前チェックを行い、翌日の添削へつなげる。">
-                    <span>08 / CHECK</span><strong>CHECK</strong>
-                  </button>
-
-                  <button class="course-clip visual" type="button" style="grid-column: 9;" data-index="09" data-track="DAY 2 / DESIGN" data-title="DESIGN" data-copy="画像挿入、画面整理、色味を整えて、見た目の完成度を上げる。">
-                    <span>09 / DESIGN</span><strong>DESIGN</strong>
-                  </button>
-                  <button class="course-clip visual" type="button" style="grid-column: 10;" data-index="10" data-track="DAY 2 / MOTION" data-title="MOTION" data-copy="アニメーションと見せ場を作り、画面にリズムを加える。">
-                    <span>10 / MOTION</span><strong>MOTION</strong>
-                  </button>
-                  <button class="course-clip check" type="button" style="grid-column: 11;" data-index="11" data-track="DAY 2 / EXPORT" data-title="EXPORT" data-copy="書き出し、納品形式、音量を確認する。">
-                    <span>11 / EXPORT</span><strong>EXPORT</strong>
-                  </button>
-                  <button class="course-clip hot" type="button" style="grid-column: 12;" data-index="12" data-track="DAY 2 / REVIEW" data-title="REVIEW 1" data-copy="作品を提出し、講師添削で修正点を確認する。">
-                    <span>12 / REVIEW</span><strong>REVIEW 1</strong>
-                  </button>
-                  <button class="course-clip hot" type="button" style="grid-column: 13;" data-index="13" data-track="DAY 2 / REVIEW" data-title="REVIEW 2" data-copy="修正、再提出、OK基準の確認まで進める。">
-                    <span>13 / REVIEW</span><strong>REVIEW 2</strong>
-                  </button>
-                  <button class="course-clip visual" type="button" style="grid-column: 14;" data-index="14" data-track="DAY 2 / PORTFOLIO" data-title="PORTFOLIO" data-copy="提出用作品として見せられる形へ整え、実績化の準備をする。">
-                    <span>14 / WORKS</span><strong>PORTFOLIO</strong>
-                  </button>
-                  <button class="course-clip check" type="button" style="grid-column: 15;" data-index="15" data-track="DAY 2 / SALES" data-title="SALES" data-copy="営業文、応募先、案件導線を整理する。">
-                    <span>15 / SALES</span><strong>SALES</strong>
-                  </button>
-                  <button class="course-clip hot" id="community" type="button" style="grid-column: 16;" data-index="16" data-track="DAY 2 / COMMUNITY" data-title="COMMUNITY" data-copy="OK後の案件紹介コミュニティ参加導線へ進む。">
-                    <span>16 / COMMUNITY</span><strong>COMMUNITY</strong>
-                  </button>
-
-                  <div class="course-wave" aria-hidden="true"></div>
-                </div>
-              </div>
+        <div class="seq-day">
+          <div class="seq-day-label">DAY 2 / REVIEW</div>
+          <div class="seq-scroll">
+            <div class="seq-row" data-seq-row>
+              <div class="seq-koma k-design"><time>10:00</time><small>09 / DESIGN</small><strong>DESIGN</strong></div>
+              <div class="seq-koma k-design"><time>11:00</time><small>10 / MOTION</small><strong>MOTION</strong></div>
+              <div class="seq-koma k-export"><time>12:50</time><small>11 / EXPORT</small><strong>EXPORT</strong></div>
+              <div class="seq-koma k-review"><time>13:50</time><small>12 / REVIEW</small><strong>REVIEW 1</strong></div>
+              <div class="seq-koma k-review"><time>14:50</time><small>13 / REVIEW</small><strong>REVIEW 2</strong></div>
+              <div class="seq-koma k-works"><time>15:50</time><small>14 / WORKS</small><strong>PORTFOLIO</strong></div>
+              <div class="seq-koma k-sales"><time>16:50</time><small>15 / SALES</small><strong>SALES</strong></div>
+              <div class="seq-koma k-community"><time>17:40</time><small>16 / COMMUNITY</small><strong>COMMUNITY</strong></div>
+              <i class="seq-playhead" aria-hidden="true"></i>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section class="mid-cta section-band">
-        <div class="section-inner offer-grid compact">
-          <div>
-            <p class="scene-label">CUT-IN / LINE CHECK</p>
-            <h2>この工程で進めそうか、説明会で先に確認。</h2>
-          </div>
-          <div class="cta-card">
-            <p>必要PC環境、日程、添削条件、コミュニティ参加条件をLINEで確認できます。</p>
-            <a class="primary-btn" href="#contact">LINEで確認する</a>
+      <div class="cutin">
+        <small>CUT-IN / LINE CHECK</small>
+        <h3>この工程で進めそうか、説明会で先に確認。</h3>
+        <p>必要PC環境、日程、添削条件、コミュニティ参加条件をLINEで確認できます。</p>
+        <a class="btn-primary" href="#contact">LINEで確認する</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCENE 07 / REVIEW -->
+  <section class="scene" id="review" data-scene="REVIEW" data-cue="01:12" data-clip="SCENE 07|REVIEW">
+    <div class="panel panel-wide">
+      <p class="scene-label">SCENE 07 / REVIEW</p>
+      <h2>作った動画を添削。OKが出たら、次の導線へ。</h2>
+      <p class="lead">
+        講座内で制作した課題動画を提出し、カット、テロップ、BGM/SE、書き出し形式を確認。<br class="pc-only">
+        OK基準を満たした受講者は、案件紹介コミュニティへの参加導線を案内する。
+      </p>
+
+      <ol class="review-flow">
+        <li class="d1"><span>01</span>課題動画を制作</li>
+        <li class="d2"><span>02</span>講師/運営が添削</li>
+        <li class="d3"><span>03</span>修正して再提出</li>
+        <li class="d4"><span>04</span>OK後コミュニティへ</li>
+      </ol>
+
+      <div class="console-head"><span class="rec-dot"></span>WORKS TAPE / 実績一覧</div>
+      <p class="works-lead">
+        サムネイル実績を、編集テープに乗せて流す。<br>
+        <span class="works-note">まずは画像サンプルで演出確認。将来は同じカード枠をYouTube埋め込みへ差し替え、作品実績として見せられる構造にしておく。</span>
+      </p>
+
+      <div class="tape" data-tape aria-label="実績サムネイルのテープ">
+        <div class="tape-track">
+          <!-- JSで2周分を複製 -->
+          <figure data-work="0"><img src="assets/works/work-2000-rank.png" alt="2000目指してランクマッチ" loading="lazy"><figcaption><small>GAME THUMBNAIL</small>2000目指してランクマッチ</figcaption></figure>
+          <figure data-work="1"><img src="assets/works/work-xp-update.png" alt="XP更新行くぞ!!!" loading="lazy"><figcaption><small>SPLATOON</small>XP更新行くぞ!!!</figcaption></figure>
+          <figure data-work="2"><img src="assets/works/work-horror-game.png" alt="みんなでホラーゲーム" loading="lazy"><figcaption><small>STREAM</small>みんなでホラーゲーム</figcaption></figure>
+          <figure data-work="3"><img src="assets/works/work-nintendo-direct.png" alt="同時視聴配信" loading="lazy"><figcaption><small>LIVE</small>同時視聴配信</figcaption></figure>
+          <figure data-work="4"><img src="assets/works/work-mariokart-world.png" alt="世界1元気マリカ" loading="lazy"><figcaption><small>MARIOKART</small>世界1元気マリカ</figcaption></figure>
+          <figure data-work="5"><img src="assets/works/work-birthday-live.png" alt="飲酒誕生日配信" loading="lazy"><figcaption><small>BIRTHDAY LIVE</small>飲酒誕生日配信</figcaption></figure>
+          <figure data-work="6"><img src="assets/works/work-springfest-members.png" alt="SpringFest メン限" loading="lazy"><figcaption><small>MEMBERS</small>SpringFest メン限</figcaption></figure>
+          <figure data-work="7"><img src="assets/works/work-short-editing.png" alt="shortを作るには" loading="lazy"><figcaption><small>EDITING</small>shortを作るには</figcaption></figure>
+        </div>
+      </div>
+
+      <div class="console-head"><span class="rec-dot"></span>WORKS SELECT / 案2</div>
+      <p class="works-lead">
+        流れる実績から、1本を編集モニターへ読み込む。テープで一覧性を出しつつ、気になる実績は大きく見せる。<br>
+        <span class="works-note">本番ではこのメイン画面をYouTube埋め込みへ差し替えられる。</span>
+      </p>
+
+      <div class="monitor" data-monitor>
+        <div class="monitor-head">
+          <span>SELECTED <em id="monitor-num">01</em></span>
+          <strong>YOUTUBE READY</strong>
+        </div>
+        <div class="monitor-screen">
+          <img id="monitor-img" src="assets/works/work-2000-rank.png" alt="2000目指してランクマッチ">
+          <div class="monitor-osd" aria-hidden="true"><span class="rec-dot"></span>PREVIEW</div>
+        </div>
+        <div class="monitor-meta">
+          <small id="monitor-tag">GAME THUMBNAIL</small>
+          <strong id="monitor-title">2000目指してランクマッチ</strong>
+          <p id="monitor-desc">大会感のある背景、キャラクター、巨大テキストで、配信前に期待値を作るサムネイル。</p>
+        </div>
+        <div class="monitor-picker" role="tablist" aria-label="実績を選ぶ">
+          <button type="button" role="tab" aria-selected="true" data-pick="0">01</button>
+          <button type="button" role="tab" aria-selected="false" data-pick="1">02</button>
+          <button type="button" role="tab" aria-selected="false" data-pick="2">03</button>
+          <button type="button" role="tab" aria-selected="false" data-pick="3">04</button>
+          <button type="button" role="tab" aria-selected="false" data-pick="4">05</button>
+          <button type="button" role="tab" aria-selected="false" data-pick="5">06</button>
+          <button type="button" role="tab" aria-selected="false" data-pick="6">07</button>
+          <button type="button" role="tab" aria-selected="false" data-pick="7">08</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCENE 08 / PRESENT -->
+  <section class="scene" id="present" data-scene="PRESENT" data-cue="01:24" data-clip="SCENE 08|PRESENT">
+    <div class="panel">
+      <p class="scene-label">SCENE 08 / PRESENT</p>
+      <h2>受講して終わりにしない。編集者になるための支給セット。</h2>
+      <p class="lead">
+        講座中に学ぶ工程だけでなく、受講後に見返す教材、営業準備、OK後のコミュニティ導線まで用意。<br class="pc-only">
+        4つの装備として、編集スタジオの棚に並べる。
+      </p>
+
+      <div class="present-grid">
+        <article class="present-card d1">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18v-6a8 8 0 0 1 16 0v6"/><rect x="2.6" y="13" width="4.4" height="6.4" rx="1.6"/><rect x="17" y="13" width="4.4" height="6.4" rx="1.6"/></svg>
+          <small>PRESENT 01</small>
+          <strong>営業サポート</strong>
+          <p>提案文、応募時の見せ方、案件へ進む前の準備を整理。</p>
+          <em class="kit-tag">SALES KIT</em>
+        </article>
+        <article class="present-card d2">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5V2L7.5 5.5 12 9V6a6.5 6.5 0 1 1-6.5 6.5"/></svg>
+          <small>PRESENT 02</small>
+          <strong>オンライン学習で復習</strong>
+          <p>カット、音、テロップ、提出前チェックを受講後も見返せる。</p>
+          <em class="kit-tag">REVIEW DECK</em>
+        </article>
+        <article class="present-card d3">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="9" r="3"/><circle cx="17" cy="10.4" r="2.4"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0M13.6 15.4A4.6 4.6 0 0 1 21 19"/></svg>
+          <small>PRESENT 03</small>
+          <strong>案件紹介コミュニティへの参加権利</strong>
+          <p>添削OK後、案件紹介コミュニティへ進むための導線を案内。</p>
+          <em class="kit-tag">COMMUNITY PASS</em>
+        </article>
+        <article class="present-card d4">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/><rect x="13" y="13" width="4.4" height="4" rx="1"/></svg>
+          <small>PRESENT 04</small>
+          <strong>土日に受講</strong>
+          <p>平日に仕事がある人でも、2日間で集中して工程を進めやすい。</p>
+          <em class="kit-tag">WEEKEND SLOT</em>
+        </article>
+      </div>
+
+      <div class="graduate-banner">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="5.5"/><path d="M12 6.4l.9 1.8 2 .3-1.45 1.4.35 2-1.8-.95-1.8.95.35-2L9.1 8.5l2-.3z"/><path d="M8.5 13.8L7 21l5-2.6L17 21l-1.5-7.2"/></svg>
+        <p>添削OK後は、卒業後コミュニティの入会金カット対象として案内。条件はLINE説明会で確認。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCENE 09 / PLAN(PRICE) -->
+  <section class="scene" id="price" data-scene="PRICE" data-cue="01:36" data-clip="SCENE 09|PLAN">
+    <div class="panel">
+      <p class="scene-label">SCENE 09 / PLAN</p>
+      <h2>料金は、書き出し前の最終確認みたいに見せる。</h2>
+      <p class="lead">
+        迷わせる価格表ではなく、卒業後に何が続き、何がカットされ、何をLINEで確認するのかを<br class="pc-only">
+        編集ソフトのエクスポート画面のように整理する。
+      </p>
+
+      <div class="price-chips">
+        <div class="price-chip d1">
+          <span class="yen" aria-hidden="true">¥</span>
+          <strong>月額4,900円</strong>
+          <small>卒業後コミュニティの継続費</small>
+        </div>
+        <div class="price-chip d2">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6.5" cy="6.5" r="2.7"/><circle cx="6.5" cy="17.5" r="2.7"/><path d="M8.8 8.4L20 19M8.8 15.6L20 5"/></svg>
+          <strong>入会金CUT</strong>
+          <small>卒業条件を満たした人向けに案内</small>
+        </div>
+      </div>
+
+      <ol class="price-lines">
+        <li class="d1"><span>01</span>講座本体と参加条件はLINE説明会で確認</li>
+        <li class="d2"><span>02</span>添削OK後、案件紹介コミュニティの参加導線へ</li>
+        <li class="d3"><span>03</span>必要な人だけアフターサポートを追加</li>
+      </ol>
+
+      <div class="export-dialog" aria-label="料金の最終確認パネル">
+        <div class="export-head">
+          <span>EXPORT SETTINGS / PRICE CHECK</span>
+          <div class="export-titlebar">
+            <strong>PREMIERE EDITOR</strong>
+            <em>PRICE CHECK READY</em>
+            <small>SCENE 09 / 01:36</small>
           </div>
         </div>
-      </section>
-
-      <section class="review section-dark" id="review">
-        <div class="section-inner review-inner">
-          <div class="review-head split">
-            <div>
-              <p class="scene-label">SCENE 07 / REVIEW</p>
-              <h2>作った動画を添削。OKが出たら、次の導線へ。</h2>
-              <p>
-                講座内で制作した課題動画を提出し、カット、テロップ、BGM/SE、書き出し形式を確認。
-                OK基準を満たした受講者は、案件紹介コミュニティへの参加導線を案内する。
-              </p>
-            </div>
-            <ol class="review-steps">
-              <li><span>01</span>課題動画を制作</li>
-              <li><span>02</span>講師/運営が添削</li>
-              <li><span>03</span>修正して再提出</li>
-              <li><span>04</span>OK後コミュニティへ</li>
-            </ol>
-          </div>
-
-          <div class="works-tape" id="works">
-            <div class="works-tape-head">
-              <div>
-                <p class="scene-label">WORKS TAPE / 実績一覧</p>
-                <h3>サムネイル実績を、編集テープに乗せて流す。</h3>
-              </div>
-              <p>
-                まずは画像サンプルで演出確認。将来は同じカード枠をYouTube埋め込みへ差し替え、
-                作品実績として見せられる構造にしておく。
-              </p>
-            </div>
-
-            <div class="works-tape-frame" aria-label="実績サムネイルの横流れギャラリー">
-              <div class="works-track works-track-primary">
-                <div class="works-set">
-                  <article class="work-card" data-video-slot="work-01">
-                    <div class="work-media"><img src="assets/works/work-2000-rank.png" alt="2000目指してランクマッチの配信サムネイル"></div>
-                    <div class="work-caption"><span>GAME THUMBNAIL</span><strong>2000目指してランクマッチ</strong></div>
-                  </article>
-                  <article class="work-card" data-video-slot="work-02">
-                    <div class="work-media"><img src="assets/works/work-xp-update.png" alt="XP更新行くぞの配信サムネイル"></div>
-                    <div class="work-caption"><span>SPLATOON</span><strong>XP更新行くぞ!!!</strong></div>
-                  </article>
-                  <article class="work-card" data-video-slot="work-03">
-                    <div class="work-media"><img src="assets/works/work-horror-game.png" alt="みんなでホラーゲームの配信サムネイル"></div>
-                    <div class="work-caption"><span>STREAM</span><strong>みんなでホラーゲーム</strong></div>
-                  </article>
-                  <article class="work-card" data-video-slot="work-04">
-                    <div class="work-media"><img src="assets/works/work-nintendo-direct.png" alt="同時視聴配信の配信サムネイル"></div>
-                    <div class="work-caption"><span>LIVE</span><strong>同時視聴配信</strong></div>
-                  </article>
-                  <article class="work-card" data-video-slot="work-05">
-                    <div class="work-media"><img src="assets/works/work-mariokart-world.png" alt="世界1元気マリカの配信サムネイル"></div>
-                    <div class="work-caption"><span>MARIOKART</span><strong>世界1元気マリカ</strong></div>
-                  </article>
-                  <article class="work-card" data-video-slot="work-06">
-                    <div class="work-media"><img src="assets/works/work-birthday-live.png" alt="飲酒誕生日配信の配信サムネイル"></div>
-                    <div class="work-caption"><span>BIRTHDAY LIVE</span><strong>飲酒誕生日配信</strong></div>
-                  </article>
-                  <article class="work-card" data-video-slot="work-07">
-                    <div class="work-media"><img src="assets/works/work-springfest-members.png" alt="スプリングフェスメン限の配信サムネイル"></div>
-                    <div class="work-caption"><span>MEMBERS</span><strong>SpringFest メン限</strong></div>
-                  </article>
-                  <article class="work-card" data-video-slot="work-08">
-                    <div class="work-media"><img src="assets/works/work-short-editing.png" alt="shortを作るにはの動画サムネイル"></div>
-                    <div class="work-caption"><span>EDITING</span><strong>shortを作るには</strong></div>
-                  </article>
-                </div>
-
-                <div class="works-set" aria-hidden="true">
-                  <article class="work-card">
-                    <div class="work-media"><img src="assets/works/work-2000-rank.png" alt=""></div>
-                    <div class="work-caption"><span>GAME THUMBNAIL</span><strong>2000目指してランクマッチ</strong></div>
-                  </article>
-                  <article class="work-card">
-                    <div class="work-media"><img src="assets/works/work-xp-update.png" alt=""></div>
-                    <div class="work-caption"><span>SPLATOON</span><strong>XP更新行くぞ!!!</strong></div>
-                  </article>
-                  <article class="work-card">
-                    <div class="work-media"><img src="assets/works/work-horror-game.png" alt=""></div>
-                    <div class="work-caption"><span>STREAM</span><strong>みんなでホラーゲーム</strong></div>
-                  </article>
-                  <article class="work-card">
-                    <div class="work-media"><img src="assets/works/work-nintendo-direct.png" alt=""></div>
-                    <div class="work-caption"><span>LIVE</span><strong>同時視聴配信</strong></div>
-                  </article>
-                  <article class="work-card">
-                    <div class="work-media"><img src="assets/works/work-mariokart-world.png" alt=""></div>
-                    <div class="work-caption"><span>MARIOKART</span><strong>世界1元気マリカ</strong></div>
-                  </article>
-                  <article class="work-card">
-                    <div class="work-media"><img src="assets/works/work-birthday-live.png" alt=""></div>
-                    <div class="work-caption"><span>BIRTHDAY LIVE</span><strong>飲酒誕生日配信</strong></div>
-                  </article>
-                  <article class="work-card">
-                    <div class="work-media"><img src="assets/works/work-springfest-members.png" alt=""></div>
-                    <div class="work-caption"><span>MEMBERS</span><strong>SpringFest メン限</strong></div>
-                  </article>
-                  <article class="work-card">
-                    <div class="work-media"><img src="assets/works/work-short-editing.png" alt=""></div>
-                    <div class="work-caption"><span>EDITING</span><strong>shortを作るには</strong></div>
-                  </article>
-                </div>
-              </div>
-
-              <div class="works-track works-track-secondary" aria-hidden="true">
-                <div class="works-set">
-                  <article class="work-card">
-                    <div class="work-media"><img src="assets/works/work-short-editing.png" alt=""></div>
-                    <div class="work-caption"><span>EDITING</span><strong>shortを作るには</strong></div>
-                  </article>
-                  <article class="work-card">
-                    <div class="work-media"><img src="assets/works/work-springfest-members.png" alt=""></div>
-                    <div class="work-caption"><span>MEMBERS</span><strong>SpringFest メン限</strong></div>
-                  </article>
-                  <article class="work-card">
-                    <div class="work-media"><img src="assets/works/work-birthday-live.png" alt=""></div>
-                    <div class="work-caption"><span>BIRTHDAY LIVE</span><strong>飲酒誕生日配信</strong></div>
-                  </article>
-                  <article class="work-card">
-                    <div class="work-media"><img src="assets/works/work-mariokart-world.png" alt=""></div>
-                    <div class="work-caption"><span>MARIOKART</span><strong>世界1元気マリカ</strong></div>
-                  </article>
-                  <article class="work-card">
-                    <div class="work-media"><img src="assets/works/work-nintendo-direct.png" alt=""></div>
-                    <div class="work-caption"><span>LIVE</span><strong>同時視聴配信</strong></div>
-                  </article>
-                  <article class="work-card">
-                    <div class="work-media"><img src="assets/works/work-horror-game.png" alt=""></div>
-                    <div class="work-caption"><span>STREAM</span><strong>みんなでホラーゲーム</strong></div>
-                  </article>
-                  <article class="work-card">
-                    <div class="work-media"><img src="assets/works/work-xp-update.png" alt=""></div>
-                    <div class="work-caption"><span>SPLATOON</span><strong>XP更新行くぞ!!!</strong></div>
-                  </article>
-                  <article class="work-card">
-                    <div class="work-media"><img src="assets/works/work-2000-rank.png" alt=""></div>
-                    <div class="work-caption"><span>GAME THUMBNAIL</span><strong>2000目指してランクマッチ</strong></div>
-                  </article>
-                </div>
-
-                <div class="works-set">
-                  <article class="work-card">
-                    <div class="work-media"><img src="assets/works/work-short-editing.png" alt=""></div>
-                    <div class="work-caption"><span>EDITING</span><strong>shortを作るには</strong></div>
-                  </article>
-                  <article class="work-card">
-                    <div class="work-media"><img src="assets/works/work-springfest-members.png" alt=""></div>
-                    <div class="work-caption"><span>MEMBERS</span><strong>SpringFest メン限</strong></div>
-                  </article>
-                  <article class="work-card">
-                    <div class="work-media"><img src="assets/works/work-birthday-live.png" alt=""></div>
-                    <div class="work-caption"><span>BIRTHDAY LIVE</span><strong>飲酒誕生日配信</strong></div>
-                  </article>
-                  <article class="work-card">
-                    <div class="work-media"><img src="assets/works/work-mariokart-world.png" alt=""></div>
-                    <div class="work-caption"><span>MARIOKART</span><strong>世界1元気マリカ</strong></div>
-                  </article>
-                  <article class="work-card">
-                    <div class="work-media"><img src="assets/works/work-nintendo-direct.png" alt=""></div>
-                    <div class="work-caption"><span>LIVE</span><strong>同時視聴配信</strong></div>
-                  </article>
-                  <article class="work-card">
-                    <div class="work-media"><img src="assets/works/work-horror-game.png" alt=""></div>
-                    <div class="work-caption"><span>STREAM</span><strong>みんなでホラーゲーム</strong></div>
-                  </article>
-                  <article class="work-card">
-                    <div class="work-media"><img src="assets/works/work-xp-update.png" alt=""></div>
-                    <div class="work-caption"><span>SPLATOON</span><strong>XP更新行くぞ!!!</strong></div>
-                  </article>
-                  <article class="work-card">
-                    <div class="work-media"><img src="assets/works/work-2000-rank.png" alt=""></div>
-                    <div class="work-caption"><span>GAME THUMBNAIL</span><strong>2000目指してランクマッチ</strong></div>
-                  </article>
-                </div>
-              </div>
+        <div class="export-main">
+          <div class="export-hero">
+            <small>COMMUNITY MONTHLY</small>
+            <p class="export-price"><span>月額</span>4,900<span>円</span></p>
+            <p class="export-note">添削OK後、参加条件を満たした卒業生向けに案内。</p>
+            <div class="export-cutline">
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6.5" cy="6.5" r="2.7"/><circle cx="6.5" cy="17.5" r="2.7"/><path d="M8.8 8.4L20 19M8.8 15.6L20 5"/></svg>
+              <strong>入会金 CUT</strong>
+              <em>GRADUATE PASS</em>
             </div>
           </div>
-
-          <div class="works-focus" id="works-focus" data-works-focus>
-            <div class="works-focus-head">
-              <div>
-                <p class="scene-label">WORKS SELECT / 案2</p>
-                <h3>流れる実績から、1本を編集モニターへ読み込む。</h3>
-              </div>
-              <p>
-                テープで一覧性を出しつつ、気になる実績は大きく見せる。
-                本番ではこのメイン画面をYouTube埋め込みへ差し替えられる。
-              </p>
-            </div>
-
-            <div class="works-focus-stage">
-              <div class="work-focus-screen" aria-live="polite">
-                <img
-                  src="assets/works/work-2000-rank.png"
-                  alt="2000目指してランクマッチの配信サムネイル"
-                  data-work-preview
-                >
-                <span class="work-focus-corner">SELECTED 01</span>
-                <span class="work-focus-ready">YOUTUBE READY</span>
-              </div>
-              <div class="work-focus-copy">
-                <span class="work-focus-tag" data-work-tag>GAME THUMBNAIL</span>
-                <h4 data-work-title>2000目指してランクマッチ</h4>
-                <p data-work-copy>大会感のある背景、キャラクター、巨大テキストで、配信前に期待値を作るサムネイル。</p>
-                <div class="work-focus-meter" aria-hidden="true">
-                  <span></span><span></span><span></span><span></span><span></span>
-                </div>
-              </div>
-            </div>
-
-            <div class="focus-thumb-strip" aria-label="案2 実績プレビューの切り替え">
-              <button class="focus-thumb is-active" type="button" data-index="01" data-tag="GAME THUMBNAIL" data-title="2000目指してランクマッチ" data-copy="大会感のある背景、キャラクター、巨大テキストで、配信前に期待値を作るサムネイル。" data-image="assets/works/work-2000-rank.png">
-                <img src="assets/works/work-2000-rank.png" alt="">
-                <span>01</span>
-              </button>
-              <button class="focus-thumb" type="button" data-index="02" data-tag="SPLATOON" data-title="XP更新行くぞ!!!" data-copy="ゲーム画面、立ち絵、太い金文字を重ねて、クリック前の勢いを作る構成。" data-image="assets/works/work-xp-update.png">
-                <img src="assets/works/work-xp-update.png" alt="">
-                <span>02</span>
-              </button>
-              <button class="focus-thumb" type="button" data-index="03" data-tag="STREAM" data-title="みんなでホラーゲーム" data-copy="暗い背景と大きな表情差で、企画の空気感が一瞬で伝わる配信サムネイル。" data-image="assets/works/work-horror-game.png">
-                <img src="assets/works/work-horror-game.png" alt="">
-                <span>03</span>
-              </button>
-              <button class="focus-thumb" type="button" data-index="04" data-tag="LIVE" data-title="同時視聴配信" data-copy="赤い面と大きいタイトルで、同時視聴のテーマをすぐ認識できる構成。" data-image="assets/works/work-nintendo-direct.png">
-                <img src="assets/works/work-nintendo-direct.png" alt="">
-                <span>04</span>
-              </button>
-              <button class="focus-thumb" type="button" data-index="05" data-tag="MARIOKART" data-title="世界1元気マリカ" data-copy="明るい背景、動きの線、キャラ表情を使い、元気さと企画名を前面に出すサムネイル。" data-image="assets/works/work-mariokart-world.png">
-                <img src="assets/works/work-mariokart-world.png" alt="">
-                <span>05</span>
-              </button>
-              <button class="focus-thumb" type="button" data-index="06" data-tag="BIRTHDAY LIVE" data-title="飲酒誕生日配信" data-copy="青い世界観に大きな文字を重ねて、記念配信らしい強い記号性を出す。" data-image="assets/works/work-birthday-live.png">
-                <img src="assets/works/work-birthday-live.png" alt="">
-                <span>06</span>
-              </button>
-              <button class="focus-thumb" type="button" data-index="07" data-tag="MEMBERS" data-title="SpringFest メン限" data-copy="緑の配色とキャラクターで、限定配信の軽さと楽しさをまとめるデザイン。" data-image="assets/works/work-springfest-members.png">
-                <img src="assets/works/work-springfest-members.png" alt="">
-                <span>07</span>
-              </button>
-              <button class="focus-thumb" type="button" data-index="08" data-tag="EDITING" data-title="shortを作るには" data-copy="白背景と赤黒文字で、講義系コンテンツとして見やすく整理したサムネイル。" data-image="assets/works/work-short-editing.png">
-                <img src="assets/works/work-short-editing.png" alt="">
-                <span>08</span>
-              </button>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <section class="present section-dark" id="present">
-        <div class="section-inner">
-          <div class="section-head present-head">
-            <div>
-            <p class="scene-label">SCENE 08 / PRESENT</p>
-              <h2>受講して終わりにしない。編集者になるための支給セット。</h2>
-            </div>
-            <p>
-              講座中に学ぶ工程だけでなく、受講後に見返す教材、営業準備、OK後のコミュニティ導線まで用意。
-              4つの装備として、編集スタジオの棚に並べる。
-            </p>
-          </div>
-
-          <div class="present-shelf" aria-label="参加者に用意している4つの支給セット">
-            <img class="asset-kit present-kit-cases" src="assets/generated-kit-01/cutouts/13-tape-case-stack.png" alt="" aria-hidden="true">
-            <article class="present-case">
-              <div class="present-case-top">
-                <span class="material-symbols-outlined" aria-hidden="true">support_agent</span>
-                <span>PRESENT 01</span>
-              </div>
-              <h3>営業サポート</h3>
-              <p>提案文、応募時の見せ方、案件へ進む前の準備を整理。</p>
-              <strong>SALES KIT</strong>
-            </article>
-
-            <article class="present-case">
-              <div class="present-case-top">
-                <span class="material-symbols-outlined" aria-hidden="true">replay</span>
-                <span>PRESENT 02</span>
-              </div>
-              <h3>オンライン学習で復習</h3>
-              <p>カット、音、テロップ、提出前チェックを受講後も見返せる。</p>
-              <strong>REVIEW DECK</strong>
-            </article>
-
-            <article class="present-case hot">
-              <div class="present-case-top">
-                <span class="material-symbols-outlined" aria-hidden="true">groups</span>
-                <span>PRESENT 03</span>
-              </div>
-              <h3>案件紹介コミュニティへの参加権利</h3>
-              <p>添削OK後、案件紹介コミュニティへ進むための導線を案内。</p>
-              <strong>COMMUNITY PASS</strong>
-              <img class="asset-kit present-kit-pass" src="assets/generated-kit-01/cutouts/10-community-pass-card.png" alt="" aria-hidden="true">
-            </article>
-
-            <article class="present-case">
-              <div class="present-case-top">
-                <span class="material-symbols-outlined" aria-hidden="true">calendar_month</span>
-                <span>PRESENT 04</span>
-              </div>
-              <h3>土日に受講</h3>
-              <p>平日に仕事がある人でも、2日間で集中して工程を進めやすい。</p>
-              <strong>WEEKEND SLOT</strong>
-            </article>
-          </div>
-
-          <div class="present-pass">
-            <span class="material-symbols-outlined" aria-hidden="true">workspace_premium</span>
-            <p>添削OK後は、卒業後コミュニティの入会金カット対象として案内。条件はLINE説明会で確認。</p>
+          <div class="export-rows">
+            <div class="export-row"><span class="track-tag v">V1</span><strong>講座本体</strong><em>LINEで確認</em></div>
+            <div class="export-row"><span class="track-tag a">A1</span><strong>アフターサポート</strong><em>10,000円</em></div>
+            <div class="export-row"><span class="track-tag c">CAL</span><strong>受講日程</strong><em>土日対応</em></div>
           </div>
         </div>
-      </section>
+        <div class="export-foot">
+          <p><svg class="ico-s" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l7 3v6c0 4.8-3 8.6-7 10-4-1.4-7-5.2-7-10V5z"/><path d="M8.6 12l2.4 2.4 4.4-4.6"/></svg>講座本体価格、参加条件、アフターサポートの期間はLINE説明会で最終確認。</p>
+          <a class="btn-primary" href="#contact">この条件でLINE確認へ進む <i aria-hidden="true">→</i></a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <section class="price section-band" id="price" data-price-section>
-        <div class="section-inner price-layout">
-          <div class="price-copy">
-            <p class="scene-label">SCENE 09 / PLAN</p>
-            <h2>料金は、書き出し前の最終確認みたいに見せる。</h2>
-            <p>
-              迷わせる価格表ではなく、卒業後に何が続き、何がカットされ、何をLINEで確認するのかを
-              編集ソフトのエクスポート画面のように整理する。
-            </p>
+  <!-- SCENE 10 / VOICE & RECOMMENDED -->
+  <section class="scene" id="recommended" data-scene="VOICE" data-cue="01:48" data-clip="SCENE 10|VOICE">
+    <div class="panel panel-wide">
+      <p class="scene-label">SCENE 10 / VOICE &amp; RECOMMENDED</p>
+      <h2>受講後の判断材料を、試写レビューのように並べる。</h2>
+      <p class="lead">
+        編集工程、添削、コミュニティ導線まで。受講者がどこに価値を感じるかを、<br class="pc-only">
+        短いレビューと監修コメントで確認できる構成にする。
+      </p>
 
-            <div class="price-assurance" aria-label="料金判断の要点">
-              <div>
-                <span class="material-symbols-outlined" aria-hidden="true">paid</span>
-                <strong>月額4,900円</strong>
-                <p>卒業後コミュニティの継続費</p>
-              </div>
-              <div>
-                <span class="material-symbols-outlined" aria-hidden="true">content_cut</span>
-                <strong>入会金CUT</strong>
-                <p>卒業条件を満たした人向けに案内</p>
-              </div>
-            </div>
+      <div class="console-head"><span class="rec-dot"></span>PREVIEW SCREENING / REVIEW DECK</div>
 
-            <ol class="price-sequence" aria-label="料金確認の流れ">
-              <li><span>01</span><p>講座本体と参加条件はLINE説明会で確認</p></li>
-              <li><span>02</span><p>添削OK後、案件紹介コミュニティの参加導線へ</p></li>
-              <li><span>03</span><p>必要な人だけアフターサポートを追加</p></li>
-            </ol>
+      <div class="voice-grid">
+        <article class="voice-card d1">
+          <header><span class="check-tag">VOICE 01</span><span class="voice-kind">PROCESS</span><em class="chip-ok">REVIEW OK</em></header>
+          <h3>独学で曖昧だった基準が、提出できる工程になった。</h3>
+          <p>カット、音、テロップ、提出前チェックまで順番に進むので、何を直せばいいかが見えやすい。</p>
+          <footer><span>会社員</span><span>土日受講</span></footer>
+        </article>
+        <article class="voice-card d2">
+          <header><span class="check-tag">VOICE 02</span><span class="voice-kind">AUDIO</span></header>
+          <h3>BGMとSEまで見てもらえるから、完成前の不安が減った。</h3>
+          <p>映像の雰囲気だけでなく、音の大きさや切り替えまで添削対象になるのが実践的。</p>
+          <footer><span>副業準備</span><span>添削重視</span></footer>
+        </article>
+        <article class="voice-card d3">
+          <header><span class="check-tag">VOICE 03</span><span class="voice-kind">ROUTE</span></header>
+          <h3>作品を作って終わりではなく、次の導線まで見えた。</h3>
+          <p>OK後にコミュニティへ進む流れがあるので、受講後に何をすればいいか迷いにくい。</p>
+          <footer><span>案件準備</span><span>コミュニティ</span></footer>
+        </article>
+      </div>
+
+      <article class="recommend-card">
+        <div class="recommend-stamp" aria-hidden="true">APPROVED</div>
+        <div class="recommend-body">
+          <small class="recommend-mark"><svg class="ico-s" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l7 3v6c0 4.8-3 8.6-7 10-4-1.4-7-5.2-7-10V5z"/><path d="M8.6 12l2.4 2.4 4.4-4.6"/></svg>RECOMMENDED</small>
+          <p class="recommend-quote">
+            1時間ごとに工程化され、添削後にコミュニティへつながる設計は実践的です。
+            編集だけでなく、案件へ進む準備まで見ている点に価値があります。
+          </p>
+          <div class="recommend-points"><span>01 / 工程化</span><span>02 / 添削基準</span><span>03 / 卒業後導線</span></div>
+          <div class="recommend-author">
+            <img src="assets/clicks-standee-1400.png" alt="クリックスch" loading="lazy">
+            <div><strong>クリックスch 監修</strong><small>Premiere Editor Supervisor</small></div>
           </div>
-
-          <div class="price-board" aria-label="料金と卒業後コミュニティ条件" data-price-board>
-            <div class="price-board-top">
-              <span>EXPORT SETTINGS / PRICE CHECK</span>
-              <strong>PREMIERE EDITOR</strong>
-            </div>
-            <img class="asset-kit price-kit-panel" src="assets/generated-kit-01/cutouts/06-export-settings-panel.png" alt="" aria-hidden="true">
-
-            <div class="price-status">
-              <span class="status-lamp" aria-hidden="true"></span>
-              <strong>PRICE CHECK READY</strong>
-                <small>SCENE 09 / 01:36</small>
-            </div>
-
-            <div class="price-main">
-              <div class="price-amount">
-                <span>COMMUNITY MONTHLY</span>
-                <strong><small>月額</small>4,900円</strong>
-                <p>添削OK後、参加条件を満たした卒業生向けに案内。</p>
-                <div class="price-meter" aria-hidden="true"><span></span></div>
-              </div>
-              <div class="cut-badge" data-cut-slasher>
-                <img class="asset-kit cut-badge-slash-img" src="assets/generated-kit-01/cutouts/11-red-cut-slash.png" alt="" aria-hidden="true">
-                <span class="material-symbols-outlined" aria-hidden="true">content_cut</span>
-                <strong>入会金 CUT</strong>
-                <em>GRADUATE PASS</em>
-              </div>
-            </div>
-
-            <div class="price-track-list" aria-label="料金条件のトラック">
-              <div class="price-track active" style="--delay: 120ms;">
-                <span>V1</span>
-                <p>講座本体</p>
-                <strong>LINEで確認</strong>
-              </div>
-              <div class="price-track" style="--delay: 260ms;">
-                <span>A1</span>
-                <p>アフターサポート</p>
-                <strong>10,000円</strong>
-              </div>
-              <div class="price-track" style="--delay: 400ms;">
-                <span>CAL</span>
-                <p>受講日程</p>
-                <strong>土日対応</strong>
-              </div>
-            </div>
-
-            <div class="price-render-note">
-              <span class="material-symbols-outlined" aria-hidden="true">verified</span>
-              <p>講座本体価格、参加条件、アフターサポートの期間はLINE説明会で最終確認。</p>
-            </div>
-
-            <a class="price-cta" href="#contact">
-              <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
-              この条件でLINE確認へ進む
-            </a>
+          <div class="recommend-chips">
+            <span>工程で進行</span><span>添削OK基準</span><span>卒業後コミュニティ</span><span>LINEで条件確認</span>
           </div>
         </div>
-      </section>
+      </article>
+    </div>
+  </section>
 
-      <section class="voice section-dark" id="recommended">
-        <div class="section-inner voice-inner">
-          <p class="scene-label">SCENE 10 / VOICE &amp; RECOMMENDED</p>
-          <div class="section-head voice-head">
-            <h2>受講後の判断材料を、試写レビューのように並べる。</h2>
-            <p>編集工程、添削、コミュニティ導線まで。受講者がどこに価値を感じるかを、短いレビューと監修コメントで確認できる構成にする。</p>
+  <!-- FINAL SCENE / LINE CHECK -->
+  <section class="scene" id="contact" data-scene="LINE" data-cue="02:00" data-clip="FINAL SCENE|LINE CHECK">
+    <div class="panel panel-contact">
+      <p class="scene-label">FINAL SCENE / LINE CHECK</p>
+      <h2>まずは、自分のPC環境と参加条件を確認してください。</h2>
+      <p class="lead">必要PC環境、受講日程、料金、コミュニティ参加条件、アフターサポート内容をLINE説明会で確認。</p>
+
+      <div class="line-chat" data-line-chat aria-label="LINE確認メッセージ">
+        <div class="line-msg from-school d1"><span>プレミアエディターです。まずPC環境を確認します。</span></div>
+        <div class="line-msg from-school d2"><span>土日受講、料金、添削条件もまとめて案内できます。</span></div>
+        <div class="line-msg from-user d3"><span>説明会の日程を確認したいです。</span></div>
+      </div>
+
+      <a class="btn-export" href="#" id="final-cta">
+        <small>FINAL EXPORT</small>
+        <strong><i aria-hidden="true">▶</i> LINEで無料説明会へ</strong>
+        <span class="btn-export-bar" aria-hidden="true"><i></i></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- SCENE 11 / Q&A -->
+  <section class="scene" id="faq" data-scene="Q&amp;A" data-cue="02:12" data-clip="SCENE 11|Q&amp;A">
+    <div class="panel">
+      <p class="scene-label">SCENE 11 / Q&amp;A</p>
+      <h2>Q&amp;A</h2>
+
+      <div class="faq-list">
+        <article class="faq-item is-open">
+          <button class="faq-q" type="button" aria-expanded="true" aria-controls="faq-a-1">
+            <span class="faq-reel" aria-hidden="true"></span>
+            <span class="faq-q-copy"><small>Q 01 / フィルム装填</small><strong>完全初心者でも受講できますか？</strong></span>
+            <span class="faq-toggle" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a" id="faq-a-1">
+            <small>ANSWER PLAYBACK</small>
+            <p>受講は可能です。ただし、PC操作と編集ソフトの準備が必要です。説明会で必要環境を確認してください。</p>
           </div>
-          <div class="voice-stage">
-            <div class="voice-review-wall" aria-label="利用者レビュー" data-voice-deck>
-              <div class="voice-strip-label">
-                <span>PREVIEW SCREENING / REVIEW DECK</span>
-                <strong data-voice-counter>VOICE 01</strong>
-              </div>
-
-              <div class="voice-monitor" aria-live="polite">
-                <div class="voice-monitor-top">
-                  <span>NOW CHECKING</span>
-                  <strong data-voice-focus>PROCESS</strong>
-                </div>
-                <h3 data-voice-title>独学で曖昧だった基準が、提出できる工程になった。</h3>
-                <p data-voice-copy>カット、音、テロップ、提出前チェックまで順番に進むので、何を直せばいいかが見えやすい。</p>
-                <div class="voice-monitor-meta">
-                  <span data-voice-person>会社員 / 土日受講</span>
-                  <span data-voice-status>REVIEW OK</span>
-                </div>
-              </div>
-
-              <div class="voice-ticket-row">
-                <button
-                  class="voice-ticket is-active"
-                  type="button"
-                  data-index="01"
-                  data-focus="PROCESS"
-                  data-title="独学で曖昧だった基準が、提出できる工程になった。"
-                  data-copy="カット、音、テロップ、提出前チェックまで順番に進むので、何を直せばいいかが見えやすい。"
-                  data-person="会社員 / 土日受講"
-                  data-status="REVIEW OK"
-                >
-                  <span class="voice-no">VOICE 01</span>
-                  <h3>独学で曖昧だった基準が、提出できる工程になった。</h3>
-                  <p>カット、音、テロップ、提出前チェックまで順番に進むので、何を直せばいいかが見えやすい。</p>
-                  <div class="voice-meta">
-                    <span>会社員</span>
-                    <span>土日受講</span>
-                  </div>
-                </button>
-                <button
-                  class="voice-ticket"
-                  type="button"
-                  data-index="02"
-                  data-focus="SOUND"
-                  data-title="BGMとSEまで見てもらえるから、完成前の不安が減った。"
-                  data-copy="映像の雰囲気だけでなく、音の大きさや切り替えまで添削対象になるのが実践的。"
-                  data-person="副業準備 / 添削重視"
-                  data-status="SOUND CHECK"
-                >
-                  <span class="voice-no">VOICE 02</span>
-                  <h3>BGMとSEまで見てもらえるから、完成前の不安が減った。</h3>
-                  <p>映像の雰囲気だけでなく、音の大きさや切り替えまで添削対象になるのが実践的。</p>
-                  <div class="voice-meta">
-                    <span>副業準備</span>
-                    <span>添削重視</span>
-                  </div>
-                </button>
-                <button
-                  class="voice-ticket"
-                  type="button"
-                  data-index="03"
-                  data-focus="NEXT STEP"
-                  data-title="作品を作って終わりではなく、次の導線まで見えた。"
-                  data-copy="OK後にコミュニティへ進む流れがあるので、受講後に何をすればいいか迷いにくい。"
-                  data-person="案件準備 / コミュニティ"
-                  data-status="COMMUNITY"
-                >
-                  <span class="voice-no">VOICE 03</span>
-                  <h3>作品を作って終わりではなく、次の導線まで見えた。</h3>
-                  <p>OK後にコミュニティへ進む流れがあるので、受講後に何をすればいいか迷いにくい。</p>
-                  <div class="voice-meta">
-                    <span>案件準備</span>
-                    <span>コミュニティ</span>
-                  </div>
-                </button>
-              </div>
-            </div>
-            <aside class="recommended-card" aria-label="推薦コメント">
-              <img class="asset-kit recommended-kit-stamp" src="assets/generated-kit-01/cutouts/07-approved-stamp-mark.png" alt="" aria-hidden="true">
-              <span class="approval-stamp" aria-hidden="true">APPROVED</span>
-              <div class="recommended-top">
-                <span class="material-symbols-outlined" aria-hidden="true">verified</span>
-                <strong>RECOMMENDED</strong>
-              </div>
-              <blockquote>
-                1時間ごとに工程化され、添削後にコミュニティへつながる設計は実践的です。編集だけでなく、案件へ進む準備まで見ている点に価値があります。
-              </blockquote>
-              <div class="recommended-cues" aria-label="推薦理由">
-                <span>01 / 工程化</span>
-                <span>02 / 添削基準</span>
-                <span>03 / 卒業後導線</span>
-              </div>
-              <div class="recommender">
-                <img src="assets/clicks-standee-1400.png" alt="クリックスch監修">
-                <div>
-                  <strong>クリックスch 監修</strong>
-                  <span>Premiere Editor Supervisor</span>
-                </div>
-              </div>
-            </aside>
+        </article>
+        <article class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a-2">
+            <span class="faq-reel" aria-hidden="true"></span>
+            <span class="faq-q-copy"><small>Q 02 / フィルム装填</small><strong>2日で案件獲得は保証されますか？</strong></span>
+            <span class="faq-toggle" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a" id="faq-a-2" hidden>
+            <small>ANSWER PLAYBACK</small>
+            <p>案件獲得保証ではありません。講座では、編集工程、提出用作品、営業準備、コミュニティ導線を整えます。</p>
           </div>
-          <div class="trust-reel" aria-label="信頼チェック" data-trust-check>
-            <div>
-              <span class="ok-lamp" aria-hidden="true"></span>
-              <span class="material-symbols-outlined" aria-hidden="true">edit_note</span>
-              <strong>工程で進行</strong>
-            </div>
-            <div>
-              <span class="ok-lamp" aria-hidden="true"></span>
-              <span class="material-symbols-outlined" aria-hidden="true">fact_check</span>
-              <strong>添削OK基準</strong>
-            </div>
-            <div>
-              <span class="ok-lamp" aria-hidden="true"></span>
-              <span class="material-symbols-outlined" aria-hidden="true">groups</span>
-              <strong>卒業後コミュニティ</strong>
-            </div>
-            <div>
-              <span class="ok-lamp" aria-hidden="true"></span>
-              <span class="material-symbols-outlined" aria-hidden="true">support_agent</span>
-              <strong>LINEで条件確認</strong>
-            </div>
+        </article>
+        <article class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a-3">
+            <span class="faq-reel" aria-hidden="true"></span>
+            <span class="faq-q-copy"><small>Q 03 / フィルム装填</small><strong>作った動画は見てもらえますか？</strong></span>
+            <span class="faq-toggle" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a" id="faq-a-3" hidden>
+            <small>ANSWER PLAYBACK</small>
+            <p>はい。講座内で作った動画を添削し、修正点を確認します。</p>
           </div>
-        </div>
-      </section>
-
-      <section class="contact section-dark" id="contact">
-        <div class="contact-bg" aria-hidden="true">
-          <img src="assets/generated-line-cta.png" alt="">
-        </div>
-        <div class="section-inner contact-inner">
-          <img class="asset-kit contact-kit-bubbles" src="assets/generated-kit-01/cutouts/08-line-chat-bubbles.png" alt="" aria-hidden="true">
-          <p class="scene-label">FINAL SCENE / LINE CHECK</p>
-          <h2>まずは、自分のPC環境と参加条件を確認してください。</h2>
-          <p>必要PC環境、受講日程、料金、コミュニティ参加条件、アフターサポート内容をLINE説明会で確認。</p>
-          <div class="line-chat" aria-label="LINE確認メッセージ" data-line-typing>
-            <div class="line-message from-school" style="--delay: 0ms;">
-              <span>プレミアエディターです。まずPC環境を確認します。</span>
-            </div>
-            <div class="line-message from-school" style="--delay: 520ms;">
-              <span>土日受講、料金、添削条件もまとめて案内できます。</span>
-            </div>
-            <div class="line-message from-user" style="--delay: 1040ms;">
-              <span>説明会の日程を確認したいです。</span>
-            </div>
+        </article>
+        <article class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a-4">
+            <span class="faq-reel" aria-hidden="true"></span>
+            <span class="faq-q-copy"><small>Q 04 / フィルム装填</small><strong>コミュニティの料金はいくらですか？</strong></span>
+            <span class="faq-toggle" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a" id="faq-a-4" hidden>
+            <small>ANSWER PLAYBACK</small>
+            <p>月額4,900円を予定しています。卒業者は入会金カットの予定です。</p>
           </div>
-          <a class="primary-btn" href="#">LINEで無料説明会へ</a>
-        </div>
-      </section>
-
-      <section class="faq section-dark" id="faq">
-        <img class="asset-kit faq-kit-reel" src="assets/generated-kit-01/cutouts/02-film-reel.png" alt="" aria-hidden="true">
-        <div class="section-inner">
-          <p class="scene-label">SCENE 11 / Q&amp;A</p>
-          <h2>Q&amp;A</h2>
-          <div class="faq-list tape-faq" data-tape-faq>
-            <article class="faq-item is-open anim-d">
-              <button class="faq-question" type="button" aria-expanded="true" aria-controls="faq-answer-1">
-                <span class="reel-icon" aria-hidden="true">
-                  <svg viewBox="0 0 64 64" role="img">
-                    <circle class="reel-ring" cx="32" cy="32" r="27"></circle>
-                    <circle class="reel-core" cx="32" cy="32" r="8"></circle>
-                    <circle class="reel-hole" cx="32" cy="15" r="4"></circle>
-                    <circle class="reel-hole" cx="47" cy="24" r="4"></circle>
-                    <circle class="reel-hole" cx="47" cy="40" r="4"></circle>
-                    <circle class="reel-hole" cx="32" cy="49" r="4"></circle>
-                    <circle class="reel-hole" cx="17" cy="40" r="4"></circle>
-                    <circle class="reel-hole" cx="17" cy="24" r="4"></circle>
-                    <path class="reel-cut" d="M32 6v18M56 32H38M32 58V40M8 32h18"></path>
-                  </svg>
-                </span>
-                <span class="question-copy">
-                  <span>Q 01 / フィルム装填</span>
-                  完全初心者でも受講できますか？
-                </span>
-              </button>
-              <div class="faq-answer" id="faq-answer-1">
-                <div class="answer-tape">
-                  <span class="answer-label">ANSWER PLAYBACK</span>
-                  <p>受講は可能です。ただし、PC操作と編集ソフトの準備が必要です。説明会で必要環境を確認してください。</p>
-                </div>
-              </div>
-            </article>
-
-            <article class="faq-item anim-d">
-              <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-2">
-                <span class="reel-icon" aria-hidden="true">
-                  <svg viewBox="0 0 64 64" role="img">
-                    <circle class="reel-ring" cx="32" cy="32" r="27"></circle>
-                    <circle class="reel-core" cx="32" cy="32" r="8"></circle>
-                    <circle class="reel-hole" cx="32" cy="15" r="4"></circle>
-                    <circle class="reel-hole" cx="47" cy="24" r="4"></circle>
-                    <circle class="reel-hole" cx="47" cy="40" r="4"></circle>
-                    <circle class="reel-hole" cx="32" cy="49" r="4"></circle>
-                    <circle class="reel-hole" cx="17" cy="40" r="4"></circle>
-                    <circle class="reel-hole" cx="17" cy="24" r="4"></circle>
-                    <path class="reel-cut" d="M32 6v18M56 32H38M32 58V40M8 32h18"></path>
-                  </svg>
-                </span>
-                <span class="question-copy">
-                  <span>Q 02 / フィルム装填</span>
-                  2日で案件獲得は保証されますか？
-                </span>
-              </button>
-              <div class="faq-answer" id="faq-answer-2" hidden>
-                <div class="answer-tape">
-                  <span class="answer-label">ANSWER PLAYBACK</span>
-                  <p>案件獲得保証ではありません。講座では、編集工程、提出用作品、営業準備、コミュニティ導線を整えます。</p>
-                </div>
-              </div>
-            </article>
-
-            <article class="faq-item anim-d">
-              <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-3">
-                <span class="reel-icon" aria-hidden="true">
-                  <svg viewBox="0 0 64 64" role="img">
-                    <circle class="reel-ring" cx="32" cy="32" r="27"></circle>
-                    <circle class="reel-core" cx="32" cy="32" r="8"></circle>
-                    <circle class="reel-hole" cx="32" cy="15" r="4"></circle>
-                    <circle class="reel-hole" cx="47" cy="24" r="4"></circle>
-                    <circle class="reel-hole" cx="47" cy="40" r="4"></circle>
-                    <circle class="reel-hole" cx="32" cy="49" r="4"></circle>
-                    <circle class="reel-hole" cx="17" cy="40" r="4"></circle>
-                    <circle class="reel-hole" cx="17" cy="24" r="4"></circle>
-                    <path class="reel-cut" d="M32 6v18M56 32H38M32 58V40M8 32h18"></path>
-                  </svg>
-                </span>
-                <span class="question-copy">
-                  <span>Q 03 / フィルム装填</span>
-                  作った動画は見てもらえますか？
-                </span>
-              </button>
-              <div class="faq-answer" id="faq-answer-3" hidden>
-                <div class="answer-tape">
-                  <span class="answer-label">ANSWER PLAYBACK</span>
-                  <p>はい。講座内で作った動画を添削し、修正点を確認します。</p>
-                </div>
-              </div>
-            </article>
-
-            <article class="faq-item anim-d">
-              <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-4">
-                <span class="reel-icon" aria-hidden="true">
-                  <svg viewBox="0 0 64 64" role="img">
-                    <circle class="reel-ring" cx="32" cy="32" r="27"></circle>
-                    <circle class="reel-core" cx="32" cy="32" r="8"></circle>
-                    <circle class="reel-hole" cx="32" cy="15" r="4"></circle>
-                    <circle class="reel-hole" cx="47" cy="24" r="4"></circle>
-                    <circle class="reel-hole" cx="47" cy="40" r="4"></circle>
-                    <circle class="reel-hole" cx="32" cy="49" r="4"></circle>
-                    <circle class="reel-hole" cx="17" cy="40" r="4"></circle>
-                    <circle class="reel-hole" cx="17" cy="24" r="4"></circle>
-                    <path class="reel-cut" d="M32 6v18M56 32H38M32 58V40M8 32h18"></path>
-                  </svg>
-                </span>
-                <span class="question-copy">
-                  <span>Q 04 / フィルム装填</span>
-                  コミュニティの料金はいくらですか？
-                </span>
-              </button>
-              <div class="faq-answer" id="faq-answer-4" hidden>
-                <div class="answer-tape">
-                  <span class="answer-label">ANSWER PLAYBACK</span>
-                  <p>月額4,900円を予定しています。卒業者は入会金カットの予定です。</p>
-                </div>
-              </div>
-            </article>
-
-            <article class="faq-item anim-d">
-              <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-5">
-                <span class="reel-icon" aria-hidden="true">
-                  <svg viewBox="0 0 64 64" role="img">
-                    <circle class="reel-ring" cx="32" cy="32" r="27"></circle>
-                    <circle class="reel-core" cx="32" cy="32" r="8"></circle>
-                    <circle class="reel-hole" cx="32" cy="15" r="4"></circle>
-                    <circle class="reel-hole" cx="47" cy="24" r="4"></circle>
-                    <circle class="reel-hole" cx="47" cy="40" r="4"></circle>
-                    <circle class="reel-hole" cx="32" cy="49" r="4"></circle>
-                    <circle class="reel-hole" cx="17" cy="40" r="4"></circle>
-                    <circle class="reel-hole" cx="17" cy="24" r="4"></circle>
-                    <path class="reel-cut" d="M32 6v18M56 32H38M32 58V40M8 32h18"></path>
-                  </svg>
-                </span>
-                <span class="question-copy">
-                  <span>Q 05 / フィルム装填</span>
-                  アフターサポートはありますか？
-                </span>
-              </button>
-              <div class="faq-answer" id="faq-answer-5" hidden>
-                <div class="answer-tape">
-                  <span class="answer-label">ANSWER PLAYBACK</span>
-                  <p>希望者向けに10,000円のアフターサポートを用意する想定です。期間と内容は本番前に確定します。</p>
-                </div>
-              </div>
-            </article>
+        </article>
+        <article class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a-5">
+            <span class="faq-reel" aria-hidden="true"></span>
+            <span class="faq-q-copy"><small>Q 05 / フィルム装填</small><strong>アフターサポートはありますか？</strong></span>
+            <span class="faq-toggle" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a" id="faq-a-5" hidden>
+            <small>ANSWER PLAYBACK</small>
+            <p>希望者向けに10,000円のアフターサポートを用意する想定です。期間と内容は本番前に確定します。</p>
           </div>
-        </div>
-      </section>
-    </main>
-    <script src="scripts.js?v=20260515-diagnosis-report"></script>
-  </body>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-foot">
+    <img src="assets/premiere-editor-pe-monogram-sparkle-transparent.png" alt="">
+    <p class="foot-note">成果には個人差があります。料金・参加条件・コミュニティ導線はLINE説明会でご確認ください。</p>
+    <p class="foot-copy">© 2026 PREMIERE EDITOR / SUPERVISED BY クリックスch</p>
+    <p class="foot-tc">END OF SEQUENCE ─ TC 02:24:00</p>
+  </footer>
+
+</main>
+
+<script type="module" src="js/main.js?v=20260704"></script>
+</body>
 </html>
