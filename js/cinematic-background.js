@@ -156,7 +156,7 @@ if (!canvas) {
     };
 
     const renderFrame = (now) => {
-      if (!reduceMotion) requestAnimationFrame(renderFrame);
+      requestAnimationFrame(renderFrame);
       const dt = Math.min((now - previous) / 1000, 0.05);
       previous = now;
 
@@ -197,14 +197,12 @@ if (!canvas) {
       }
     };
 
-    if (!reduceMotion) {
-      window.addEventListener("scroll", updateScrollTarget, { passive: true });
-      window.addEventListener("pointermove", (event) => {
-        if (coarsePointer) return;
-        pointerX = (event.clientX / window.innerWidth - 0.5) * 2;
-        pointerY = -(event.clientY / window.innerHeight - 0.5) * 2;
-      }, { passive: true });
-    }
+    window.addEventListener("scroll", updateScrollTarget, { passive: true });
+    window.addEventListener("pointermove", (event) => {
+      if (coarsePointer) return;
+      pointerX = (event.clientX / window.innerWidth - 0.5) * 2;
+      pointerY = -(event.clientY / window.innerHeight - 0.5) * 2;
+    }, { passive: true });
     window.addEventListener("resize", () => {
       renderer.setSize(window.innerWidth, window.innerHeight);
       camera.aspect = window.innerWidth / window.innerHeight;
@@ -213,15 +211,13 @@ if (!canvas) {
       updateScrollTarget();
     });
 
-    if (!window.location.hash) window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
     updateScrollTarget();
     if (reduceMotion) {
       intro.active = false;
       revealPage();
-      renderFrame(performance.now());
-    } else {
-      requestAnimationFrame(renderFrame);
     }
+    requestAnimationFrame(renderFrame);
   } catch (error) {
     console.warn("Cinematic space fallback enabled.", error);
     document.body.classList.add("no-space-background");

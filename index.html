@@ -1,271 +1,1259 @@
 <!doctype html>
 <html lang="ja">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#07080c">
-  <meta name="description" content="AI時代に選ばれる、動画を面白くできる編集者へ。VTuber・配信者向けのエンタメ動画編集を学ぶオンラインスクール、プレエディ。">
-  <meta property="og:title" content="プレエディ｜AI時代に選ばれるエンタメ動画編集者へ">
-  <meta property="og:description" content="複数音声・複数視点、カットの間、ツッコミテロップ、BGM・SEまで。10時間超の実践カリキュラム。">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://gurigen.github.io/premiere-editor-lp/">
-  <meta property="og:image" content="https://gurigen.github.io/premiere-editor-lp/assets/generated-3d-monitor.png">
-  <title>プレエディ｜AI時代に選ばれるエンタメ動画編集者へ</title>
-  <link rel="icon" href="assets/premiere-editor-pe-monogram-sparkle-transparent.png" type="image/png">
-  <link rel="preload" href="assets/premiere-editor-pe-monogram-sparkle-transparent.png" as="image">
-  <link rel="preload" href="assets/generated-3d-monitor.webp" as="image" type="image/webp">
-  <link rel="stylesheet" href="styles.css?v=20260902-product-rewrite">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>プレエディ | AI時代のエンタメ動画編集スクール</title>
+    <meta
+      name="description"
+      content="AI時代に選ばれる、動画を面白くできる編集者へ。10時間超の録画教材で、VTuber・配信者向けのエンタメ動画編集を学ぶオンラインスクール、プレエディ。"
+    >
+    <link rel="canonical" href="https://gurigen.github.io/premiere-editor-lp/">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Premiere Editor">
+    <meta property="og:title" content="プレエディ | AI時代のエンタメ動画編集スクール">
+    <meta property="og:description" content="10時間超の実践カリキュラムで、VTuber・配信者向けのエンタメ動画編集を学ぶオンラインスクール。">
+    <meta property="og:url" content="https://gurigen.github.io/premiere-editor-lp/">
+    <meta property="og:image" content="https://gurigen.github.io/premiere-editor-lp/assets/generated-hero-studio.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="プレエディ | AI時代のエンタメ動画編集スクール">
+    <meta name="twitter:description" content="AI時代に選ばれる、動画を面白くできる編集者へ。録画教材で自分のペースで学べます。">
+    <meta name="twitter:image" content="https://gurigen.github.io/premiere-editor-lp/assets/generated-hero-studio.png">
+    <link rel="icon" href="assets/premiere-editor-pe-monogram-sparkle-transparent.png" type="image/png">
+  <link rel="stylesheet" href="styles.css?v=20260904-restored-base">
   <script type="importmap">
-    { "imports": { "three": "./lib/three.module.min.js" } }
+  {
+    "imports": {
+      "three": "./lib/three.module.min.js"
+    }
+  }
   </script>
   <noscript>
     <style>
-      body { overflow: auto !important; }
-      #cinematic-space, .warp-flash { display: none !important; }
-      .site-header, main, footer { opacity: 1 !important; visibility: visible !important; }
-      [data-reveal] { opacity: 1 !important; transform: none !important; }
+      body { overflow-y: auto !important; }
+      .site-header { opacity: 1 !important; transform: none !important; }
+      .hero-startup .hero-logo,
+      .hero-startup h1,
+      .hero-startup .hero-route-panel,
+      .hero-startup .hero-actions,
+      .hero-startup .monitor-frame,
+      .hero-startup .standee-frame { opacity: 1 !important; transform: none !important; }
     </style>
   </noscript>
-</head>
-<body class="is-intro-running has-space-background">
-  <a class="skip-link" href="#main">本文へ移動</a>
-  <canvas id="cinematic-space" aria-hidden="true"></canvas>
-  <div class="warp-flash" data-warp-flash aria-hidden="true"></div>
+  </head>
+  <body class="is-intro-running has-space-background">
+    <canvas id="cinematic-space" aria-hidden="true"></canvas>
+    <div class="warp-flash" data-warp-flash aria-hidden="true"></div>
 
-  <header class="site-header" aria-label="サイトヘッダー">
-    <a class="brand" href="#top" aria-label="プレエディ トップへ">
-      <img src="assets/premiere-editor-pe-monogram-sparkle-transparent.png" width="741" height="692" alt="">
-      <span><strong>プレエディ</strong><small>ENTERTAINMENT EDITING SCHOOL</small></span>
-    </a>
-    <div class="header-scene-rail" data-scene-rail>
-      <div class="scene-progress" aria-hidden="true"><span data-scene-progress></span></div>
-      <button class="rail-arrow" type="button" aria-label="目次を左へ送る" data-scene-prev>←</button>
-      <nav class="scene-strip" aria-label="ページ目次" data-scene-nav>
-        <a class="scene-cue active" href="#top" aria-current="true"><span>00:00</span><strong>TOP</strong></a>
-        <a class="scene-cue" href="#ai-era"><span>00:12</span><strong>AI ERA</strong></a>
-        <a class="scene-cue" href="#difference"><span>00:24</span><strong>DIFFERENCE</strong></a>
-        <a class="scene-cue" href="#learn"><span>00:36</span><strong>SKILLS</strong></a>
-        <a class="scene-cue" href="#benefits"><span>00:48</span><strong>MERIT</strong></a>
-        <a class="scene-cue" href="#reality"><span>01:00</span><strong>REALITY</strong></a>
-        <a class="scene-cue" href="#hours"><span>01:12</span><strong>10H+</strong></a>
-        <a class="scene-cue" href="#curriculum"><span>01:24</span><strong>CURRICULUM</strong></a>
-        <a class="scene-cue" href="#ai-tools"><span>01:36</span><strong>AI TOOLS</strong></a>
-        <a class="scene-cue" href="#feedback"><span>01:48</span><strong>REVIEW</strong></a>
-        <a class="scene-cue" href="#community"><span>02:00</span><strong>COMMUNITY</strong></a>
-        <a class="scene-cue" href="#instructor"><span>02:12</span><strong>INSTRUCTOR</strong></a>
-        <a class="scene-cue" href="#voices"><span>02:24</span><strong>VOICE</strong></a>
-        <a class="scene-cue" href="#price"><span>02:36</span><strong>PRICE</strong></a>
-        <a class="scene-cue" href="#gifts"><span>02:48</span><strong>5 GIFTS</strong></a>
-        <a class="scene-cue" href="#faq"><span>03:00</span><strong>Q&amp;A</strong></a>
-        <a class="scene-cue" href="#contact"><span>03:12</span><strong>LINE</strong></a>
-      </nav>
-      <button class="rail-arrow" type="button" aria-label="目次を右へ送る" data-scene-next>→</button>
-    </div>
-  </header>
-
-  <main id="main">
-    <section class="hero" id="top">
-      <div class="hero-grid shell">
-        <div class="hero-copy" data-reveal>
-          <p class="eyebrow"><span>PRE-EDI</span> ONLINE SCHOOL</p>
-          <h1>AI時代に選ばれる、<br><em>「動画を面白くできる編集者」</em>へ。</h1>
-          <p class="hero-lead">複数人の会話、複数音声、複数視点、カットの間、ツッコミテロップ、BGM・SEまで。</p>
-          <p class="hero-sub">10時間を超える実践カリキュラムで、VTuber・配信者向けのエンタメ動画編集を学ぶオンラインスクール。</p>
-          <div class="hero-facts" aria-label="講座の特徴">
-            <span><b>10H+</b> 総カリキュラム</span>
-            <span><b>ON DEMAND</b> 録画教材</span>
-            <span><b>BEGINNER OK</b> Premiere Pro 初心者でも受講可能</span>
-          </div>
-          <div class="hero-offer">
-            <div><span>第1期・先着</span><strong>20<small>名</small></strong></div>
-            <div class="hero-price"><del>通常 198,000円</del><strong>98,000<small>円</small></strong><span>100,000円OFF</span></div>
-            <p>第1期生は<strong>案件獲得コミュニティ永久無料</strong></p>
-          </div>
-          <a class="primary-btn" href="#gifts"><span>LINEで無料5大特典と第1期先行案内を受け取る</span><b>→</b></a>
-        </div>
-        <div class="hero-visual" data-reveal aria-label="動画編集環境のイメージ">
-          <div class="monitor-glow" aria-hidden="true"></div>
-          <img src="assets/generated-3d-monitor.webp" width="1254" height="1254" decoding="async" fetchpriority="high" alt="動画編集タイムラインを表示したモニター">
-          <div class="visual-chip chip-a"><span>4 VOICES</span><strong>複数音声</strong></div>
-          <div class="visual-chip chip-b"><span>MULTI CAM</span><strong>複数視点</strong></div>
-          <div class="visual-chip chip-c"><span>STORY CUT</span><strong>面白さを編集</strong></div>
-        </div>
+    <header class="site-header" aria-label="サイトヘッダー">
+      <div class="header-scene-rail" data-scene-rail>
+        <div class="scene-progress" aria-hidden="true"><span data-scene-progress></span></div>
+        <a class="brand scene-brand" href="#top" aria-label="プレエディ トップへ">
+          <img class="brand-logo brand-mini-logo" src="assets/premiere-editor-pe-monogram-sparkle-transparent.png" alt="Premiere Editor">
+        </a>
+        <button class="rail-arrow rail-arrow-left" type="button" aria-label="目次を左へ送る" data-scene-prev>←</button>
+        <nav class="scene-strip" aria-label="シーン目次" data-scene-nav>
+          <a class="scene-cue active" href="#top" aria-current="true"><span>00:00</span><strong>TOP</strong></a>
+          <a class="scene-cue" href="#offer"><span>00:12</span><strong>QUICK</strong></a>
+          <a class="scene-cue" href="#philosophy"><span>00:24</span><strong>PHILO</strong></a>
+          <a class="scene-cue" href="#why"><span>00:36</span><strong>WHY</strong></a>
+          <a class="scene-cue" href="#strength"><span>00:48</span><strong>STRENGTH</strong></a>
+          <a class="scene-cue" href="#schedule"><span>01:00</span><strong>COURSE</strong></a>
+          <a class="scene-cue" href="#review"><span>01:12</span><strong>REVIEW</strong></a>
+          <a class="scene-cue" href="#present"><span>01:24</span><strong>PRESENT</strong></a>
+          <a class="scene-cue" href="#price"><span>01:36</span><strong>PRICE</strong></a>
+          <a class="scene-cue" href="#recommended"><span>01:48</span><strong>VOICE</strong></a>
+          <a class="scene-cue" href="#contact"><span>02:00</span><strong>LINE</strong></a>
+          <a class="scene-cue" href="#faq"><span>02:12</span><strong>Q&amp;A</strong></a>
+        </nav>
+        <button class="rail-arrow rail-arrow-right" type="button" aria-label="目次を右へ送る" data-scene-next>→</button>
       </div>
-      <div class="hero-ticker" aria-hidden="true"><span>CUT JUDGEMENT</span><span>MULTI CAMERA</span><span>ENTERTAINMENT</span><span>BGM / SE</span><span>AI WORKFLOW</span></div>
-    </section>
+    </header>
 
-    <section class="section section-dark" id="ai-era">
-      <div class="shell split-layout">
-        <div class="section-heading" data-reveal>
-          <p class="section-code">01 / WHY NOW</p>
-          <h2>AI時代に、<br><em>エンタメ編集</em>を学ぶ理由。</h2>
-          <p class="lead">単純作業が速くなるほど、人に残るのは「何を、どう見せるか」という判断です。</p>
+    <main id="top">
+      <section class="hero section-dark hero-startup">
+        <div class="hero-bg" aria-hidden="true">
+          <img src="assets/generated-hero-studio.png" alt="">
         </div>
-        <div class="story-panel" data-reveal>
-          <p>これからは、文字起こし、基本的なカット、テロップなどの作業ほどAIで効率化されていきます。</p>
-          <p>その中で編集者として選ばれ続けるために必要なのは、操作の速さだけではありません。</p>
-          <ul class="decision-list">
-            <li><span>01</span>どの会話を残すか</li><li><span>02</span>誰のリアクションを見せるか</li><li><span>03</span>どの視点を使うか</li><li><span>04</span>どこで笑いを作るか</li><li><span>05</span>どの一言をオチにするか</li><li><span>06</span>どの間を切り、どの間を残すか</li>
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <img class="hero-logo" src="assets/premiere-editor-wordmark-sparkle-transparent.png" alt="Premiere Editor">
+            <h1>AI時代に選ばれる、<br class="mobile-title-break">「動画を面白くできる編集者」へ。</h1>
+            <div class="hero-route-panel" aria-label="プレエディの受講概要">
+              <div class="hero-route-status">
+                <span>FIRST TERM / 20 SEATS</span>
+                <strong>98,000円</strong>
+              </div>
+              <div class="hero-route-copy">
+                <p class="hero-route-next">総カリキュラム10時間超・録画教材で自分のペースで学習。</p>
+                <p class="hero-route-detail">
+                  <strong>複数音声・複数視点・カットの間・ツッコミテロップ・BGM・SEまで。</strong>
+                  <span>Premiere Pro初心者でも受講可能。第1期生は案件獲得コミュニティを永久無料で利用できます。</span>
+                </p>
+              </div>
+            </div>
+            <div class="hero-actions" aria-label="主要アクション">
+              <a class="primary-btn" href="#contact">LINEで無料5大特典と第1期先行案内を受け取る</a>
+              <a class="secondary-btn" href="#schedule">カリキュラムを見る</a>
+            </div>
+          </div>
+
+          <div class="hero-stage" aria-label="エンタメ動画編集のイメージ">
+            <img class="asset-kit hero-kit-monitor" src="assets/generated-kit-01/cutouts/01-editing-monitor-cluster.png" alt="" aria-hidden="true">
+            <img class="asset-kit hero-kit-sparkle" src="assets/generated-kit-01/cutouts/15-red-sparkle-motif.png" alt="" aria-hidden="true">
+            <div class="monitor-frame">
+              <img src="assets/generated-3d-monitor.png" alt="編集画面のイメージ">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="offer section-band" id="offer">
+        <div class="section-inner offer-grid">
+          <div>
+            <p class="scene-label">SCENE 02 / QUICK JUDGE</p>
+            <h2>プレエディの内容を、まず4つで確認。</h2>
+            <p>操作だけで終わらず、動画の面白さを判断できる編集者を目指します。</p>
+          </div>
+          <ul class="check-list decision-list">
+            <li><span>01</span><strong>総カリキュラム10時間超</strong><small>解説・実践講義約7時間30分＋ノーカット編集実演2時間30分以上。</small></li>
+            <li><span>02</span><strong>録画教材で何度でも</strong><small>決まった日時ではなく、自分のペースで繰り返し学べる。</small></li>
+            <li><span>03</span><strong>実践的な添削</strong><small>月1〜2本程度を目安に、動画の構成や演出までフィードバック。</small></li>
+            <li><span>04</span><strong>第1期先着20名</strong><small>通常198,000円が98,000円。コミュニティ参加費も永久無料。</small></li>
           </ul>
-          <p class="panel-conclusion">プレエディでは、素材の中にある面白さを見つけ、視聴者に伝わる動画へ仕上げるための<strong>判断力</strong>を学びます。</p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section section-light" id="difference">
-      <div class="shell">
-        <div class="section-heading center" data-reveal>
-          <p class="section-code">02 / DIFFERENCE</p>
-          <h2>使える機能を増やすだけでは、<br><em>面白い動画</em>にはならない。</h2>
-          <p class="lead">一般的な動画編集スクールを卒業しても、実際の案件では使えない編集になっているケースがあります。</p>
+      <section class="editorial-philosophy section-light" id="philosophy" aria-labelledby="philosophy-title">
+        <div class="section-inner philosophy-paper">
+          <div class="philosophy-title-block">
+            <p class="philosophy-scene">SCENE 03 / PHILOSOPHY</p>
+            <h2 id="philosophy-title">PHILOSOPHY</h2>
+            <p>AI時代にエンタメ編集を学ぶ理由</p>
+          </div>
+
+          <span class="philosophy-divider" aria-hidden="true"></span>
+
+          <div class="philosophy-body">
+            <p>
+              これからは、文字起こし、基本的なカット、テロップなどの作業ほどAIで効率化されていきます。
+              その中で編集者として選ばれ続けるために必要なのは、
+              <mark>操作の速さだけではありません。</mark>
+            </p>
+            <p>
+              動画の面白さを大きく変えるのは、素材を見たうえでの判断です。
+              <br>
+              ・どの会話を残すか
+              <br>
+              ・誰のリアクション、どの視点を見せるか
+              <br>
+              ・どこで笑いを作り、どの一言をオチにするか
+              <br>
+              ・どの間を切り、どの間を残すか
+              <br>
+              こうした判断力は、人が素材を読み取るからこそ磨ける価値です。
+            </p>
+            <p>
+              プレエディでは、編集ソフトの使い方だけではなく、
+              <mark>素材の中にある面白さを見つけ、視聴者に伝わる動画へ仕上げる判断力</mark>を学びます。
+            </p>
+            <p class="philosophy-closing">
+              <mark>「この人に頼むと動画が面白くなる」編集者へ。</mark>
+            </p>
+            <p class="philosophy-note">案件獲得や特定企業への採用を保証するものではありません。</p>
+          </div>
         </div>
-        <div class="mistake-grid" data-reveal>
-          <article><span>OVER DESIGN</span><strong>テロップや演出が多すぎる</strong></article><article><span>WRONG SOUND</span><strong>場面に合わないBGM・SE</strong></article><article><span>BAD FLOW</span><strong>会話のつながりが不自然</strong></article><article><span>BAD RHYTHM</span><strong>カットの間が悪い</strong></article><article><span>NO PURPOSE</span><strong>エフェクト自体が目的になる</strong></article><article><span>LOST FOCUS</span><strong>視聴者の見る場所が分からない</strong></article>
+      </section>
+
+      <section class="diagnosis section-dark" id="why" data-diagnosis>
+        <div class="section-inner diagnosis-inner">
+          <div class="section-head diagnosis-head">
+            <div>
+              <p class="scene-label">SCENE 04 / DIAGNOSIS</p>
+              <h2>よくある動画編集スクールとの違い。</h2>
+            </div>
+            <p>
+              機能を覚えても、演出の理由が説明できなければ実際の案件では使いにくい編集になります。
+              プレエディは「なぜ、この場面にこの演出を使うのか」まで考えます。
+            </p>
+          </div>
+
+          <div class="diagnosis-stage">
+            <div class="diagnosis-monitor" aria-live="polite">
+              <div class="diagnosis-monitor-top">
+                <span>PRE-SUBMIT CHECK</span>
+                <strong data-diagnosis-counter>CHECK 01</strong>
+              </div>
+              <div class="diagnosis-preview">
+                <img class="asset-kit diagnosis-kit-panel" src="assets/generated-kit-01/cutouts/14-diagnosis-monitor-panel.png" alt="" aria-hidden="true">
+                <span class="diagnosis-playhead" aria-hidden="true"></span>
+                <div class="diagnosis-frame-row" aria-hidden="true">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="diagnosis-alert">
+                  <span data-diagnosis-label>OVER EDITING</span>
+                  <strong data-diagnosis-title>テロップや演出の量が多すぎる。</strong>
+                  <p data-diagnosis-copy>目立たせることが目的になると、視聴者がどこを見ればよいのか分からなくなります。</p>
+                </div>
+              </div>
+              <div class="diagnosis-meter" aria-hidden="true"><span></span></div>
+            </div>
+
+            <div class="diagnosis-queue" aria-label="提出前に止まりやすい原因">
+              <button
+                class="diagnosis-clip is-active"
+                type="button"
+                data-index="01"
+                data-label="OVER EDITING"
+                data-title="テロップや演出の量が多すぎる。"
+                data-copy="目立たせることが目的になると、視聴者がどこを見ればよいのか分からなくなります。"
+              >
+                <span class="material-symbols-outlined" aria-hidden="true">rule_settings</span>
+                <small>CHECK 01 / VISUAL</small>
+                <strong>演出が多すぎる</strong>
+                <em>視線が散る</em>
+              </button>
+              <button
+                class="diagnosis-clip"
+                type="button"
+                data-index="02"
+                data-label="AUDIO CHECK"
+                data-title="場面に合わないBGMやSEを使ってしまう。"
+                data-copy="音を入れること自体が目的になると、会話の温度や場面の意図が伝わりにくくなります。"
+              >
+                <span class="material-symbols-outlined" aria-hidden="true">graphic_eq</span>
+                <small>CHECK 02 / AUDIO</small>
+                <strong>音が場面に合わない</strong>
+                <em>意図が伝わらない</em>
+              </button>
+              <button
+                class="diagnosis-clip"
+                type="button"
+                data-index="03"
+                data-label="STORY CHECK"
+                data-title="会話のつながりやカットの間が不自然。"
+                data-copy="前振りとオチ、リアクションの順番を考えないまま切ると、素材の面白さが消えてしまいます。"
+              >
+                <span class="material-symbols-outlined" aria-hidden="true">fact_check</span>
+                <small>CHECK 03 / STORY</small>
+                <strong>流れと間が悪い</strong>
+                <em>面白さが消える</em>
+              </button>
+              <button
+                class="diagnosis-clip"
+                type="button"
+                data-index="04"
+                data-label="PURPOSE CHECK"
+                data-title="エフェクトを入れることが目的になる。"
+                data-copy="プレエディでは、演出の意図と視聴者への伝わり方を考え、必要な表現だけを選びます。"
+              >
+                <span class="material-symbols-outlined" aria-hidden="true">route</span>
+                <small>CHECK 04 / PURPOSE</small>
+                <strong>理由のない演出</strong>
+                <em>効果だけが残る</em>
+              </button>
+            </div>
+          </div>
+
+          <div class="diagnosis-resolve" aria-label="プレエディで身につける判断">
+            <div>
+              <span>01 / STORY</span>
+              <strong>会話の流れを読む</strong>
+              <p>前振り、リアクション、オチをつないで面白さを残す。</p>
+            </div>
+            <div>
+              <span>02 / DIRECTION</span>
+              <strong>演出に理由を持つ</strong>
+              <p>テロップ、BGM、SEを場面の意図に合わせて選ぶ。</p>
+            </div>
+            <div>
+              <span>03 / VALUE</span>
+              <strong>頼みたくなる編集へ</strong>
+              <p>「この人に頼むと動画が面白くなる」と思われる編集者を目指す。</p>
+            </div>
+          </div>
         </div>
-        <div class="difference-statement" data-reveal>
-          <p>プレエディでは、テロップ、BGM、SE、エフェクトをただ入れるのではなく、</p><blockquote>「なぜ、この場面にこの演出を使うのか」</blockquote><p>まで考えながら編集します。</p>
-          <div><span>編集ソフトを使える人</span><b>→</b><strong>この人に頼むと動画が面白くなる編集者</strong></div>
+      </section>
+
+      <section class="strength section-band" id="strength" data-strength-suite>
+        <div class="section-inner">
+          <p class="scene-label">SCENE 05 / STRENGTH</p>
+          <div class="section-head strength-head">
+            <div>
+              <h2>エンタメ編集は、幅広い動画に応用できる。</h2>
+              <p>見やすさ、話の流れ、飽きさせない構成、リアクションの活かし方を考え続けるから、他ジャンルにも応用しやすくなります。</p>
+            </div>
+            <p>
+              VTuber・配信者動画、ゲーム実況、Shorts、企業PR、採用動画、対談、商品紹介、MVなど。
+              エンタメコンテンツを扱う企業や活動者の案件へ挑戦する土台になります。
+            </p>
+          </div>
+
+          <div class="strength-suite">
+            <div class="strength-console" aria-live="polite">
+              <div class="strength-console-top">
+                <span>QUALITY GATE / BEFORE SUBMIT</span>
+                <strong data-strength-counter>GATE 01</strong>
+              </div>
+              <div class="strength-preview">
+                <img class="asset-kit strength-kit-strip" src="assets/generated-kit-01/cutouts/05-timeline-clip-blocks.png" alt="" aria-hidden="true">
+                <img class="asset-kit strength-kit-wave" src="assets/generated-kit-01/cutouts/09-audio-waveform-icon.png" alt="" aria-hidden="true">
+                <span class="strength-preview-label" data-strength-label>ENTERTAINMENT</span>
+                <h3 data-strength-title>VTuber・配信者動画</h3>
+                <p data-strength-copy>複数人の会話、リアクション、ゲーム画面を整理し、視聴者を飽きさせない流れを作ります。</p>
+              </div>
+            </div>
+
+            <div class="strength-gates" aria-label="プレエディで学ぶ編集の応用先">
+              <button
+                class="strength-gate is-active"
+                type="button"
+                data-index="01"
+                data-label="ENTERTAINMENT"
+                data-title="VTuber・配信者動画"
+                data-copy="複数人の会話、リアクション、ゲーム画面を整理し、視聴者を飽きさせない流れを作ります。"
+              >
+                <span class="material-symbols-outlined" aria-hidden="true">timer</span>
+                <small>FIELD 01 / STREAM</small>
+                <strong>VTuber・ゲーム実況</strong>
+                <p>複数人コラボや配信切り抜きで、会話とリアクションを活かす。</p>
+              </button>
+              <button
+                class="strength-gate"
+                type="button"
+                data-index="02"
+                data-label="SHORT FORM"
+                data-title="Shorts・商品紹介"
+                data-copy="短い時間で要点と見せ場を伝え、視聴者の興味をつなぐ構成へ応用できます。"
+              >
+                <span class="material-symbols-outlined" aria-hidden="true">graphic_eq</span>
+                <small>FIELD 02 / SHORT</small>
+                <strong>Shorts・商品紹介</strong>
+                <p>短尺でも、見せ場とテンポを設計して要点を伝える。</p>
+              </button>
+              <button
+                class="strength-gate"
+                type="button"
+                data-index="03"
+                data-label="BUSINESS"
+                data-title="企業PR・採用・対談"
+                data-copy="話の流れを整理し、見る人が理解しやすい順番とテンポへ組み立てます。"
+              >
+                <span class="material-symbols-outlined" aria-hidden="true">fact_check</span>
+                <small>FIELD 03 / BUSINESS</small>
+                <strong>企業PR・採用・対談</strong>
+                <p>会話を自然につなぎ、伝えたい情報を見やすくまとめる。</p>
+              </button>
+              <button
+                class="strength-gate route"
+                type="button"
+                data-index="04"
+                data-label="CREATIVE"
+                data-title="MV・演出系動画"
+                data-copy="BGM、SE、ズーム、エフェクトの意図を考え、映像と音のリズムを作ります。"
+              >
+                <span class="material-symbols-outlined" aria-hidden="true">hub</span>
+                <small>FIELD 04 / CREATIVE</small>
+                <strong>MV・演出系動画</strong>
+                <p>音と画のタイミングを読み、印象に残る見せ場を作る。</p>
+              </button>
+            </div>
+          </div>
+
+          <div class="strength-proof-line" aria-label="強みの結論">
+            <span>REALITY CHECK</span>
+            <strong>決して楽な編集ではありません。作業量が多いからこそ、できる編集者が少なく、差別化しやすい分野です。</strong>
+          </div>
+          <div class="editing-reality-grid" aria-label="エンタメ動画編集で発生する作業">
+            <span>複数の音声トラック</span>
+            <span>複数視点の素材</span>
+            <span>フルテロップ</span>
+            <span>リアクションごとの画面切替</span>
+            <span>BGM・SE・演出の細かな調整</span>
+          </div>
+          <p class="editing-reality-note">AI・プリセット・自動化ツールで単純作業を短縮し、人は面白さの判断へ集中します。</p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section section-dark" id="learn">
-      <div class="shell">
-        <div class="section-heading" data-reveal><p class="section-code">03 / WHAT YOU LEARN</p><h2>プレエディで学べるのは、<br>ソフト操作の<em>その先</em>。</h2></div>
-        <div class="skills-grid">
-          <article data-reveal><span>01</span><h3>素材を読む</h3><p>複数人の会話から、前振り、リアクション、オチになる素材を見つける。</p></article>
-          <article data-reveal><span>02</span><h3>構成を作る</h3><p>会話の順番と情報量を整え、視聴者が迷わない流れを組み立てる。</p></article>
-          <article data-reveal><span>03</span><h3>間を操る</h3><p>不要な間と、笑いや余韻を生む間を見分け、テンポを設計する。</p></article>
-          <article data-reveal><span>04</span><h3>視点を選ぶ</h3><p>複数視点から、状況や感情が最も伝わる画面を判断する。</p></article>
-          <article data-reveal><span>05</span><h3>演出を効かせる</h3><p>ツッコミテロップ、BGM、SE、ズームを目的に合わせて使う。</p></article>
-          <article data-reveal><span>06</span><h3>仕事につなげる</h3><p>見積もり、ポートフォリオ、案件応募まで、赤字を防ぎながら準備する。</p></article>
+      <section class="schedule section-dark" id="schedule">
+        <div class="section-inner">
+          <div class="section-head schedule-head">
+            <div>
+              <p class="scene-label">SCENE 06 / CURRICULUM</p>
+              <h2>総カリキュラム10時間超。全6章＋ノーカット編集実演。</h2>
+            </div>
+            <p>
+              解説・実践講義は約7時間30分。さらに、講師の実際の編集判断を追えるノーカット編集実演を2時間30分以上収録しています。
+            </p>
+          </div>
+
+          <div class="course-timeline" data-course-timeline>
+            <div class="course-monitor" aria-live="polite">
+              <span class="course-monitor-counter" data-course-counter>NOW 01</span>
+              <span class="course-monitor-track" data-course-track>CHAPTER 01</span>
+              <strong data-course-title>エンタメ動画編集の本質</strong>
+              <p data-course-copy>普通の動画編集との違い、視聴者を飽きさせない考え方、AI時代に編集者へ残る価値を学びます。</p>
+            </div>
+
+            <div class="course-editor">
+              <div class="course-editor-top">
+                <span>PROJECT / PREMIERE EDITOR COURSE</span>
+                <strong>10 HOURS+ / 6 CHAPTERS</strong>
+                <span>ON DEMAND</span>
+              </div>
+
+              <div class="course-scroll" aria-label="講座進行を編集タイムラインとして表示">
+                <div class="course-grid">
+                  <div class="course-day course-day-build curriculum-total">RECORDED CURRICULUM / LEARN AT YOUR OWN PACE</div>
+
+                  <span class="course-time" style="grid-column: 1 / span 2;">CHAPTER 01</span>
+                  <span class="course-time" style="grid-column: 3 / span 3;">CHAPTER 02</span>
+                  <span class="course-time" style="grid-column: 6 / span 2;">CHAPTER 03</span>
+                  <span class="course-time" style="grid-column: 8 / span 2;">CHAPTER 04</span>
+                  <span class="course-time" style="grid-column: 10 / span 2;">CHAPTER 05</span>
+                  <span class="course-time" style="grid-column: 12 / span 2;">CHAPTER 06</span>
+                  <span class="course-time" style="grid-column: 14 / span 3;">NO-CUT DEMO</span>
+
+                  <div class="course-playhead" aria-hidden="true"></div>
+
+                  <button class="course-clip setup is-active" type="button" style="grid-column: 1 / span 2;" data-index="01" data-track="CHAPTER 01" data-title="エンタメ動画編集の本質" data-copy="普通の動画編集との違い、視聴者を飽きさせない考え方、AI時代に編集者へ残る価値を学びます。">
+                    <span>01 / ESSENCE</span><strong>エンタメ編集の本質</strong>
+                  </button>
+                  <button class="course-clip hot" id="cut-01" type="button" style="grid-column: 3 / span 3;" data-index="02" data-track="CHAPTER 02" data-title="カット判断・会話構成・間の作り方" data-copy="どの会話を残すか、前振りからオチまでをどう構成するか、笑いになる間と不要な間の違いを学びます。">
+                    <span>02 / CUT &amp; STORY</span><strong>カット判断・会話構成・間</strong>
+                  </button>
+                  <button class="course-clip visual" type="button" style="grid-column: 6 / span 2;" data-index="03" data-track="CHAPTER 03" data-title="テロップ・BGM・SE・演出" data-copy="ツッコミテロップ、BGM、SE、ズーム、エフェクトなどを、場面に合わせて使う方法を学びます。">
+                    <span>03 / DIRECTION</span><strong>テロップ・音・演出</strong>
+                  </button>
+                  <button class="course-clip audio" type="button" style="grid-column: 8 / span 2;" data-index="04" data-track="CHAPTER 04" data-title="複数音声・複数視点の編集" data-copy="複数人が同時に話す素材の整理、主軸音声の決め方、状況が伝わる視点切り替えを学びます。">
+                    <span>04 / MULTI</span><strong>複数音声・複数視点</strong>
+                  </button>
+                  <button class="course-clip check" type="button" style="grid-column: 10 / span 2;" data-index="05" data-track="CHAPTER 05" data-title="AIを使った編集効率化" data-copy="AIによる切り抜き候補の抽出、3パターンのカット案生成、自動カットツールへの取り込み方法を学びます。">
+                    <span>05 / AI</span><strong>AI編集効率化</strong>
+                  </button>
+                  <button class="course-clip visual" type="button" style="grid-column: 12 / span 2;" data-index="06" data-track="CHAPTER 06" data-title="案件獲得・見積もり・ポートフォリオ" data-copy="赤字を防ぐ見積もり、案件で評価されるポートフォリオ、単価を上げるための考え方を学びます。">
+                    <span>06 / BUSINESS</span><strong>案件獲得・見積もり</strong>
+                  </button>
+                  <button class="course-clip hot" type="button" style="grid-column: 14 / span 3;" data-index="07" data-track="NO-CUT DEMO" data-title="実際の編集作業をノーカットで見る" data-copy="講師が実際に動画を編集する工程を見ながら、どこを切るか、どの視点を使うか、どこにテロップやBGM・SEを入れるかを学びます。">
+                    <span>07 / 2.5H+</span><strong>ノーカット編集実演</strong>
+                  </button>
+
+                  <div class="course-wave" aria-hidden="true"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section section-band" id="benefits">
-      <div class="shell benefit-layout">
-        <div class="section-heading" data-reveal><p class="section-code">04 / EXPAND YOUR FIELD</p><h2>エンタメ編集の思考は、<br><em>他ジャンルにも応用</em>できる。</h2><p class="lead">見やすさ、話の流れ、飽きさせない構成、リアクションの活かし方。毎回この判断を積み重ねるから、応用範囲が広がります。</p></div>
-        <div class="genre-orbit" data-reveal><span>VTuber・配信者動画</span><span>ゲーム実況</span><span>Shorts</span><span>企業PR</span><span>採用動画</span><span>対談動画</span><span>商品紹介</span><span>MV・演出系動画</span></div>
-      </div>
-      <div class="shell note-line" data-reveal><p>VTuber事務所やプロゲーミングチームなど、エンタメコンテンツを扱う企業・活動者の編集案件へ挑戦する土台にもなります。</p><small>※案件獲得や特定企業への採用を保証するものではありません。</small></div>
-    </section>
+      <section class="schedule-alt section-light" id="learning" aria-label="学習形式">
+        <div class="section-inner">
+          <p class="scene-label">LEARNING STYLE / ON DEMAND</p>
+          <div class="schedule-alt-head">
+            <h2>LEARNING STYLE</h2>
+            <p>録画教材だから、自分のペースで何度でも学べる。</p>
+          </div>
 
-    <section class="section section-light" id="reality">
-      <div class="shell reality-grid">
-        <div class="section-heading" data-reveal><p class="section-code">05 / THE REALITY</p><h2>正直、<br><em>楽な編集ではありません。</em></h2><p class="lead">エンタメ動画編集は、一般的なビジネス系編集よりも作業量が多くなることがあります。</p></div>
-        <div class="workload-panel" data-reveal>
-          <ul><li><b>01</b><span>音声トラックが複数ある</span></li><li><b>02</b><span>複数視点の素材がある</span></li><li><b>03</b><span>フルテロップが必要</span></li><li><b>04</b><span>リアクションごとに画面を切り替える</span></li><li><b>05</b><span>BGM、SE、演出を細かく調整する</span></li></ul>
-          <p>ただし、難しくて手間がかかるからこそ、できる編集者がまだ少なく、<strong>差別化しやすい分野</strong>でもあります。</p><p class="automation-note">AI・プリセット・自動化ツールで単純作業を短縮し、人間は<strong>面白さの判断</strong>に集中します。</p>
+          <div class="schedule-alt-grid">
+            <article class="schedule-alt-day">
+              <h3><span aria-hidden="true"></span>LECTURE<span aria-hidden="true"></span></h3>
+              <ol>
+                <li><time>約7.5H</time><strong>全6章の解説・実践講義</strong></li>
+                <li><time>REPLAY</time><strong>分からない部分を繰り返し確認</strong></li>
+                <li><time>HANDS ON</time><strong>Premiere Proを操作しながら進める</strong></li>
+              </ol>
+            </article>
+
+            <article class="schedule-alt-day">
+              <h3><span aria-hidden="true"></span>PRACTICE<span aria-hidden="true"></span></h3>
+              <ol>
+                <li><time>2.5H+</time><strong>ノーカット編集実演</strong></li>
+                <li><time>BEGINNER</time><strong>初心者にも取り組めるよう解説</strong></li>
+                <li><time>ANYTIME</time><strong>本業・副業・活動と両立しやすい</strong></li>
+              </ol>
+              <div class="schedule-alt-note">
+                <p>Premiere Proの基本操作ができる方向けですが、初心者でも受講可能です。</p>
+                <p>決まった日時に参加するオンライン授業ではありません。</p>
+              </div>
+            </article>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section section-dark" id="hours">
-      <div class="shell hours-layout">
-        <div class="section-heading" data-reveal><p class="section-code">06 / LEARNING FORMAT</p><h2>録画教材だから、<br>自分のペースで<em>何度でも</em>学べる。</h2><p class="lead">プレエディは、決まった日時に参加するオンライン授業ではありません。本業や副業、活動と両立しながら、Premiere Proを実際に操作して進められます。</p><p>Premiere Proの基本操作ができる方向けですが、初心者でも取り組めるように解説します。</p></div>
-        <div class="hours-console" data-reveal aria-label="カリキュラム時間"><div class="hours-total"><span>TOTAL CURRICULUM</span><strong>10<small>時間</small><em>超</em></strong></div><div class="hours-track"><span style="--w:75%"><b>解説・実践講義</b><strong>約7時間30分</strong></span></div><div class="hours-track demo"><span style="--w:25%"><b>ノーカット編集実演</b><strong>2時間30分以上</strong></span></div><div class="hours-badges"><span>PAUSE</span><span>REPLAY</span><span>YOUR PACE</span></div></div>
-      </div>
-    </section>
-
-    <section class="section section-band" id="curriculum">
-      <div class="shell">
-        <div class="section-heading center" data-reveal><p class="section-code">07 / CURRICULUM</p><h2>全6章＋<em>ノーカット編集実演</em></h2><p class="lead">知識を並べるだけでなく、素材を見るところから、案件へ出す準備まで一本の流れで学びます。</p></div>
-        <div class="chapter-list">
-          <article data-reveal><span class="chapter-no">CHAPTER 01</span><div><h3>エンタメ動画編集の本質</h3><p>普通の動画編集との違い、視聴者を飽きさせない考え方、AI時代に編集者へ残る価値を学びます。</p></div><b>01</b></article>
-          <article data-reveal><span class="chapter-no">CHAPTER 02</span><div><h3>カット判断・会話構成・間の作り方</h3><p>どの会話を残すか、前振りからオチまでをどう構成するか、笑いになる間と不要な間の違いを学びます。</p></div><b>02</b></article>
-          <article data-reveal><span class="chapter-no">CHAPTER 03</span><div><h3>テロップ・BGM・SE・演出</h3><p>ツッコミテロップ、BGM、SE、ズーム、エフェクトを、場面に合わせて使う方法を学びます。</p></div><b>03</b></article>
-          <article data-reveal><span class="chapter-no">CHAPTER 04</span><div><h3>複数音声・複数視点の編集</h3><p>複数人が同時に話す素材の整理、主軸音声の決め方、状況が伝わる視点切り替えを学びます。</p></div><b>04</b></article>
-          <article data-reveal><span class="chapter-no">CHAPTER 05</span><div><h3>AIを使った編集効率化</h3><p>AIによる切り抜き候補の抽出、3パターンのカット案生成、自動カットツールへの取り込み方法を学びます。</p></div><b>05</b></article>
-          <article data-reveal><span class="chapter-no">CHAPTER 06</span><div><h3>案件獲得・見積もり・ポートフォリオ</h3><p>赤字を防ぐ見積もり、案件で評価されるポートフォリオ、単価を上げるための考え方を学びます。</p></div><b>06</b></article>
-          <article class="chapter-demo" data-reveal><span class="chapter-no">UNCUT DEMONSTRATION</span><div><h3>実際の編集作業をノーカットで見る</h3><p>講師が実際に動画を編集する工程を見ながら、どこを切り、どの視点を使い、どこにテロップを入れ、どのBGM・SEを選ぶのか。Premiere Proのタイムライン上で実務の判断を学びます。</p></div><b>＋</b></article>
+      <section class="mid-cta section-band">
+        <div class="section-inner offer-grid compact">
+          <div>
+            <p class="scene-label">CUT-IN / LINE CHECK</p>
+            <h2>AIと自動化で、単純作業を短縮。</h2>
+          </div>
+          <div class="cta-card">
+            <p>AIによる切り抜き候補の抽出、3パターンのカット案、自動カットツールへの取り込み、案件見積もりAIまで。人は面白さの判断へ集中します。</p>
+            <a class="primary-btn" href="#contact">LINEで無料5大特典を受け取る</a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section section-light" id="ai-tools">
-      <div class="shell">
-        <div class="section-heading center" data-reveal><p class="section-code">08 / AI WORKFLOW</p><h2>AIは編集者を消すものではなく、<br><em>判断へ集中するための道具</em>にする。</h2></div>
-        <div class="tool-grid">
-          <article data-reveal><div class="tool-window"><span>AI CUT ASSIST</span><div class="wave-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><b>3 CUT PATTERNS</b></div><p class="tool-code">TOOL 01</p><h3>AI切り抜き・自動カットツール</h3><p>AIで素材を整理し、切り抜き候補と3パターンのカット案を作成。自動カットツールへ取り込む流れまで学びます。</p><ul><li>切り抜き候補の抽出</li><li>カット案の比較</li><li>単純作業を短縮</li></ul></article>
-          <article data-reveal><div class="tool-window estimate"><span>ESTIMATE AI</span><strong>WORKLOAD → PRICE</strong><b>LOSS CHECK / OK</b></div><p class="tool-code">TOOL 02</p><h3>案件見積もりAI</h3><p>尺、素材数、音声、テロップ、演出、修正条件を整理し、見積もりの抜け漏れや赤字を防ぐために活用します。</p><ul><li>作業量を言語化</li><li>見積もり漏れを確認</li><li>最終判断は自分で行う</li></ul></article>
+      <section class="review section-dark" id="review">
+        <div class="section-inner review-inner">
+          <div class="review-head split">
+            <div>
+              <p class="scene-label">SCENE 07 / REVIEW</p>
+              <h2>実際に作った動画へ、実践的なフィードバック。</h2>
+              <p>
+                教材を見て終わりではなく、実際に編集した動画を添削します。
+                月1〜2本程度を目安に提出でき、厳密な回数上限は設けない予定です。
+              </p>
+            </div>
+            <ol class="review-steps">
+              <li><span>01</span>カットのテンポ・会話構成</li>
+              <li><span>02</span>テロップ・BGM・SE</li>
+              <li><span>03</span>視点切り替え・全体構成</li>
+              <li><span>04</span>実際の案件で使える状態へ</li>
+            </ol>
+          </div>
+
+          <div class="works-tape" id="works">
+            <div class="works-tape-head">
+              <div>
+                <p class="scene-label">INSTRUCTOR WORKS / 実績一覧</p>
+                <h3>講師・クリックスchの実績を、編集テープに乗せて流す。</h3>
+              </div>
+              <p>
+                エンタメ動画に必要な、強い見せ場、キャラクターの表情、企画内容の伝わりやすさを確認できます。
+              </p>
+            </div>
+
+            <div class="works-tape-frame" aria-label="実績サムネイルの横流れギャラリー">
+              <div class="works-track works-track-primary">
+                <div class="works-set">
+                  <article class="work-card" data-video-slot="work-01">
+                    <div class="work-media"><img src="assets/works/work-2000-rank.png" alt="2000目指してランクマッチの配信サムネイル"></div>
+                    <div class="work-caption"><span>GAME THUMBNAIL</span><strong>2000目指してランクマッチ</strong></div>
+                  </article>
+                  <article class="work-card" data-video-slot="work-02">
+                    <div class="work-media"><img src="assets/works/work-xp-update.png" alt="XP更新行くぞの配信サムネイル"></div>
+                    <div class="work-caption"><span>SPLATOON</span><strong>XP更新行くぞ!!!</strong></div>
+                  </article>
+                  <article class="work-card" data-video-slot="work-03">
+                    <div class="work-media"><img src="assets/works/work-horror-game.png" alt="みんなでホラーゲームの配信サムネイル"></div>
+                    <div class="work-caption"><span>STREAM</span><strong>みんなでホラーゲーム</strong></div>
+                  </article>
+                  <article class="work-card" data-video-slot="work-04">
+                    <div class="work-media"><img src="assets/works/work-nintendo-direct.png" alt="同時視聴配信の配信サムネイル"></div>
+                    <div class="work-caption"><span>LIVE</span><strong>同時視聴配信</strong></div>
+                  </article>
+                  <article class="work-card" data-video-slot="work-05">
+                    <div class="work-media"><img src="assets/works/work-mariokart-world.png" alt="世界1元気マリカの配信サムネイル"></div>
+                    <div class="work-caption"><span>MARIOKART</span><strong>世界1元気マリカ</strong></div>
+                  </article>
+                  <article class="work-card" data-video-slot="work-06">
+                    <div class="work-media"><img src="assets/works/work-birthday-live.png" alt="飲酒誕生日配信の配信サムネイル"></div>
+                    <div class="work-caption"><span>BIRTHDAY LIVE</span><strong>飲酒誕生日配信</strong></div>
+                  </article>
+                  <article class="work-card" data-video-slot="work-07">
+                    <div class="work-media"><img src="assets/works/work-springfest-members.png" alt="スプリングフェスメン限の配信サムネイル"></div>
+                    <div class="work-caption"><span>MEMBERS</span><strong>SpringFest メン限</strong></div>
+                  </article>
+                  <article class="work-card" data-video-slot="work-08">
+                    <div class="work-media"><img src="assets/works/work-short-editing.png" alt="shortを作るにはの動画サムネイル"></div>
+                    <div class="work-caption"><span>EDITING</span><strong>shortを作るには</strong></div>
+                  </article>
+                </div>
+
+                <div class="works-set" aria-hidden="true">
+                  <article class="work-card">
+                    <div class="work-media"><img src="assets/works/work-2000-rank.png" alt=""></div>
+                    <div class="work-caption"><span>GAME THUMBNAIL</span><strong>2000目指してランクマッチ</strong></div>
+                  </article>
+                  <article class="work-card">
+                    <div class="work-media"><img src="assets/works/work-xp-update.png" alt=""></div>
+                    <div class="work-caption"><span>SPLATOON</span><strong>XP更新行くぞ!!!</strong></div>
+                  </article>
+                  <article class="work-card">
+                    <div class="work-media"><img src="assets/works/work-horror-game.png" alt=""></div>
+                    <div class="work-caption"><span>STREAM</span><strong>みんなでホラーゲーム</strong></div>
+                  </article>
+                  <article class="work-card">
+                    <div class="work-media"><img src="assets/works/work-nintendo-direct.png" alt=""></div>
+                    <div class="work-caption"><span>LIVE</span><strong>同時視聴配信</strong></div>
+                  </article>
+                  <article class="work-card">
+                    <div class="work-media"><img src="assets/works/work-mariokart-world.png" alt=""></div>
+                    <div class="work-caption"><span>MARIOKART</span><strong>世界1元気マリカ</strong></div>
+                  </article>
+                  <article class="work-card">
+                    <div class="work-media"><img src="assets/works/work-birthday-live.png" alt=""></div>
+                    <div class="work-caption"><span>BIRTHDAY LIVE</span><strong>飲酒誕生日配信</strong></div>
+                  </article>
+                  <article class="work-card">
+                    <div class="work-media"><img src="assets/works/work-springfest-members.png" alt=""></div>
+                    <div class="work-caption"><span>MEMBERS</span><strong>SpringFest メン限</strong></div>
+                  </article>
+                  <article class="work-card">
+                    <div class="work-media"><img src="assets/works/work-short-editing.png" alt=""></div>
+                    <div class="work-caption"><span>EDITING</span><strong>shortを作るには</strong></div>
+                  </article>
+                </div>
+              </div>
+
+              <div class="works-track works-track-secondary" aria-hidden="true">
+                <div class="works-set">
+                  <article class="work-card">
+                    <div class="work-media"><img src="assets/works/work-short-editing.png" alt=""></div>
+                    <div class="work-caption"><span>EDITING</span><strong>shortを作るには</strong></div>
+                  </article>
+                  <article class="work-card">
+                    <div class="work-media"><img src="assets/works/work-springfest-members.png" alt=""></div>
+                    <div class="work-caption"><span>MEMBERS</span><strong>SpringFest メン限</strong></div>
+                  </article>
+                  <article class="work-card">
+                    <div class="work-media"><img src="assets/works/work-birthday-live.png" alt=""></div>
+                    <div class="work-caption"><span>BIRTHDAY LIVE</span><strong>飲酒誕生日配信</strong></div>
+                  </article>
+                  <article class="work-card">
+                    <div class="work-media"><img src="assets/works/work-mariokart-world.png" alt=""></div>
+                    <div class="work-caption"><span>MARIOKART</span><strong>世界1元気マリカ</strong></div>
+                  </article>
+                  <article class="work-card">
+                    <div class="work-media"><img src="assets/works/work-nintendo-direct.png" alt=""></div>
+                    <div class="work-caption"><span>LIVE</span><strong>同時視聴配信</strong></div>
+                  </article>
+                  <article class="work-card">
+                    <div class="work-media"><img src="assets/works/work-horror-game.png" alt=""></div>
+                    <div class="work-caption"><span>STREAM</span><strong>みんなでホラーゲーム</strong></div>
+                  </article>
+                  <article class="work-card">
+                    <div class="work-media"><img src="assets/works/work-xp-update.png" alt=""></div>
+                    <div class="work-caption"><span>SPLATOON</span><strong>XP更新行くぞ!!!</strong></div>
+                  </article>
+                  <article class="work-card">
+                    <div class="work-media"><img src="assets/works/work-2000-rank.png" alt=""></div>
+                    <div class="work-caption"><span>GAME THUMBNAIL</span><strong>2000目指してランクマッチ</strong></div>
+                  </article>
+                </div>
+
+                <div class="works-set">
+                  <article class="work-card">
+                    <div class="work-media"><img src="assets/works/work-short-editing.png" alt=""></div>
+                    <div class="work-caption"><span>EDITING</span><strong>shortを作るには</strong></div>
+                  </article>
+                  <article class="work-card">
+                    <div class="work-media"><img src="assets/works/work-springfest-members.png" alt=""></div>
+                    <div class="work-caption"><span>MEMBERS</span><strong>SpringFest メン限</strong></div>
+                  </article>
+                  <article class="work-card">
+                    <div class="work-media"><img src="assets/works/work-birthday-live.png" alt=""></div>
+                    <div class="work-caption"><span>BIRTHDAY LIVE</span><strong>飲酒誕生日配信</strong></div>
+                  </article>
+                  <article class="work-card">
+                    <div class="work-media"><img src="assets/works/work-mariokart-world.png" alt=""></div>
+                    <div class="work-caption"><span>MARIOKART</span><strong>世界1元気マリカ</strong></div>
+                  </article>
+                  <article class="work-card">
+                    <div class="work-media"><img src="assets/works/work-nintendo-direct.png" alt=""></div>
+                    <div class="work-caption"><span>LIVE</span><strong>同時視聴配信</strong></div>
+                  </article>
+                  <article class="work-card">
+                    <div class="work-media"><img src="assets/works/work-horror-game.png" alt=""></div>
+                    <div class="work-caption"><span>STREAM</span><strong>みんなでホラーゲーム</strong></div>
+                  </article>
+                  <article class="work-card">
+                    <div class="work-media"><img src="assets/works/work-xp-update.png" alt=""></div>
+                    <div class="work-caption"><span>SPLATOON</span><strong>XP更新行くぞ!!!</strong></div>
+                  </article>
+                  <article class="work-card">
+                    <div class="work-media"><img src="assets/works/work-2000-rank.png" alt=""></div>
+                    <div class="work-caption"><span>GAME THUMBNAIL</span><strong>2000目指してランクマッチ</strong></div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="works-focus" id="works-focus" data-works-focus>
+            <div class="works-focus-head">
+              <div>
+                <p class="scene-label">WORKS SELECT / PREVIEW</p>
+                <h3>流れる実績から、1本を編集モニターへ読み込む。</h3>
+              </div>
+              <p>
+                気になる実績を選ぶと、メイン画面へ読み込んで大きく確認できます。
+              </p>
+            </div>
+
+            <div class="works-focus-stage">
+              <div class="work-focus-screen" aria-live="polite">
+                <img
+                  src="assets/works/work-2000-rank.png"
+                  alt="2000目指してランクマッチの配信サムネイル"
+                  data-work-preview
+                >
+                <span class="work-focus-corner">SELECTED 01</span>
+                <span class="work-focus-ready">YOUTUBE READY</span>
+              </div>
+              <div class="work-focus-copy">
+                <span class="work-focus-tag" data-work-tag>GAME THUMBNAIL</span>
+                <h4 data-work-title>2000目指してランクマッチ</h4>
+                <p data-work-copy>大会感のある背景、キャラクター、巨大テキストで、配信前に期待値を作るサムネイル。</p>
+                <div class="work-focus-meter" aria-hidden="true">
+                  <span></span><span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="focus-thumb-strip" aria-label="案2 実績プレビューの切り替え">
+              <button class="focus-thumb is-active" type="button" data-index="01" data-tag="GAME THUMBNAIL" data-title="2000目指してランクマッチ" data-copy="大会感のある背景、キャラクター、巨大テキストで、配信前に期待値を作るサムネイル。" data-image="assets/works/work-2000-rank.png">
+                <img src="assets/works/work-2000-rank.png" alt="">
+                <span>01</span>
+              </button>
+              <button class="focus-thumb" type="button" data-index="02" data-tag="SPLATOON" data-title="XP更新行くぞ!!!" data-copy="ゲーム画面、立ち絵、太い金文字を重ねて、クリック前の勢いを作る構成。" data-image="assets/works/work-xp-update.png">
+                <img src="assets/works/work-xp-update.png" alt="">
+                <span>02</span>
+              </button>
+              <button class="focus-thumb" type="button" data-index="03" data-tag="STREAM" data-title="みんなでホラーゲーム" data-copy="暗い背景と大きな表情差で、企画の空気感が一瞬で伝わる配信サムネイル。" data-image="assets/works/work-horror-game.png">
+                <img src="assets/works/work-horror-game.png" alt="">
+                <span>03</span>
+              </button>
+              <button class="focus-thumb" type="button" data-index="04" data-tag="LIVE" data-title="同時視聴配信" data-copy="赤い面と大きいタイトルで、同時視聴のテーマをすぐ認識できる構成。" data-image="assets/works/work-nintendo-direct.png">
+                <img src="assets/works/work-nintendo-direct.png" alt="">
+                <span>04</span>
+              </button>
+              <button class="focus-thumb" type="button" data-index="05" data-tag="MARIOKART" data-title="世界1元気マリカ" data-copy="明るい背景、動きの線、キャラ表情を使い、元気さと企画名を前面に出すサムネイル。" data-image="assets/works/work-mariokart-world.png">
+                <img src="assets/works/work-mariokart-world.png" alt="">
+                <span>05</span>
+              </button>
+              <button class="focus-thumb" type="button" data-index="06" data-tag="BIRTHDAY LIVE" data-title="飲酒誕生日配信" data-copy="青い世界観に大きな文字を重ねて、記念配信らしい強い記号性を出す。" data-image="assets/works/work-birthday-live.png">
+                <img src="assets/works/work-birthday-live.png" alt="">
+                <span>06</span>
+              </button>
+              <button class="focus-thumb" type="button" data-index="07" data-tag="MEMBERS" data-title="SpringFest メン限" data-copy="緑の配色とキャラクターで、限定配信の軽さと楽しさをまとめるデザイン。" data-image="assets/works/work-springfest-members.png">
+                <img src="assets/works/work-springfest-members.png" alt="">
+                <span>07</span>
+              </button>
+              <button class="focus-thumb" type="button" data-index="08" data-tag="EDITING" data-title="shortを作るには" data-copy="白背景と赤黒文字で、講義系コンテンツとして見やすく整理したサムネイル。" data-image="assets/works/work-short-editing.png">
+                <img src="assets/works/work-short-editing.png" alt="">
+                <span>08</span>
+              </button>
+            </div>
+          </div>
+
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section section-dark" id="feedback">
-      <div class="shell feedback-layout">
-        <div class="section-heading" data-reveal><p class="section-code">09 / FEEDBACK</p><h2>実際に作った動画へ、<br><em>実践的なフィードバック。</em></h2><p class="lead">教材を見て終わりではなく、実際に編集した動画への添削を行います。</p><p>月1〜2本程度を目安に提出でき、厳密な回数上限は設けない予定です。</p></div>
-        <div class="review-monitor" data-reveal><div class="review-screen"><span>REVIEWING / TIMELINE 01</span><div class="review-line"><i style="--x:14%"></i><i style="--x:38%"></i><i style="--x:65%"></i><i style="--x:84%"></i></div></div><ul><li>カットのテンポ</li><li>会話のつながり</li><li>テロップの見せ方</li><li>BGM・SEの使い方</li><li>視点切り替え</li><li>動画全体の構成</li></ul><strong>案件で使える状態を目指して、直す理由までフィードバック。</strong></div>
-      </div>
-    </section>
+      <section class="present section-dark" id="present">
+        <div class="section-inner">
+          <div class="section-head present-head">
+            <div>
+            <p class="scene-label">SCENE 08 / PRESENT</p>
+              <h2>LINE登録で、編集に使える無料5大特典。</h2>
+            </div>
+            <p>
+              受講前から使えるチェックリスト、AIツール、テロップ素材、見積もり支援を無料でプレゼントします。
+            </p>
+          </div>
 
-    <section class="section section-band" id="community">
-      <div class="shell community-layout">
-        <div class="community-pass" data-reveal aria-hidden="true"><span>GRADUATE ACCESS</span><b>PRE-EDI</b><strong>COMMUNITY PASS</strong><small>1ST CLASS / LIFETIME FREE</small></div>
-        <div class="section-heading" data-reveal><p class="section-code">10 / AFTER GRADUATION</p><h2>学んで終わりではなく、<br><em>案件へ挑戦できる環境</em>へ。</h2><p class="lead">卒業後は、プレエディ卒業生限定の案件獲得コミュニティへ参加できます。</p><ul class="check-list"><li>活動者・企業から届いた案件情報の共有</li><li>編集案件への応募</li><li>ポートフォリオや営業についての相談</li><li>編集者同士の情報交換</li><li>案件獲得や単価アップのノウハウ共有</li></ul><div class="first-class-note"><span>第1期20名限定</span><strong>コミュニティ参加費・永久無料</strong></div><small>※案件獲得を保証するものではありません。案件ごとに募集条件・選考が発生する場合があります。</small></div>
-      </div>
-    </section>
+          <div class="present-shelf" aria-label="LINE登録でもらえる無料5大特典">
+            <img class="asset-kit present-kit-cases" src="assets/generated-kit-01/cutouts/13-tape-case-stack.png" alt="" aria-hidden="true">
+            <article class="present-case">
+              <div class="present-case-top">
+                <span class="material-symbols-outlined" aria-hidden="true">support_agent</span>
+                <span>GIFT 01</span>
+              </div>
+              <h3>カット判断チェックリスト</h3>
+              <p>残す会話、切る間、見せるリアクションを判断するための確認表。</p>
+              <strong>CUT CHECKLIST</strong>
+            </article>
 
-    <section class="section section-dark" id="instructor">
-      <div class="shell">
-        <div class="section-heading" data-reveal><p class="section-code">11 / INSTRUCTOR &amp; WORKS</p><h2>エンタメ動画の現場で使う判断を、<br><em>実際の編集画面</em>で伝える。</h2></div>
-        <div class="instructor-grid">
-          <div class="instructor-profile" data-reveal><img src="assets/clicks-standee-1400.webp" width="1400" height="1400" loading="lazy" decoding="async" alt="講師・監修 クリックスch"><div><span>INSTRUCTOR / SUPERVISOR</span><h3>クリックスch</h3><p>動画を派手にするためではなく、視聴者へ面白さを届けるためのカット、テロップ、音、視点選びをカリキュラムへ落とし込みます。</p></div></div>
-          <div class="works-grid" data-reveal aria-label="制作実績イメージ"><figure><img src="assets/works/work-2000-rank.webp" width="1280" height="720" loading="lazy" decoding="async" alt="ゲーム配信動画の制作実績"><figcaption>GAME / STREAM</figcaption></figure><figure><img src="assets/works/work-xp-update.webp" width="1280" height="720" loading="lazy" decoding="async" alt="ゲーム実況動画の制作実績"><figcaption>ENTERTAINMENT</figcaption></figure><figure><img src="assets/works/work-horror-game.webp" width="1368" height="770" loading="lazy" decoding="async" alt="複数人ゲーム動画の制作実績"><figcaption>MULTI CAST</figcaption></figure><figure><img src="assets/works/work-short-editing.webp" width="1368" height="770" loading="lazy" decoding="async" alt="動画編集解説の制作実績"><figcaption>SHORT / HOW-TO</figcaption></figure></div>
+            <article class="present-case">
+              <div class="present-case-top">
+                <span class="material-symbols-outlined" aria-hidden="true">replay</span>
+                <span>GIFT 02</span>
+              </div>
+              <h3>AI切り抜き候補出し＆自動カットツール</h3>
+              <p>候補抽出と3パターンのカット案から、下準備を効率化。</p>
+              <strong>AI CUT TOOL</strong>
+            </article>
+
+            <article class="present-case hot">
+              <div class="present-case-top">
+                <span class="material-symbols-outlined" aria-hidden="true">groups</span>
+                <span>GIFT 03</span>
+              </div>
+              <h3>王道ツッコミテロップ一覧表</h3>
+              <p>エンタメ動画で使いやすいツッコミ表現を、場面別に確認。</p>
+              <strong>TSUKKOMI LIST</strong>
+            </article>
+
+            <article class="present-case">
+              <div class="present-case-top">
+                <span class="material-symbols-outlined" aria-hidden="true">calendar_month</span>
+                <span>GIFT 04</span>
+              </div>
+              <h3>テロップデータ80選</h3>
+              <p>動画の雰囲気や場面に合わせて選べるテロップ素材。</p>
+              <strong>80 TEXT STYLES</strong>
+            </article>
+
+            <article class="present-case">
+              <div class="present-case-top">
+                <span class="material-symbols-outlined" aria-hidden="true">calculate</span>
+                <span>GIFT 05</span>
+              </div>
+              <h3>案件見積もりAI</h3>
+              <p>作業量を整理し、赤字を防ぐ見積もりづくりをサポート。</p>
+              <strong>ESTIMATE AI</strong>
+            </article>
+          </div>
+
+          <div class="present-pass">
+            <span class="material-symbols-outlined" aria-hidden="true">workspace_premium</span>
+            <p>第1期20名は、卒業後の案件獲得コミュニティを永久無料で利用できます。案件獲得を保証するものではありません。</p>
+          </div>
+          <div class="community-panel" id="community">
+            <div>
+              <span>GRADUATE COMMUNITY</span>
+              <h3>学んで終わりではなく、案件へ挑戦できる環境へ。</h3>
+              <p>卒業後は、プレエディ卒業生限定の案件獲得コミュニティへ参加できます。</p>
+            </div>
+            <ul>
+              <li>活動者・企業から届いた案件情報の共有</li>
+              <li>編集案件への応募</li>
+              <li>ポートフォリオや営業についての相談</li>
+              <li>編集者同士の情報交換</li>
+              <li>案件獲得や単価アップに関するノウハウ共有</li>
+            </ul>
+            <small>※案件獲得を保証するものではありません。案件ごとに募集条件・選考が発生する場合があります。</small>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section section-light voice-section" id="voices">
-      <div class="shell">
-        <div class="section-heading center" data-reveal><p class="section-code">12 / VOICES</p><h2>活動者から寄せられた、<br><em>プレエディへの期待の声。</em></h2><p class="lead">VTuber・配信者と、エンタメ編集を学んだ編集者がつながる未来へ。</p></div>
-        <div class="voice-cards">
-          <article class="voice-card voice-purple" data-reveal><div class="voice-photo"><img src="assets/voices/nagare.webp" width="323" height="323" loading="lazy" decoding="async" alt="ナガレ様"></div><div class="voice-body"><span class="quote-mark" aria-hidden="true">“</span><blockquote>活動者にとって、自分の動画に合った編集者さんを見つけるのは意外と難しいので、安心して編集をお願いできる方と繋がれるサービスとして期待しています！</blockquote><footer><strong>ナガレ様</strong><span>CREATOR VOICE 01</span></footer></div></article>
-          <article class="voice-card voice-red" data-reveal><div class="voice-photo"><img src="assets/voices/cameron.webp" width="400" height="400" loading="lazy" decoding="async" alt="キャメロン様"></div><div class="voice-body"><span class="quote-mark" aria-hidden="true">“</span><blockquote>VTuber・配信者向けの編集に理解がある編集者さんと繋がれる場所として、とても期待しています！複数人コラボや配信切り抜きなど、活動者のニーズに寄り添った編集者さんが増えるのは本当にありがたいです。動画編集者を探す選択肢として、今後ぜひ活用させていただきたいと思います！</blockquote><footer><strong>キャメロン様</strong><span>CREATOR VOICE 02</span></footer></div></article>
-          <article class="voice-card voice-orange" data-reveal><div class="voice-photo"><img src="assets/voices/kiruha.webp" width="400" height="400" loading="lazy" decoding="async" alt="キルハ様"></div><div class="voice-body"><span class="quote-mark" aria-hidden="true">“</span><blockquote>質の高いエンタメ動画編集を学んだ編集者と出会える手厚いサービスです！</blockquote><footer><strong>キルハ様</strong><span>CREATOR VOICE 03</span></footer></div></article>
+      <section class="price section-band" id="price" data-price-section>
+        <div class="section-inner price-layout">
+          <div class="price-copy">
+            <p class="scene-label">SCENE 09 / PLAN</p>
+            <h2>第1期・先着20名限定の先行価格。</h2>
+            <p>
+              通常価格198,000円から100,000円OFF。第1期の受付終了後は、内容の追加・サポート拡充にあわせて値上げを予定しています。
+            </p>
+
+            <div class="price-assurance" aria-label="料金判断の要点">
+              <div>
+                <span class="material-symbols-outlined" aria-hidden="true">paid</span>
+                <strong>通常198,000円</strong>
+                <p>第1期のみ100,000円OFF</p>
+              </div>
+              <div>
+                <span class="material-symbols-outlined" aria-hidden="true">content_cut</span>
+                <strong>永久無料</strong>
+                <p>第1期生の案件獲得コミュニティ</p>
+              </div>
+            </div>
+
+            <ol class="price-sequence" aria-label="料金確認の流れ">
+              <li><span>01</span><p>全6章＋ノーカット編集実演を録画教材で受講</p></li>
+              <li><span>02</span><p>月1〜2本程度を目安に実践添削</p></li>
+              <li><span>03</span><p>第1期20名は卒業後コミュニティ永久無料</p></li>
+            </ol>
+          </div>
+
+          <div class="price-board" aria-label="第1期の受講料金" data-price-board>
+            <div class="price-board-top">
+              <span>EXPORT SETTINGS / PRICE CHECK</span>
+              <strong>PREMIERE EDITOR</strong>
+            </div>
+            <img class="asset-kit price-kit-panel" src="assets/generated-kit-01/cutouts/06-export-settings-panel.png" alt="" aria-hidden="true">
+
+            <div class="price-status">
+              <span class="status-lamp" aria-hidden="true"></span>
+              <strong>PRICE CHECK READY</strong>
+                <small>SCENE 09 / 01:36</small>
+            </div>
+
+            <div class="price-main">
+              <div class="price-amount">
+                <span>FIRST TERM PRICE / LIMITED 20</span>
+                <strong><small>先行価格</small>98,000円</strong>
+                <p><del>通常価格 198,000円</del> ／ 100,000円OFF</p>
+                <div class="price-meter" aria-hidden="true"><span></span></div>
+              </div>
+              <div class="cut-badge" data-cut-slasher>
+                <img class="asset-kit cut-badge-slash-img" src="assets/generated-kit-01/cutouts/11-red-cut-slash.png" alt="" aria-hidden="true">
+                <span class="material-symbols-outlined" aria-hidden="true">content_cut</span>
+                <strong>100,000円 OFF</strong>
+                <em>LIMITED 20 SEATS</em>
+              </div>
+            </div>
+
+            <div class="price-track-list" aria-label="料金条件のトラック">
+              <div class="price-track active" style="--delay: 120ms;">
+                <span>V1</span>
+                <p>総カリキュラム</p>
+                <strong>10時間超</strong>
+              </div>
+              <div class="price-track" style="--delay: 260ms;">
+                <span>A1</span>
+                <p>添削</p>
+                <strong>月1〜2本目安</strong>
+              </div>
+              <div class="price-track" style="--delay: 400ms;">
+                <span>CAL</span>
+                <p>第1期コミュニティ</p>
+                <strong>永久無料</strong>
+              </div>
+            </div>
+
+            <div class="price-render-note">
+              <span class="material-symbols-outlined" aria-hidden="true">verified</span>
+              <p>第1期20名の受付終了後は、内容の追加・サポート拡充にあわせて値上げ予定です。</p>
+            </div>
+
+            <a class="price-cta" href="#contact">
+              <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+              LINEで無料5大特典＋第1期先行案内を受け取る
+            </a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section section-dark" id="price">
-      <div class="shell price-layout">
-        <div class="section-heading" data-reveal><p class="section-code">13 / FIRST CLASS OFFER</p><h2>第1期・<em>先着20名限定</em></h2><p class="lead">最初に参加していただく20名へ、先行価格とコミュニティ永久無料の特典をご用意します。</p></div>
-        <div class="price-card" data-reveal><div class="limited-ribbon">FIRST 20 MEMBERS ONLY</div><div class="regular-price"><span>通常価格</span><del>198,000円</del></div><div class="launch-price"><span>第1期先行価格</span><strong>98,000<small>円</small></strong></div><div class="discount">100,000円 OFF</div><div class="lifetime"><span>第1期限定特典</span><strong>案件獲得コミュニティ<br>参加費・永久無料</strong></div><p>第1期20名の受付終了後は、内容の追加・サポートの拡充にあわせて値上げする予定です。</p><a class="primary-btn" href="#gifts"><span>無料5大特典＋第1期先行案内を受け取る</span><b>→</b></a></div>
-      </div>
-    </section>
+      <section class="voice section-dark" id="recommended">
+        <div class="section-inner voice-inner">
+          <p class="scene-label">SCENE 10 / VOICE &amp; RECOMMENDED</p>
+          <div class="section-head voice-head">
+            <h2>活動者の皆さまから届いた、プレエディへの期待の声。</h2>
+            <p>VTuber・配信者と、エンタメ編集を学んだ編集者が安心してつながれる場所を目指しています。</p>
+          </div>
+          <div class="voice-stage">
+            <div class="voice-review-wall" aria-label="利用者レビュー" data-voice-deck>
+              <div class="voice-strip-label">
+                <span>PREVIEW SCREENING / REVIEW DECK</span>
+                <strong data-voice-counter>VOICE 01</strong>
+              </div>
 
-    <section class="section section-line" id="gifts">
-      <div class="shell gifts-layout">
-        <div class="section-heading" data-reveal><p class="section-code">14 / LINE FREE GIFTS</p><h2>LINE登録で、<br><em>無料5大特典</em>をプレゼント。</h2><p class="lead">受講前から使えるチェックリストやAIツールをまとめて受け取れます。</p></div>
-        <ol class="gift-list" data-reveal><li><span>01</span><div><strong>カット判断チェックリスト</strong><small>CUT JUDGEMENT CHECK</small></div></li><li><span>02</span><div><strong>AI切り抜き候補出し＆自動カットツール</strong><small>AI CUT ASSIST</small></div></li><li><span>03</span><div><strong>王道ツッコミテロップ一覧表</strong><small>TSUKKOMI TEXT LIST</small></div></li><li><span>04</span><div><strong>テロップデータ80選</strong><small>80 TEXT PRESETS</small></div></li><li><span>05</span><div><strong>案件見積もりAI</strong><small>ESTIMATE AI</small></div></li></ol>
-        <div class="gift-cta" data-reveal><span>0円で受け取る</span><a class="primary-btn" href="#contact"><span>LINEで無料5大特典を受け取る</span><b>→</b></a></div>
-      </div>
-    </section>
+              <div class="voice-monitor" aria-live="polite">
+                <div class="voice-monitor-top">
+                  <span>NOW CHECKING</span>
+                  <strong data-voice-focus>PROCESS</strong>
+                </div>
+                <h3 data-voice-title>ナガレ様</h3>
+                <p data-voice-copy>活動者にとって、自分の動画に合った編集者さんを見つけるのは意外と難しいので、安心して編集をお願いできる方と繋がれるサービスとして期待しています！</p>
+                <div class="voice-monitor-meta">
+                  <span data-voice-person>活動者</span>
+                  <span data-voice-status>MESSAGE 01</span>
+                </div>
+              </div>
 
-    <section class="section section-light" id="faq">
-      <div class="shell faq-shell">
-        <div class="section-heading" data-reveal><p class="section-code">15 / FAQ</p><h2>よくある質問</h2></div>
-        <div class="faq-list" data-faq>
-          <article class="faq-item is-open" data-reveal><button id="faq-q1" type="button" aria-expanded="true" aria-controls="faq-a1"><span>Q01</span><strong>初心者でも受講できますか？</strong><i aria-hidden="true"></i></button><div class="faq-answer" id="faq-a1" role="region" aria-labelledby="faq-q1"><p>受講できます。Premiere Proの基本操作ができる方向けですが、初心者でも取り組めるように解説します。教材を止めたり、繰り返したりしながら自分のペースで進められます。</p></div></article>
-          <article class="faq-item" data-reveal><button id="faq-q2" type="button" aria-expanded="false" aria-controls="faq-a2"><span>Q02</span><strong>決まった日時に参加する授業ですか？</strong><i aria-hidden="true"></i></button><div class="faq-answer" id="faq-a2" role="region" aria-labelledby="faq-q2" hidden><p>いいえ。プレエディは録画教材を自分のペースで視聴する形式です。本業、副業、配信活動などと両立しながら、好きな時間に何度でも学べます。</p></div></article>
-          <article class="faq-item" data-reveal><button id="faq-q3" type="button" aria-expanded="false" aria-controls="faq-a3"><span>Q03</span><strong>カリキュラムはどのくらいの長さですか？</strong><i aria-hidden="true"></i></button><div class="faq-answer" id="faq-a3" role="region" aria-labelledby="faq-q3" hidden><p>総カリキュラムは10時間を超えます。解説・実践講義が約7時間30分、講師の実際の編集作業を見られるノーカット編集実演パートが2時間30分以上です。</p></div></article>
-          <article class="faq-item" data-reveal><button id="faq-q4" type="button" aria-expanded="false" aria-controls="faq-a4"><span>Q04</span><strong>制作した動画を添削してもらえますか？</strong><i aria-hidden="true"></i></button><div class="faq-answer" id="faq-a4" role="region" aria-labelledby="faq-q4" hidden><p>はい。月1〜2本程度を目安に提出でき、厳密な回数上限は設けない予定です。カット、会話構成、テロップ、BGM・SE、視点切り替えなどを実践基準でフィードバックします。</p></div></article>
-          <article class="faq-item" data-reveal><button id="faq-q5" type="button" aria-expanded="false" aria-controls="faq-a5"><span>Q05</span><strong>卒業後のコミュニティでは必ず案件を獲得できますか？</strong><i aria-hidden="true"></i></button><div class="faq-answer" id="faq-a5" role="region" aria-labelledby="faq-q5" hidden><p>案件獲得を保証するものではありません。活動者・企業から届いた案件情報の共有や応募機会、営業・ポートフォリオ相談などを行う予定ですが、案件ごとに募集条件や選考が発生する場合があります。第1期20名は参加費が永久無料です。</p></div></article>
-          <article class="faq-item pc-faq" data-reveal><button id="faq-q6" type="button" aria-expanded="false" aria-controls="faq-a6"><span>Q06</span><strong>受講に必要なPC環境を教えてください。</strong><i aria-hidden="true"></i></button><div class="faq-answer" id="faq-a6" role="region" aria-labelledby="faq-q6" hidden><p>プレエディでは、1080pのMP4素材を使用し、4人分の複数音声・複数視点、フルテロップ、BGM・SE・ズーム・エフェクトなどを取り入れた実践編集を行います。メモリ16GBでも受講・編集は可能ですが、より快適に進めたい場合は32GB以上を推奨します。</p><div class="pc-grid"><section><span>WINDOWS / 受講可能な目安</span><dl><div><dt>OS</dt><dd>Windows 11 64bit</dd></div><div><dt>CPU</dt><dd>Intel第11世代以降、またはAMD Ryzen 3000シリーズ以降</dd></div><div><dt>メモリ</dt><dd>16GB以上</dd></div><div><dt>GPU</dt><dd>GPUメモリ4GB以上</dd></div><div><dt>ストレージ</dt><dd>SSD 512GB以上</dd></div><div><dt>空き容量</dt><dd>100GB以上を推奨</dd></div><div><dt>画面解像度</dt><dd>1920×1080以上</dd></div></dl></section><section class="recommended"><span>快適に編集するための推奨環境</span><dl><div><dt>CPU</dt><dd>Intel Core i7、またはAMD Ryzen 7クラス以上</dd></div><div><dt>メモリ</dt><dd>32GB以上</dd></div><div><dt>GPU</dt><dd>GPUメモリ8GB以上</dd></div><div><dt>ストレージ</dt><dd>NVMe SSD 1TB以上</dd></div></dl></section></div></div></article>
-          <article class="faq-item" data-reveal><button id="faq-q7" type="button" aria-expanded="false" aria-controls="faq-a7"><span>Q07</span><strong>LINE登録特典は受講しなくても受け取れますか？</strong><i aria-hidden="true"></i></button><div class="faq-answer" id="faq-a7" role="region" aria-labelledby="faq-q7" hidden><p>はい。無料5大特典は受講特典ではなく、LINE登録特典です。LINEから第1期の先行案内も受け取れます。</p></div></article>
+              <div class="voice-ticket-row">
+                <button
+                  class="voice-ticket is-active"
+                  type="button"
+                  data-index="01"
+                  data-focus="NAGARE"
+                  data-title="ナガレ様"
+                  data-copy="活動者にとって、自分の動画に合った編集者さんを見つけるのは意外と難しいので、安心して編集をお願いできる方と繋がれるサービスとして期待しています！"
+                  data-person="活動者"
+                  data-status="MESSAGE 01"
+                >
+                  <img class="voice-avatar" src="assets/voices/nagare.webp" alt="ナガレ様">
+                  <span class="voice-no">VOICE 01</span>
+                  <h3>ナガレ様</h3>
+                  <p>「活動者にとって、自分の動画に合った編集者さんを見つけるのは意外と難しいので、安心して編集をお願いできる方と繋がれるサービスとして期待しています！」</p>
+                  <div class="voice-meta">
+                    <span>活動者</span>
+                    <span>期待の声</span>
+                  </div>
+                </button>
+                <button
+                  class="voice-ticket"
+                  type="button"
+                  data-index="02"
+                  data-focus="CAMERON"
+                  data-title="キャメロン様"
+                  data-copy="VTuber・配信者向けの編集に理解がある編集者さんと繋がれる場所として、とても期待しています！複数人コラボや配信切り抜きなど、活動者のニーズに寄り添った編集者さんが増えるのは本当にありがたいです。動画編集者を探す選択肢として、今後ぜひ活用させていただきたいと思います！"
+                  data-person="VTuber・配信者"
+                  data-status="MESSAGE 02"
+                >
+                  <img class="voice-avatar" src="assets/voices/cameron.webp" alt="キャメロン様">
+                  <span class="voice-no">VOICE 02</span>
+                  <h3>キャメロン様</h3>
+                  <p>「VTuber・配信者向けの編集に理解がある編集者さんと繋がれる場所として、とても期待しています！複数人コラボや配信切り抜きなど、活動者のニーズに寄り添った編集者さんが増えるのは本当にありがたいです。動画編集者を探す選択肢として、今後ぜひ活用させていただきたいと思います！」</p>
+                  <div class="voice-meta">
+                    <span>VTuber・配信者</span>
+                    <span>期待の声</span>
+                  </div>
+                </button>
+                <button
+                  class="voice-ticket"
+                  type="button"
+                  data-index="03"
+                  data-focus="KIRUHA"
+                  data-title="キルハ様"
+                  data-copy="質の高いエンタメ動画編集を学んだ編集者と出会える手厚いサービスです！"
+                  data-person="活動者"
+                  data-status="MESSAGE 03"
+                >
+                  <img class="voice-avatar" src="assets/voices/kiruha.webp" alt="キルハ様">
+                  <span class="voice-no">VOICE 03</span>
+                  <h3>キルハ様</h3>
+                  <p>「質の高いエンタメ動画編集を学んだ編集者と出会える手厚いサービスです！」</p>
+                  <div class="voice-meta">
+                    <span>活動者</span>
+                    <span>期待の声</span>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <aside class="recommended-card" aria-label="推薦コメント">
+              <img class="asset-kit recommended-kit-stamp" src="assets/generated-kit-01/cutouts/07-approved-stamp-mark.png" alt="" aria-hidden="true">
+              <span class="approval-stamp" aria-hidden="true">APPROVED</span>
+              <div class="recommended-top">
+                <span class="material-symbols-outlined" aria-hidden="true">verified</span>
+                <strong>RECOMMENDED</strong>
+              </div>
+              <blockquote>
+                操作だけではなく、素材の面白さを見つける判断、複数音声・複数視点、BGM・SEまで学べる実践的なスクールです。
+              </blockquote>
+              <div class="recommended-cues" aria-label="推薦理由">
+                <span>01 / エンタメ編集</span>
+                <span>02 / 実践添削</span>
+                <span>03 / 卒業後導線</span>
+              </div>
+              <div class="recommender">
+                <img src="assets/clicks-standee-1400.png" alt="クリックスch監修">
+                <div>
+                  <strong>クリックスch 監修</strong>
+                  <span>Premiere Editor Supervisor</span>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <div class="trust-reel" aria-label="信頼チェック" data-trust-check>
+            <div>
+              <span class="ok-lamp" aria-hidden="true"></span>
+              <span class="material-symbols-outlined" aria-hidden="true">edit_note</span>
+              <strong>録画教材10時間超</strong>
+            </div>
+            <div>
+              <span class="ok-lamp" aria-hidden="true"></span>
+              <span class="material-symbols-outlined" aria-hidden="true">fact_check</span>
+              <strong>実践添削</strong>
+            </div>
+            <div>
+              <span class="ok-lamp" aria-hidden="true"></span>
+              <span class="material-symbols-outlined" aria-hidden="true">groups</span>
+              <strong>卒業後コミュニティ</strong>
+            </div>
+            <div>
+              <span class="ok-lamp" aria-hidden="true"></span>
+              <span class="material-symbols-outlined" aria-hidden="true">support_agent</span>
+              <strong>LINE無料5大特典</strong>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="final-cta" id="contact">
-      <div class="final-cta-bg" aria-hidden="true"></div>
-      <div class="shell final-cta-inner" data-reveal><p class="section-code">FINAL / JOIN THE FIRST CLASS</p><h2>AIに任せる編集ではなく、<br><em>AIを使いこなし、面白さを作る編集者へ。</em></h2><p>まずは無料5大特典を受け取り、第1期の先行案内をご確認ください。</p><div class="final-offer"><span>第1期先着20名</span><strong>198,000円 <b>→</b> 98,000円</strong><small>案件獲得コミュニティ永久無料</small></div><a class="primary-btn large" href="#gifts"><span>LINEで無料5大特典と第1期先行案内を受け取る</span><b>→</b></a></div>
-    </section>
-  </main>
+      <section class="contact section-dark" id="contact">
+        <div class="contact-bg" aria-hidden="true">
+          <img src="assets/generated-line-cta.png" alt="">
+        </div>
+        <div class="section-inner contact-inner">
+          <img class="asset-kit contact-kit-bubbles" src="assets/generated-kit-01/cutouts/08-line-chat-bubbles.png" alt="" aria-hidden="true">
+          <p class="scene-label">FINAL SCENE / LINE CHECK</p>
+          <h2>LINEで無料5大特典と、第1期先行案内を受け取る。</h2>
+          <p>カット判断チェックリスト、AI切り抜き候補出し＆自動カットツール、王道ツッコミテロップ一覧表、テロップデータ80選、案件見積もりAIを無料で配布します。</p>
+          <div class="line-chat" aria-label="LINE確認メッセージ" data-line-typing>
+            <div class="line-message from-school" style="--delay: 0ms;">
+              <span>プレエディです。無料5大特典をお送りします。</span>
+            </div>
+            <div class="line-message from-school" style="--delay: 520ms;">
+              <span>第1期先着20名の先行案内もLINEでお知らせします。</span>
+            </div>
+            <div class="line-message from-user" style="--delay: 1040ms;">
+              <span>特典と先行案内を受け取りたいです。</span>
+            </div>
+          </div>
+          <a class="primary-btn" href="#">LINEで無料5大特典を受け取る</a>
+        </div>
+      </section>
 
-  <footer class="site-footer"><div class="shell"><a href="#top" class="footer-brand"><img src="assets/premiere-editor-pe-monogram-sparkle-transparent.png" width="741" height="692" loading="lazy" decoding="async" alt=""><span>プレエディ</span></a><p>AI時代に選ばれる、エンタメ動画編集者へ。</p><small>© PRE-EDI</small></div></footer>
-  <script src="scripts.js?v=20260902-product-rewrite"></script>
-  <script type="module" src="js/cinematic-background.js?v=20260902-product-rewrite"></script>
+      <section class="faq section-dark" id="faq">
+        <img class="asset-kit faq-kit-reel" src="assets/generated-kit-01/cutouts/02-film-reel.png" alt="" aria-hidden="true">
+        <div class="section-inner">
+          <p class="scene-label">SCENE 11 / Q&amp;A</p>
+          <h2>Q&amp;A</h2>
+          <div class="faq-list tape-faq" data-tape-faq>
+            <article class="faq-item is-open anim-d">
+              <button class="faq-question" type="button" aria-expanded="true" aria-controls="faq-answer-1">
+                <span class="reel-icon" aria-hidden="true">
+                  <svg viewBox="0 0 64 64" role="img">
+                    <circle class="reel-ring" cx="32" cy="32" r="27"></circle>
+                    <circle class="reel-core" cx="32" cy="32" r="8"></circle>
+                    <circle class="reel-hole" cx="32" cy="15" r="4"></circle>
+                    <circle class="reel-hole" cx="47" cy="24" r="4"></circle>
+                    <circle class="reel-hole" cx="47" cy="40" r="4"></circle>
+                    <circle class="reel-hole" cx="32" cy="49" r="4"></circle>
+                    <circle class="reel-hole" cx="17" cy="40" r="4"></circle>
+                    <circle class="reel-hole" cx="17" cy="24" r="4"></circle>
+                    <path class="reel-cut" d="M32 6v18M56 32H38M32 58V40M8 32h18"></path>
+                  </svg>
+                </span>
+                <span class="question-copy">
+                  <span>Q 01 / フィルム装填</span>
+                  Premiere Pro初心者でも受講できますか？
+                </span>
+              </button>
+              <div class="faq-answer" id="faq-answer-1">
+                <div class="answer-tape">
+                  <span class="answer-label">ANSWER PLAYBACK</span>
+                  <p>はい。Premiere Proの基本操作ができる方向けですが、初心者でも取り組めるように解説します。録画教材なので、分からない部分は何度でも確認できます。</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="faq-item anim-d">
+              <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-2">
+                <span class="reel-icon" aria-hidden="true">
+                  <svg viewBox="0 0 64 64" role="img">
+                    <circle class="reel-ring" cx="32" cy="32" r="27"></circle>
+                    <circle class="reel-core" cx="32" cy="32" r="8"></circle>
+                    <circle class="reel-hole" cx="32" cy="15" r="4"></circle>
+                    <circle class="reel-hole" cx="47" cy="24" r="4"></circle>
+                    <circle class="reel-hole" cx="47" cy="40" r="4"></circle>
+                    <circle class="reel-hole" cx="32" cy="49" r="4"></circle>
+                    <circle class="reel-hole" cx="17" cy="40" r="4"></circle>
+                    <circle class="reel-hole" cx="17" cy="24" r="4"></circle>
+                    <path class="reel-cut" d="M32 6v18M56 32H38M32 58V40M8 32h18"></path>
+                  </svg>
+                </span>
+                <span class="question-copy">
+                  <span>Q 02 / フィルム装填</span>
+                  決まった日時に参加する授業ですか？
+                </span>
+              </button>
+              <div class="faq-answer" id="faq-answer-2" hidden>
+                <div class="answer-tape">
+                  <span class="answer-label">ANSWER PLAYBACK</span>
+                  <p>いいえ。録画教材を自分のペースで視聴する形式です。本業や副業、活動と両立しながら進められます。</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="faq-item anim-d">
+              <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-3">
+                <span class="reel-icon" aria-hidden="true">
+                  <svg viewBox="0 0 64 64" role="img">
+                    <circle class="reel-ring" cx="32" cy="32" r="27"></circle>
+                    <circle class="reel-core" cx="32" cy="32" r="8"></circle>
+                    <circle class="reel-hole" cx="32" cy="15" r="4"></circle>
+                    <circle class="reel-hole" cx="47" cy="24" r="4"></circle>
+                    <circle class="reel-hole" cx="47" cy="40" r="4"></circle>
+                    <circle class="reel-hole" cx="32" cy="49" r="4"></circle>
+                    <circle class="reel-hole" cx="17" cy="40" r="4"></circle>
+                    <circle class="reel-hole" cx="17" cy="24" r="4"></circle>
+                    <path class="reel-cut" d="M32 6v18M56 32H38M32 58V40M8 32h18"></path>
+                  </svg>
+                </span>
+                <span class="question-copy">
+                  <span>Q 03 / フィルム装填</span>
+                  添削はどのくらい受けられますか？
+                </span>
+              </button>
+              <div class="faq-answer" id="faq-answer-3" hidden>
+                <div class="answer-tape">
+                  <span class="answer-label">ANSWER PLAYBACK</span>
+                  <p>月1〜2本程度を目安に提出でき、厳密な回数上限は設けない予定です。カットのテンポ、会話のつながり、テロップ、BGM・SE、視点切り替え、全体構成などをフィードバックします。</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="faq-item anim-d">
+              <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-4">
+                <span class="reel-icon" aria-hidden="true">
+                  <svg viewBox="0 0 64 64" role="img">
+                    <circle class="reel-ring" cx="32" cy="32" r="27"></circle>
+                    <circle class="reel-core" cx="32" cy="32" r="8"></circle>
+                    <circle class="reel-hole" cx="32" cy="15" r="4"></circle>
+                    <circle class="reel-hole" cx="47" cy="24" r="4"></circle>
+                    <circle class="reel-hole" cx="47" cy="40" r="4"></circle>
+                    <circle class="reel-hole" cx="32" cy="49" r="4"></circle>
+                    <circle class="reel-hole" cx="17" cy="40" r="4"></circle>
+                    <circle class="reel-hole" cx="17" cy="24" r="4"></circle>
+                    <path class="reel-cut" d="M32 6v18M56 32H38M32 58V40M8 32h18"></path>
+                  </svg>
+                </span>
+                <span class="question-copy">
+                  <span>Q 04 / フィルム装填</span>
+                  卒業後の案件獲得コミュニティについて教えてください。
+                </span>
+              </button>
+              <div class="faq-answer" id="faq-answer-4" hidden>
+                <div class="answer-tape">
+                  <span class="answer-label">ANSWER PLAYBACK</span>
+                  <p>活動者・企業から届いた案件情報の共有、編集案件への応募、ポートフォリオや営業の相談、編集者同士の情報交換などを行う予定です。第1期20名は参加費が永久無料です。案件獲得を保証するものではなく、案件ごとに募集条件・選考が発生する場合があります。</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="faq-item anim-d">
+              <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-5">
+                <span class="reel-icon" aria-hidden="true">
+                  <svg viewBox="0 0 64 64" role="img">
+                    <circle class="reel-ring" cx="32" cy="32" r="27"></circle>
+                    <circle class="reel-core" cx="32" cy="32" r="8"></circle>
+                    <circle class="reel-hole" cx="32" cy="15" r="4"></circle>
+                    <circle class="reel-hole" cx="47" cy="24" r="4"></circle>
+                    <circle class="reel-hole" cx="47" cy="40" r="4"></circle>
+                    <circle class="reel-hole" cx="32" cy="49" r="4"></circle>
+                    <circle class="reel-hole" cx="17" cy="40" r="4"></circle>
+                    <circle class="reel-hole" cx="17" cy="24" r="4"></circle>
+                    <path class="reel-cut" d="M32 6v18M56 32H38M32 58V40M8 32h18"></path>
+                  </svg>
+                </span>
+                <span class="question-copy">
+                  <span>Q 05 / フィルム装填</span>
+                  受講に必要なPC環境を教えてください。
+                </span>
+              </button>
+              <div class="faq-answer" id="faq-answer-5" hidden>
+                <div class="answer-tape">
+                  <span class="answer-label">ANSWER PLAYBACK</span>
+                  <div class="pc-requirements">
+                    <p>プレエディでは、1080pのMP4素材を使用し、4人分の複数音声・複数視点、フルテロップ、BGM・SE・ズーム・エフェクトなどを取り入れた実践編集を行います。メモリ16GBでも受講・編集は可能ですが、より快適に進めたい場合は32GB以上を推奨します。</p>
+                    <div class="pc-spec-grid">
+                      <section>
+                        <h3>Windows｜受講可能な目安</h3>
+                        <ul>
+                          <li><strong>OS：</strong>Windows 11 64bit</li>
+                          <li><strong>CPU：</strong>Intel第11世代以降、またはAMD Ryzen 3000シリーズ以降</li>
+                          <li><strong>メモリ：</strong>16GB以上</li>
+                          <li><strong>GPU：</strong>GPUメモリ4GB以上</li>
+                          <li><strong>ストレージ：</strong>SSD 512GB以上</li>
+                          <li><strong>空き容量：</strong>100GB以上を推奨</li>
+                          <li><strong>画面解像度：</strong>1920×1080以上</li>
+                        </ul>
+                      </section>
+                      <section>
+                        <h3>快適に編集するための推奨環境</h3>
+                        <ul>
+                          <li><strong>CPU：</strong>Intel Core i7、またはAMD Ryzen 7クラス以上</li>
+                          <li><strong>メモリ：</strong>32GB以上</li>
+                          <li><strong>GPU：</strong>GPUメモリ8GB以上</li>
+                          <li><strong>ストレージ：</strong>NVMe SSD 1TB以上</li>
+                        </ul>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  <script src="scripts.js?v=20260904-restored-base"></script>
+  <script type="module" src="js/cinematic-background.js?v=20260904-restored-base"></script>
 </body>
 </html>
