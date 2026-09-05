@@ -21,3 +21,14 @@
 No blocking or material fidelity issues remained after the comparison pass.
 
 final result: passed
+
+## 2026-09-05 reading-focused UX refinement
+
+- Backed up the entire published baseline at commit 28961d7 before changes.
+- SCENE 04/05: removed duplicate preview/selector content; retained supporting details in native disclosures. SCENE 05 initial visible text is approximately half the previous amount.
+- Preserved the red/black identity, space/warp, timecode navigation, testimonial rail, exact quotations and subscriber counts.
+- Japanese navigation, shorter headings, quieter borders, clearer spacing, one consolidated price/inclusion card.
+- Chapter and work previews are now controlled by the reader, with chapter pressed states.
+- In-app Browser checks at 1440×1000 and 390×844: details click/Enter, chapter selection/persistence, PC FAQ, images, overflow and browser logs.
+- Local comparison evidence and implementation decisions: output/ux-20260905/UX_REFINEMENT.md.
+- Existing LINE URL dependency remains unresolved; no destination was invented.
