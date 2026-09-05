@@ -12,6 +12,32 @@ const trustReel = document.querySelector("[data-trust-check]");
 const loadIntro = document.querySelector("[data-load-intro]");
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+// Restore a shared section link after the opening warp releases the page.
+const initialSectionHash = window.location.hash;
+if (initialSectionHash && initialSectionHash !== "#top") {
+  const restoreInitialSection = () => {
+    if (window.location.hash !== initialSectionHash) return;
+    let targetId;
+    try {
+      targetId = decodeURIComponent(initialSectionHash.slice(1));
+    } catch {
+      return;
+    }
+    const target = document.getElementById(targetId);
+    if (target) window.requestAnimationFrame(() => target.scrollIntoView({ behavior: "instant", block: "start" }));
+  };
+  if (document.body.classList.contains("is-intro-running")) {
+    const introObserver = new MutationObserver(() => {
+      if (document.body.classList.contains("is-intro-running")) return;
+      introObserver.disconnect();
+      restoreInitialSection();
+    });
+    introObserver.observe(document.body, { attributes: true, attributeFilter: ["class"] });
+  } else {
+    restoreInitialSection();
+  }
+}
+
 const revealOnView = (target, className, options = {}) => {
   if (!target) return;
 

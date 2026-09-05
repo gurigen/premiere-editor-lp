@@ -32,3 +32,4 @@ final result: passed
 - In-app Browser checks at 1440×1000 and 390×844: details click/Enter, chapter selection/persistence, PC FAQ, images, overflow and browser logs.
 - Local comparison evidence and implementation decisions: output/ux-20260905/UX_REFINEMENT.md.
 - Existing LINE URL dependency remains unresolved; no destination was invented.
+- Direct section links are restored after the opening warp, so shared links land on their intended section instead of returning to the top.
