@@ -1,0 +1,128 @@
+/* Restore the original brand-led hero without the illustration or price panel. */
+body.ux-refined .hero-refined {
+  min-height: 0;
+  padding: 0;
+  background:
+    linear-gradient(124deg, transparent 64%, rgba(170, 15, 28, .07) 64.1%, transparent 87%),
+    radial-gradient(ellipse at 93% 25%, rgba(145, 15, 26, .18), transparent 55%),
+    linear-gradient(90deg, rgba(5, 6, 8, .93), rgba(5, 6, 8, .6) 64%, rgba(5, 6, 8, .75));
+}
+
+.ux-refined .hero-refined .hero-inner {
+  width: min(1120px, calc(100% - 48px));
+  min-height: calc(100svh - 77px);
+  padding: 40px 0 52px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: center;
+  gap: 0;
+}
+
+.hero-refined .hero-copy { max-width: 860px; text-align: left; }
+
+.ux-refined .hero-refined .hero-logo {
+  display: block;
+  width: 244px;
+  max-width: 70%;
+  height: auto;
+  margin: 0 0 18px -8px;
+}
+
+.ux-refined .hero-refined h1 {
+  max-width: none;
+  margin: 0;
+  color: #f7f7f7;
+  font-size: clamp(40px, 4.4vw, 60px);
+  font-weight: 900;
+  letter-spacing: -.03em;
+  line-height: 1.35;
+  text-shadow: 0 4px 28px rgba(0, 0, 0, .3);
+}
+
+.ux-refined .hero-refined .hero-route-panel {
+  width: min(660px, 100%);
+  margin: 26px 0 0;
+  padding: 18px 22px;
+  display: block;
+  background: rgba(15, 17, 23, .7);
+  border: 1px solid rgba(255, 255, 255, .14);
+  border-left: 3px solid var(--red);
+  box-shadow: none;
+}
+
+.ux-refined .hero-refined .hero-route-next {
+  color: #f4f0e6;
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1.6;
+}
+
+.ux-refined .hero-refined .hero-route-detail {
+  margin: 8px 0 0;
+  padding: 0;
+  border: 0;
+  line-height: 1.8;
+}
+
+.ux-refined .hero-refined .hero-route-detail span {
+  display: inline;
+  margin: 0;
+  color: #bfc2cb;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.ux-refined .hero-refined .hero-actions {
+  justify-content: flex-start;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.ux-refined .hero-refined .hero-actions a {
+  min-height: 54px;
+  padding: 14px 26px;
+  font-size: 15px;
+}
+
+@media (max-width: 720px) {
+  .ux-refined .hero-refined .hero-inner {
+    width: calc(100% - 40px);
+    min-height: calc(100svh - 68px);
+    padding: 28px 0 40px;
+  }
+  .ux-refined .hero-refined .hero-logo { width: 210px; margin: 0 0 20px -6px; }
+  .ux-refined .hero-refined h1 {
+    font-size: clamp(27px, 8vw, 48px);
+    letter-spacing: -.035em;
+    line-height: 1.45;
+  }
+  .ux-refined .hero-refined .hero-route-panel { margin-top: 24px; padding: 16px; }
+  .ux-refined .hero-refined .hero-route-next { font-size: 15px; }
+  .ux-refined .hero-refined .hero-route-detail span { display: block; font-size: 13px; }
+  .ux-refined .hero-refined .hero-actions {
+    max-width: 360px;
+    margin-top: 22px;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .ux-refined .hero-refined .hero-actions a { width: 100%; padding-inline: 12px; font-size: 14px; }
+}
+
+@media (max-height: 760px) and (min-width: 721px) {
+  .ux-refined .hero-refined .hero-inner { padding: 28px 0 36px; }
+  .ux-refined .hero-refined .hero-logo { width: 190px; margin-bottom: 14px; }
+  .ux-refined .hero-refined h1 { font-size: clamp(38px, 4vw, 48px); }
+  .ux-refined .hero-refined .hero-route-panel { margin-top: 22px; padding: 16px 20px; }
+  .ux-refined .hero-refined .hero-actions { margin-top: 20px; }
+}
+
+@media (max-height: 700px) and (max-width: 720px) {
+  .ux-refined .hero-refined .hero-inner { padding: 20px 0 28px; }
+  .ux-refined .hero-refined .hero-logo { width: 152px; margin-bottom: 14px; }
+  .ux-refined .hero-refined h1 { font-size: 27px; line-height: 1.35; }
+  .ux-refined .hero-refined .hero-route-panel { margin-top: 18px; padding: 12px; }
+  .ux-refined .hero-refined .hero-route-next { font-size: 14px; }
+  .ux-refined .hero-refined .hero-actions { margin-top: 18px; gap: 10px; }
+  .ux-refined .hero-refined .hero-actions a { min-height: 48px; padding-block: 11px; }
+}
