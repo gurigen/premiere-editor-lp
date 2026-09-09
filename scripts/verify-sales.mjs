@@ -7,14 +7,19 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const html = readFileSync(resolve(root, 'index.html'), 'utf8');
 const lineUrl = 'https://utage-system.com/line/open/0CJLkc0Iv7Bt';
 const count = (pattern) => [...html.matchAll(pattern)].length;
-assert.equal(count(/data-purchase-link/g), 3, 'Top, price, and final purchase paths required');
-assert.equal(count(/>LINEで無料個別相談<\/a>/g), 3, 'Three consultation paths required');
-assert.equal(count(/LINE追加後に「個別相談希望」と送ってください。日程予約フォームをご案内します。/g), 3);
-assert.equal(count(/相談は無料・オンライン約20分。その場で申込みを決める必要はありません。/g), 3);
+assert.equal(count(/data-purchase-link/g), 2, 'Price and final purchase paths required; top removed by request');
+assert.equal(count(/>LINEで無料個別相談<\/a>/g), 2, 'Two consultation paths required');
+assert.equal(count(/LINE追加後に「個別相談希望」と送ってください。日程予約フォームをご案内します。/g), 2);
+assert.equal(count(/相談は無料・オンライン約20分。その場で申込みを決める必要はありません。/g), 2);
+assert(html.includes('<title>プレエディ@エンタメ動画編集スクール</title>'));
+assert(!/id="works"|id="works-focus"|講師・クリックスchのサムネイル制作実績|気になる実績を、大きく見る。/.test(html));
+const hero = html.slice(html.indexOf('<section class="hero '), html.indexOf('<section class="offer '));
+assert(!/data-purchase-link|consult-button|hero-purchase-note|hero-consult-note/.test(hero), 'Top enrollment paths must stay removed');
+assert(hero.includes('hero-logo') && hero.includes('href="#contact"'), 'Preserve logo and separate gift link');
 for (const anchor of html.matchAll(/<a\b[^>]*data-line-link[^>]*>/g)) {
   assert(anchor[0].includes(`href="${lineUrl}"`), 'LINE destination mismatch');
 }
-assert(count(/data-line-link/g) >= 5, 'Consultation and gift destinations required');
+assert(count(/data-line-link/g) >= 4, 'Consultation and gift destinations required');
 assert(!/href="#"/.test(html), 'Empty link found');
 assert(!/全6章|6 CHAPTERS|ノーカット|198,000|100,000円|利用者の声|Premiere Editor|PREMIERE EDITOR/.test(html), 'Outdated claim or service name');
 for (const id of ['offer', 'community', 'price', 'faq']) {
@@ -51,5 +56,5 @@ console.log('PASS: Content, participation rules, CTA count, LINE URLs, and local
 console.log('Publication blockers:', blockers.join(', ') || 'none');
 if (process.argv.includes('--publish')) {
   assert.equal(blockers.length, 0, 'DO NOT PUBLISH: unresolved items remain');
-  assert.equal(count(/<a\b[^>]*data-purchase-link[^>]*>/g), 3, 'Purchase buttons must be verified links');
+  assert.equal(count(/<a\b[^>]*data-purchase-link[^>]*>/g), 2, 'Purchase buttons must be verified links');
 }
