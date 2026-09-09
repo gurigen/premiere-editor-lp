@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="205" viewBox="0 0 600 205" role="img" aria-labelledby="title">
+  <title id="title">プレエディ</title>
+  <path fill="#e0192d" d="M491 7c-3 26-10 33-36 36 26 3 33 10 36 36 3-26 10-33 36-36-26-3-33-10-36-36Z"/>
+  <text x="4" y="145" fill="#f7f7f7" font-family="'Noto Sans JP','Yu Gothic','Hiragino Kaku Gothic ProN',sans-serif" font-size="110" font-weight="900" letter-spacing="-6">プレエディ</text>
+  <path fill="#e0192d" d="M8 173h260v10H8z"/>
+</svg>

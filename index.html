@@ -11,7 +11,7 @@
     <link rel="canonical" href="https://gurigen.github.io/premiere-editor-lp/">
     <meta property="og:locale" content="ja_JP">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Premiere Editor">
+    <meta property="og:site_name" content="プレエディ">
     <meta property="og:title" content="プレエディ | AI時代のエンタメ動画編集スクール">
     <meta property="og:description" content="10時間超の実践カリキュラムで、VTuber・配信者向けのエンタメ動画編集を学ぶオンラインスクール。">
     <meta property="og:url" content="https://gurigen.github.io/premiere-editor-lp/">
@@ -24,6 +24,8 @@
   <link rel="stylesheet" href="styles.css?v=20260904-voice-subscribers">
   <link rel="stylesheet" href="ux-cleanup.css?v=20260905-1">
   <link rel="stylesheet" href="hero-refined.css?v=20260906-2">
+  <link rel="stylesheet" href="sales-refinement.css?v=20260909-2">
+  <meta name="robots" content="noindex, nofollow" data-release-blocker="draft">
   <script type="importmap">
   {
     "imports": {
@@ -44,7 +46,7 @@
     </style>
   </noscript>
   </head>
-  <body class="is-intro-running has-space-background ux-refined">
+  <body class="is-intro-running has-space-background ux-refined sales-refined">
     <canvas id="cinematic-space" aria-hidden="true"></canvas>
     <div class="warp-flash" data-warp-flash aria-hidden="true"></div>
 
@@ -52,7 +54,7 @@
       <div class="header-scene-rail" data-scene-rail>
         <div class="scene-progress" aria-hidden="true"><span data-scene-progress></span></div>
         <a class="brand scene-brand" href="#top" aria-label="プレエディ トップへ">
-          <img class="brand-logo brand-mini-logo" src="assets/premiere-editor-pe-monogram-sparkle-transparent.png" alt="Premiere Editor">
+          <img class="brand-logo brand-mini-logo" src="assets/premiere-editor-pe-monogram-sparkle-transparent.png" alt="プレエディ">
         </a>
         <button class="rail-arrow rail-arrow-left" type="button" aria-label="目次を左へ送る" data-scene-prev>←</button>
         <nav class="scene-strip" aria-label="シーン目次" data-scene-nav>
@@ -65,7 +67,7 @@
           <a class="scene-cue" href="#review"><span>01:12</span><strong>添削・実績</strong></a>
           <a class="scene-cue" href="#present"><span>01:24</span><strong>無料特典</strong></a>
           <a class="scene-cue" href="#price"><span>01:36</span><strong>料金</strong></a>
-          <a class="scene-cue" href="#recommended"><span>01:48</span><strong>利用者の声</strong></a>
+          <a class="scene-cue" href="#recommended"><span>01:48</span><strong>推薦者の声</strong></a>
           <a class="scene-cue" href="#contact"><span>02:00</span><strong>LINE</strong></a>
           <a class="scene-cue" href="#faq"><span>02:12</span><strong>Q&amp;A</strong></a>
         </nav>
@@ -77,20 +79,23 @@
       <section class="hero section-dark hero-startup hero-refined" aria-labelledby="hero-title">
         <div class="hero-inner">
           <div class="hero-copy">
-            <img class="hero-logo" src="assets/premiere-editor-wordmark-sparkle-transparent.png" width="904" height="652" alt="Premiere Editor">
+            <img class="hero-logo" src="assets/preedi-wordmark.svg" width="600" height="205" alt="プレエディ">
             <h1 id="hero-title">AI時代に選ばれる、<br>動画を面白くできる<br>編集者へ。</h1>
             <div class="hero-route-panel" aria-label="プレエディの受講概要">
               <div class="hero-route-copy">
                 <p class="hero-route-next">録画教材10時間超・実践添削付き</p>
                 <p class="hero-route-detail">
-                  <span>Premiere Pro初心者も受講可能。</span><span>実践添削・卒業後のコミュニティ付き。</span>
+                  <span>編集初心者も受講可能。教材の課題添削・チャット相談付き。</span><span>コミュニティは、最終課題の納品OK後に参加。</span>
                 </p>
               </div>
             </div>
-            <div class="hero-actions" aria-label="主要アクション">
-              <a class="primary-btn" href="#contact">無料5大特典をLINEで受け取る</a>
-              <a class="secondary-btn" href="#schedule">カリキュラムを見る</a>
-            </div>
+            <div class="hero-actions" aria-label="主要アクション"><div class="enrollment-options enrollment-compact" aria-label="受講申込みと無料個別相談">
+<div class="enrollment-option">
+<button class="enroll-button purchase-button" type="button" disabled data-purchase-link data-release-blocker="purchase-url" aria-describedby="hero-purchase-note">今すぐ受講を申し込む</button>
+<p class="setup-pending" id="hero-purchase-note">確認版：申込み・決済URLの設定待ち</p></div>
+<div class="enrollment-option">
+<a class="enroll-button consult-button" href="https://utage-system.com/line/open/0CJLkc0Iv7Bt" data-line-link aria-describedby="hero-consult-note">LINEで無料個別相談</a>
+<p class="consult-instructions" id="hero-consult-note">LINE追加後に「個別相談希望」と送ってください。日程予約フォームをご案内します。</p><p class="consult-terms">相談は無料・オンライン約20分。その場で申込みを決める必要はありません。</p></div></div><div class="hero-sub-links"><a href="#contact">LINEで無料5大特典を受け取る</a><a href="#schedule">カリキュラムを見る</a></div></div>
           </div>
 
         </div>
@@ -104,10 +109,10 @@
             <p>操作だけで終わらず、動画の面白さを判断できる編集者を目指します。</p>
           </div>
           <ul class="check-list decision-list">
-            <li><span>01</span><strong>総カリキュラム10時間超</strong><small>解説・実践講義約7時間30分＋ノーカット編集実演2時間30分以上。</small></li>
-            <li><span>02</span><strong>録画教材で何度でも</strong><small>決まった日時ではなく、自分のペースで繰り返し学べる。</small></li>
-            <li><span>03</span><strong>実践的な添削</strong><small>月1〜2本程度を目安に、動画の構成や演出までフィードバック。</small></li>
-            <li><span>04</span><strong>第1期先着20名</strong><small>通常198,000円が98,000円。コミュニティ参加費も永久無料。</small></li>
+            <li><span>01</span><strong>総カリキュラム10時間超</strong><small>前半の解説・実践講義約7時間30分＋後半の編集実演パート。</small></li>
+            <li><span>02</span><strong>録画教材で何度でも</strong><small>教材の視聴期間は無期限。自分のペースで繰り返し学べる。</small></li>
+            <li><span>03</span><strong>実践的な添削</strong><small>教材の課題を月1〜2本目安で添削。受講開始から添削・チャット対応は無期限。</small></li>
+            <li><span>04</span><strong>条件達成後のコミュニティ</strong><small>最終課題を完成・提出し、添削・修正後の納品OK確認で参加。第1期先着20名は、参加条件を満たした後の参加費が永久無料。</small></li>
           </ul>
         </div>
       </section>
@@ -164,7 +169,7 @@
           <div class="ux-section-heading">
             <p class="scene-label">SCENE 05 / STRENGTH</p>
             <h2>エンタメで磨く力を、<br>次の仕事へ。</h2>
-            <p>見やすい構成、飽きさせないテンポ。学んだ編集を、次の仕事へ。</p>
+            <p>本講座の中心は、VTuber・配信者の複数人コラボ動画です。</p><p class="sales-note">そこで学ぶ構成・テンポ・音・演出の考え方を、Shorts、対談、企業向け動画などへ応用していくことを目指します。以下は応用先の例で、すべてのジャンルを講座内で直接教えるものではありません。</p>
           </div>
           <div class="ux-field-grid" aria-label="編集を活かせる4つの分野">
             <article class="ux-field-card"><span class="material-symbols-outlined" aria-hidden="true">sports_esports</span><h3>VTuber・<wbr>ゲーム実況</h3><p>会話とリアクションを活かし、<br>コラボや切り抜きを面白く。</p></article>
@@ -183,110 +188,22 @@
       </section>
 
       <section class="schedule section-dark" id="schedule">
-        <div class="section-inner">
-          <div class="section-head schedule-head">
-            <div>
-              <p class="scene-label">SCENE 06 / CURRICULUM</p>
-              <h2>全6章＋実演で、<br>編集の判断を学ぶ。</h2>
-            </div>
-            <p>
-              総カリキュラム10時間超。解説・実践講義約7.5時間と、ノーカット編集実演2.5時間以上を収録。
-            </p>
-          </div>
+<div class="section-inner">
+<div class="section-head schedule-head"><div><p class="scene-label">SCENE 06 / CURRICULUM</p><h2>編集の工程に沿って学び、<br>1本の動画を完成させる。</h2></div><p>録画教材は総計10時間超。前半の解説・実践講義と、後半の編集実演パートを、自分のペースで進めます。</p></div>
+<div class="course-outline">
+<article class="course-phase"><p class="course-phase-label">前半 / 解説・実践講義</p><h3>操作と、判断の理由を学ぶ。</h3><ol class="lesson-list"><li>音合わせ</li><li>荒カット</li><li>本カット</li><li>テロップ作り・打ち</li><li>効果音・BGM</li><li>素材作り</li><li>演出</li><li>演出レパートリー</li></ol></article>
+<article class="course-phase"><p class="course-phase-label">後半 / 編集実演</p><h3>実際の工程を見て、作る。</h3><ol class="lesson-list"><li>後編カット</li><li>後編テロップ</li><li>後編BGM・SE</li><li>後編演出1・2</li></ol><p class="sales-note">後半には、解説を入れずに編集工程を見せる作業映像も含まれます。</p></article>
+</div>
+<div class="completion-path"><h3>制作・提出</h3><ol><li>動画を1本完成</li><li>提出</li><li>添削・修正</li><li>納品OK確認</li></ol><p>確認後、案件獲得コミュニティへご案内します。</p></div>
+<p class="sales-note">AIツールの配布はLINE登録特典、案件情報や営業相談は条件達成後のコミュニティサポートです。録画教材の独立した講義とは分けてご案内しています。</p>
+</div></section>
 
-          <p class="ux-course-hint">気になる章を選ぶと、学習内容を確認できます。</p>
-          <div class="course-timeline" data-course-timeline>
-            <div class="course-monitor" aria-live="polite">
-              <span class="course-monitor-counter" data-course-counter>NOW 01</span>
-              <span class="course-monitor-track" data-course-track>CHAPTER 01</span>
-              <strong data-course-title>エンタメ動画編集の本質</strong>
-              <p data-course-copy>普通の動画編集との違い、視聴者を飽きさせない考え方、AI時代に編集者へ残る価値を学びます。</p>
-            </div>
-
-            <div class="course-editor">
-              <div class="course-editor-top">
-                <span>PROJECT / PREMIERE EDITOR COURSE</span>
-                <strong>10 HOURS+ / 6 CHAPTERS</strong>
-                <span>ON DEMAND</span>
-              </div>
-
-              <div class="course-scroll" aria-label="講座進行を編集タイムラインとして表示">
-                <div class="course-grid">
-                  <div class="course-day course-day-build curriculum-total">RECORDED CURRICULUM / LEARN AT YOUR OWN PACE</div>
-
-                  <span class="course-time" style="grid-column: 1 / span 2;">CHAPTER 01</span>
-                  <span class="course-time" style="grid-column: 3 / span 3;">CHAPTER 02</span>
-                  <span class="course-time" style="grid-column: 6 / span 2;">CHAPTER 03</span>
-                  <span class="course-time" style="grid-column: 8 / span 2;">CHAPTER 04</span>
-                  <span class="course-time" style="grid-column: 10 / span 2;">CHAPTER 05</span>
-                  <span class="course-time" style="grid-column: 12 / span 2;">CHAPTER 06</span>
-                  <span class="course-time" style="grid-column: 14 / span 3;">NO-CUT DEMO</span>
-
-                  <div class="course-playhead" aria-hidden="true"></div>
-
-                  <button class="course-clip setup is-active" type="button" style="grid-column: 1 / span 2;" data-index="01" data-track="CHAPTER 01" data-title="エンタメ動画編集の本質" data-copy="普通の動画編集との違い、視聴者を飽きさせない考え方、AI時代に編集者へ残る価値を学びます。">
-                    <span>01 / ESSENCE</span><strong>エンタメ編集の本質</strong>
-                  </button>
-                  <button class="course-clip hot" id="cut-01" type="button" style="grid-column: 3 / span 3;" data-index="02" data-track="CHAPTER 02" data-title="カット判断・会話構成・間の作り方" data-copy="どの会話を残すか、前振りからオチまでをどう構成するか、笑いになる間と不要な間の違いを学びます。">
-                    <span>02 / CUT &amp; STORY</span><strong>カット判断・会話構成・間</strong>
-                  </button>
-                  <button class="course-clip visual" type="button" style="grid-column: 6 / span 2;" data-index="03" data-track="CHAPTER 03" data-title="テロップ・BGM・SE・演出" data-copy="ツッコミテロップ、BGM、SE、ズーム、エフェクトなどを、場面に合わせて使う方法を学びます。">
-                    <span>03 / DIRECTION</span><strong>テロップ・音・演出</strong>
-                  </button>
-                  <button class="course-clip audio" type="button" style="grid-column: 8 / span 2;" data-index="04" data-track="CHAPTER 04" data-title="複数音声・複数視点の編集" data-copy="複数人が同時に話す素材の整理、主軸音声の決め方、状況が伝わる視点切り替えを学びます。">
-                    <span>04 / MULTI</span><strong>複数音声・複数視点</strong>
-                  </button>
-                  <button class="course-clip check" type="button" style="grid-column: 10 / span 2;" data-index="05" data-track="CHAPTER 05" data-title="AIを使った編集効率化" data-copy="AIによる切り抜き候補の抽出、3パターンのカット案生成、自動カットツールへの取り込み方法を学びます。">
-                    <span>05 / AI</span><strong>AI編集効率化</strong>
-                  </button>
-                  <button class="course-clip visual" type="button" style="grid-column: 12 / span 2;" data-index="06" data-track="CHAPTER 06" data-title="案件獲得・見積もり・ポートフォリオ" data-copy="赤字を防ぐ見積もり、案件で評価されるポートフォリオ、単価を上げるための考え方を学びます。">
-                    <span>06 / BUSINESS</span><strong>案件獲得・見積もり</strong>
-                  </button>
-                  <button class="course-clip hot" type="button" style="grid-column: 14 / span 3;" data-index="07" data-track="NO-CUT DEMO" data-title="実際の編集作業をノーカットで見る" data-copy="講師が実際に動画を編集する工程を見ながら、どこを切るか、どの視点を使うか、どこにテロップやBGM・SEを入れるかを学びます。">
-                    <span>07 / 2.5H+</span><strong>ノーカット編集実演</strong>
-                  </button>
-
-                  <div class="course-wave" aria-hidden="true"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="schedule-alt section-light" id="learning" aria-label="学習形式">
-        <div class="section-inner">
-          <p class="scene-label">LEARNING STYLE / ON DEMAND</p>
-          <div class="schedule-alt-head">
-            <h2>自分のペースで、何度でも。</h2>
-            <p>録画教材だから、自分のペースで何度でも学べる。</p>
-          </div>
-
-          <div class="schedule-alt-grid">
-            <article class="schedule-alt-day">
-              <h3><span aria-hidden="true"></span>解説・実践講義<span aria-hidden="true"></span></h3>
-              <ol>
-                <li><time>約7.5H</time><strong>全6章の解説・実践講義</strong></li>
-                <li><time>繰り返し</time><strong>分からない部分を繰り返し確認</strong></li>
-                <li><time>実践</time><strong>Premiere Proを操作しながら進める</strong></li>
-              </ol>
-            </article>
-
-            <article class="schedule-alt-day">
-              <h3><span aria-hidden="true"></span>ノーカット実演<span aria-hidden="true"></span></h3>
-              <ol>
-                <li><time>2.5H+</time><strong>ノーカット編集実演</strong></li>
-                <li><time>初心者も</time><strong>初心者にも取り組めるよう解説</strong></li>
-                <li><time>好きな時に</time><strong>本業・副業・活動と両立しやすい</strong></li>
-              </ol>
-              <div class="schedule-alt-note">
-                <p>Premiere Proの基本操作ができる方向けですが、初心者でも受講可能です。</p>
-                <p>決まった日時に参加するオンライン授業ではありません。</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
+      <section class="schedule-alt section-light" id="learning" aria-label="学習形式"><div class="section-inner">
+<p class="scene-label">LEARNING STYLE / ON DEMAND</p>
+<div class="schedule-alt-head"><h2>前半で学び、<br>後半で実際に作る。</h2><p>前半の約7時間30分では、編集操作と判断の理由を解説します。後半は、前半で学んだ内容を実際の編集でどう使うかを確認できる作業実演パートです。後半には、解説を入れずに編集工程を見せる映像も含まれます。</p></div>
+<div class="learning-routes"><article><span>進め方 01</span><h3>実演を見ながら作る</h3><p>実演を見ながら同じように編集し、工程と判断を確かめます。</p></article><article><span>進め方 02</span><h3>自分なりに編集する</h3><p>前半の学びを活かして、自分の判断で動画を仕上げても大丈夫です。</p></article></div>
+<p class="learning-closing">分からない部分はチャットで質問しながら、動画を最後まで完成させていきます。</p><p class="sales-note">編集初心者も受講可能です。Premiere Proの基本操作に触れておくと進めやすくなります。編集未経験の方は、お申込み前にご相談ください。</p>
+</div></section>
 
       <section class="mid-cta section-band">
         <div class="section-inner offer-grid compact">
@@ -295,7 +212,7 @@
             <h2>AIと自動化で、単純作業を短縮。</h2>
           </div>
           <div class="cta-card">
-            <p>AIによる切り抜き候補の抽出、3パターンのカット案、自動カットツールへの取り込み、案件見積もりAIまで。人は面白さの判断へ集中します。</p>
+            <p>LINE登録特典として、AI切り抜き候補出し＆自動カットツール、案件見積もりAIなどを配布します。録画教材の講義とは別の特典です。</p>
             <a class="primary-btn" href="#contact">LINEで無料5大特典を受け取る</a>
           </div>
         </div>
@@ -308,8 +225,7 @@
               <p class="scene-label">SCENE 07 / REVIEW</p>
               <h2>作った動画に、<br>具体的な添削を。</h2>
               <p>
-                教材を見て終わりではなく、実際に編集した動画を添削します。
-                月1〜2本程度を目安に提出でき、厳密な回数上限は設けない予定です。
+                添削は教材の課題を対象に、月1〜2本を目安に対応します。カット、会話のつながり、テロップ、BGM・SE、視点切り替えなどを、修正理由とともにお伝えします。
               </p>
             </div>
             <ol class="review-steps">
@@ -320,11 +236,12 @@
             </ol>
           </div>
 
-          <div class="works-tape" id="works">
+          <div class="support-terms"><h3>分からないことは、チャットで相談できます。</h3><p>教材の内容や編集の進め方で迷ったときは、受講者向けチャットからご質問ください。</p><dl class="support-facts"><div><dt>教材の視聴期間</dt><dd>無期限</dd></div><div><dt>添削の対応期間</dt><dd>受講開始から無期限</dd></div><div><dt>チャットの対応期間</dt><dd>受講開始から無期限</dd></div><div><dt>添削対象</dt><dd>教材の課題のみ</dd></div><div><dt>提出方法</dt><dd>Discordで動画URLまたはファイルを提出</dd></div></dl><p class="sales-note">教材視聴・添削・チャットの対応期間と、条件達成後のコミュニティ参加費は、それぞれ別の提供条件です。</p></div>
+<div class="works-tape" id="works">
             <div class="works-tape-head">
               <div>
                 <p class="scene-label">INSTRUCTOR WORKS / 実績一覧</p>
-                <h3>講師・クリックスchの制作実績</h3>
+                <h3>講師・クリックスchのサムネイル制作実績</h3>
               </div>
               <p>
                 エンタメ動画に必要な、強い見せ場、キャラクターの表情、企画内容の伝わりやすさを確認できます。
@@ -613,107 +530,46 @@
             </article>
           </div>
 
-          <div class="present-pass">
-            <span class="material-symbols-outlined" aria-hidden="true">workspace_premium</span>
-            <p>第1期20名は、卒業後の案件獲得コミュニティを永久無料で利用できます。案件獲得を保証するものではありません。</p>
-          </div>
-          <div class="community-panel" id="community">
-            <div>
-              <span>GRADUATE COMMUNITY</span>
-              <h3>卒業後も、案件への挑戦を支える。</h3>
-              <p>卒業後は、プレエディ卒業生限定の案件獲得コミュニティへ参加できます。</p>
-            </div>
-            <ul>
-              <li>活動者・企業から届いた案件情報の共有</li>
-              <li>編集案件への応募</li>
-              <li>ポートフォリオや営業についての相談</li>
-              <li>編集者同士の情報交換</li>
-              <li>案件獲得や単価アップに関するノウハウ共有</li>
-            </ul>
-            <small>※案件獲得を保証するものではありません。案件ごとに募集条件・選考が発生する場合があります。</small>
-          </div>
-        </div>
-      </section>
+<p class="gift-receive-note">LINE追加後、トーク画面で「興味あります」と送ってください。特典の受け取りページをお送りします。</p>
+<a class="primary-btn" href="https://utage-system.com/line/open/0CJLkc0Iv7Bt" data-line-link>LINEで無料5大特典を受け取る</a>
+</div></section>
+<section class="graduate-support section-band" id="community"><div class="section-inner">
+<p class="scene-label">受講者向けサポート / COMMUNITY</p><div class="community-panel">
+<div><h2>動画を完成させ、<br>「納品OK」の確認後にコミュニティへ。</h2><p>講座で学んだ内容を活かして、動画を最後まで1本完成させていただきます。提出後は添削・修正を行い、講師が実案件での納品を想定した品質に達していると確認した方を、案件獲得コミュニティへご案内します。</p><p class="community-condition">第1期先着20名は、参加条件を満たした後のコミュニティ参加費が永久無料です。</p></div>
+<ul><li>活動者・企業から届いた案件情報の共有</li><li>編集案件への応募</li><li>ポートフォリオや営業についての相談</li><li>編集者同士の情報交換</li><li>案件獲得や単価アップに関するノウハウ共有</li></ul>
+<small>※コミュニティへの参加は、案件獲得・採用・収益を保証するものではありません。案件ごとに募集条件・選考が発生する場合があります。</small></div>
+<p class="sales-note">LINE登録だけでもらえる無料5大特典とは別の、有料講座の受講者向けサポートです。教材の視聴完了だけで自動参加にはなりません。</p>
+</div></section>
 
-      <section class="price section-band" id="price" data-price-section>
-        <div class="section-inner price-layout">
-          <div class="price-copy">
-            <p class="scene-label">SCENE 09 / PLAN</p>
-            <h2>第1期・先着20名限定の先行価格。</h2>
-            <p>
-              通常価格198,000円から100,000円OFF。第1期の受付終了後は、内容の追加・サポート拡充にあわせて値上げを予定しています。
-            </p>
-
-            <p class="ux-price-included">録画教材・実践添削・卒業後コミュニティまで。<br>学習から、その先の挑戦までをひとつに。</p>
-          </div>
-
-          <div class="price-board" aria-label="第1期の受講料金" data-price-board>
-            <div class="price-board-top">
-              <span>受講料に含まれるもの</span>
-              <strong>PREMIERE EDITOR</strong>
-            </div>
-            <img class="asset-kit price-kit-panel" src="assets/generated-kit-01/cutouts/06-export-settings-panel.png" alt="" aria-hidden="true">
-
-            <div class="price-status">
-              <span class="status-lamp" aria-hidden="true"></span>
-              <strong>PRICE CHECK READY</strong>
-                <small>SCENE 09 / 01:36</small>
-            </div>
-
-            <div class="price-main">
-              <div class="price-amount">
-                <span>第1期・先着20名</span>
-                <strong><small>先行価格</small>98,000円</strong>
-                <p><del>通常価格 198,000円</del> ／ 100,000円OFF</p>
-                <div class="price-meter" aria-hidden="true"><span></span></div>
-              </div>
-              <div class="cut-badge" data-cut-slasher>
-                <img class="asset-kit cut-badge-slash-img" src="assets/generated-kit-01/cutouts/11-red-cut-slash.png" alt="" aria-hidden="true">
-                <span class="material-symbols-outlined" aria-hidden="true">content_cut</span>
-                <strong>100,000円 OFF</strong>
-                <em>LIMITED 20 SEATS</em>
-              </div>
-            </div>
-
-            <div class="price-track-list" aria-label="料金条件のトラック">
-              <div class="price-track active" style="--delay: 120ms;">
-                <span>V1</span>
-                <p>総カリキュラム</p>
-                <strong>10時間超</strong>
-              </div>
-              <div class="price-track" style="--delay: 260ms;">
-                <span>A1</span>
-                <p>添削</p>
-                <strong>月1〜2本目安</strong>
-              </div>
-              <div class="price-track" style="--delay: 400ms;">
-                <span>CAL</span>
-                <p>第1期コミュニティ</p>
-                <strong>永久無料</strong>
-              </div>
-            </div>
-
-            <div class="price-render-note">
-              <span class="material-symbols-outlined" aria-hidden="true">verified</span>
-              <p>第1期20名の受付終了後は、内容の追加・サポート拡充にあわせて値上げ予定です。</p>
-            </div>
-
-            <a class="price-cta" href="#contact">
-              <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
-              無料特典と先行案内を受け取る
-            </a>
-          </div>
-        </div>
-      </section>
+      <section class="price section-band" id="price" data-price-section><div class="section-inner">
+<div class="price-layout">
+<div class="price-copy"><p class="scene-label">SCENE 09 / PLAN</p><h2>プレエディ<br>第1期の受講プラン。</h2><p>第1期の受付終了後は、内容の追加・サポート拡充にあわせて値上げを予定しています。</p><p class="ux-price-included">録画教材・教材の課題添削・チャット相談。<br>コミュニティは、最終課題の納品OK後に参加。</p></div>
+<div class="price-board" aria-label="プレエディ 第1期の受講料金" data-price-board>
+<div class="price-main"><div class="price-amount"><span>第1期・先着20名限定</span><strong>98,000円</strong><p class="setup-pending" data-release-blocker="tax">確認版：税込の支払総額か確認中</p></div></div>
+<div class="price-track-list" aria-label="受講料に含まれるもの">
+<div class="price-track"><p>録画教材</p><strong>10時間超・視聴無期限</strong></div><div class="price-track"><p>教材の課題添削</p><strong>月1〜2本目安・無期限</strong></div><div class="price-track"><p>チャット相談</p><strong>受講開始から無期限</strong></div><div class="price-track"><p>条件達成後のコミュニティ参加費</p><strong>第1期先着20名は永久無料</strong></div></div>
+<div class="price-render-note"><p class="community-condition">最終課題の納品OK後に参加。第1期先着20名は、参加条件を満たした後のコミュニティ参加費が永久無料です。</p><p>※コミュニティへの参加は、案件獲得・採用・収益を保証するものではありません。</p></div>
+</div></div>
+<div class="decision-area"><div class="enrollment-options" aria-label="受講申込みと無料個別相談">
+<div class="enrollment-option"><h3>受講を決めている方へ</h3>
+<button class="enroll-button purchase-button" type="button" disabled data-purchase-link data-release-blocker="purchase-url" aria-describedby="price-purchase-note">今すぐ受講を申し込む</button>
+<p class="consult-instructions">LINE登録や個別相談を挟まず、お申込み・決済ページへ進めます。</p>
+<p class="setup-pending" id="price-purchase-note">確認版：申込み・決済URLの設定待ち</p></div>
+<div class="enrollment-option"><h3>相談してから決めたい方へ</h3>
+<a class="enroll-button consult-button" href="https://utage-system.com/line/open/0CJLkc0Iv7Bt" data-line-link aria-describedby="price-consult-note">LINEで無料個別相談</a>
+<p class="consult-instructions" id="price-consult-note">LINE追加後に「個別相談希望」と送ってください。日程予約フォームをご案内します。</p><p class="consult-terms">相談は無料・オンライン約20分。その場で申込みを決める必要はありません。</p></div></div><p class="gift-separate"><a href="#contact">まずはLINEで無料5大特典を受け取る</a></p></div>
+</div></section>
 
       <section class="voice testimonials-showcase" id="recommended">
         <div class="testimonials-heading-wrap">
           <p class="scene-label testimonials-scene-label">SCENE 10 / VOICE &amp; RECOMMENDED</p>
           <p class="testimonials-kicker">活動者の皆さまから、プレエディへの期待の声が届きました</p>
-          <h2>利用者の声</h2>
+          <h2>推薦者の声</h2>
+<p class="testimonial-disclosure">※活動者の皆さまからいただいた、コミュニティの取り組みに対するコメントです。受講生の学習成果を示すものではありません。</p>
+<p class="testimonial-disclosure">登録者数はYouTubeの公開表示（2026年9月4日確認）。現在の数字とは異なる場合があります。</p>
         </div>
 
-        <div class="testimonials-marquee" aria-label="利用者の声。カードは自動で横に流れます" tabindex="0">
+        <div class="testimonials-marquee" aria-label="推薦者の声。カードは自動で横に流れます" tabindex="0">
           <div class="testimonials-track">
             <div class="testimonials-group">
               <article class="testimonial-card">
@@ -723,7 +579,7 @@
                   <div>
                     <div class="testimonial-name-row">
                       <strong>ナガレ様</strong>
-                      <span class="testimonial-subscriber-count" aria-label="YouTubeチャンネル登録者数 26.9万人">26.9万人</span>
+                      <span class="testimonial-subscriber-count" aria-label="2026年9月4日確認 YouTubeチャンネル登録者数 26.9万人">26.9万人</span>
                     </div>
                     <span>活動者</span>
                   </div>
@@ -737,7 +593,7 @@
                   <div>
                     <div class="testimonial-name-row">
                       <strong>キャメロン様</strong>
-                      <span class="testimonial-subscriber-count" aria-label="YouTubeチャンネル登録者数 20.3万人">20.3万人</span>
+                      <span class="testimonial-subscriber-count" aria-label="2026年9月4日確認 YouTubeチャンネル登録者数 20.3万人">20.3万人</span>
                     </div>
                     <span>VTuber・配信者</span>
                   </div>
@@ -751,7 +607,7 @@
                   <div>
                     <div class="testimonial-name-row">
                       <strong>キルハ様</strong>
-                      <span class="testimonial-subscriber-count" aria-label="YouTubeチャンネル登録者数 36.2万人">36.2万人</span>
+                      <span class="testimonial-subscriber-count" aria-label="2026年9月4日確認 YouTubeチャンネル登録者数 36.2万人">36.2万人</span>
                     </div>
                     <span>活動者</span>
                   </div>
@@ -807,28 +663,13 @@
       </section>
 
       <section class="contact section-dark" id="contact">
-        <div class="contact-bg" aria-hidden="true">
-          <img src="assets/generated-line-cta.png" alt="">
-        </div>
-        <div class="section-inner contact-inner">
-          <img class="asset-kit contact-kit-bubbles" src="assets/generated-kit-01/cutouts/08-line-chat-bubbles.png" alt="" aria-hidden="true">
-          <p class="scene-label">FINAL SCENE / LINE CHECK</p>
-          <h2>無料5大特典を、LINEで。</h2>
-          <p>カット判断チェックリスト、AI切り抜き候補出し＆自動カットツール、王道ツッコミテロップ一覧表、テロップデータ80選、案件見積もりAIを無料で配布します。</p>
-          <div class="line-chat" aria-label="LINE確認メッセージ" data-line-typing>
-            <div class="line-message from-school" style="--delay: 0ms;">
-              <span>プレエディです。無料5大特典をお送りします。</span>
-            </div>
-            <div class="line-message from-school" style="--delay: 520ms;">
-              <span>第1期先着20名の先行案内もLINEでお知らせします。</span>
-            </div>
-            <div class="line-message from-user" style="--delay: 1040ms;">
-              <span>特典と先行案内を受け取りたいです。</span>
-            </div>
-          </div>
-          <a class="primary-btn" href="#">LINEで無料5大特典を受け取る</a>
-        </div>
-      </section>
+<div class="contact-bg" aria-hidden="true"><img src="assets/generated-line-cta.png" alt=""></div>
+<div class="section-inner contact-inner"><p class="scene-label">LINE / 無料5大特典</p><h2>無料5大特典の受け取り方</h2>
+<p>下のボタンからLINEを追加し、トーク画面で「興味あります」と送ってください。特典の受け取りページをお送りします。</p>
+<ol class="line-receive-steps"><li>LINEを追加</li><li>「興味あります」と送信</li><li>受け取りページが届く</li></ol>
+<a class="primary-btn" href="https://utage-system.com/line/open/0CJLkc0Iv7Bt" data-line-link>LINEで無料5大特典を受け取る</a>
+<p class="sales-note">カット判断チェックリスト／AI切り抜き候補出し＆自動カットツール／王道ツッコミテロップ一覧表／テロップデータ80選／案件見積もりAI</p>
+</div></section>
 
       <section class="faq section-dark" id="faq">
         <img class="asset-kit faq-kit-reel" src="assets/generated-kit-01/cutouts/02-film-reel.png" alt="" aria-hidden="true">
@@ -859,7 +700,7 @@
               <div class="faq-answer" id="faq-answer-1">
                 <div class="answer-tape">
                   <span class="answer-label">ANSWER PLAYBACK</span>
-                  <p>はい。Premiere Proの基本操作ができる方向けですが、初心者でも取り組めるように解説します。録画教材なので、分からない部分は何度でも確認できます。</p>
+                  <p>編集初心者も受講可能です。Premiere Proの基本操作に触れておくと進めやすくなります。編集未経験の方は、お申込み前にご相談ください。 録画教材なので、分からない部分は何度でも確認できます。</p>
                 </div>
               </div>
             </article>
@@ -915,7 +756,7 @@
               <div class="faq-answer" id="faq-answer-3" hidden>
                 <div class="answer-tape">
                   <span class="answer-label">ANSWER PLAYBACK</span>
-                  <p>月1〜2本程度を目安に提出でき、厳密な回数上限は設けない予定です。カットのテンポ、会話のつながり、テロップ、BGM・SE、視点切り替え、全体構成などをフィードバックします。</p>
+                  <p>添削は教材の課題のみを対象に、月1〜2本を目安に対応します。受講開始から添削・チャットの対応期間は無期限、教材の視聴期間も無期限です。Discordで動画URLまたはファイルをご提出ください。カット、会話のつながり、テロップ、BGM・SE、視点切り替えなどを、修正理由とともにお伝えします。</p>
                 </div>
               </div>
             </article>
@@ -943,7 +784,7 @@
               <div class="faq-answer" id="faq-answer-4" hidden>
                 <div class="answer-tape">
                   <span class="answer-label">ANSWER PLAYBACK</span>
-                  <p>活動者・企業から届いた案件情報の共有、編集案件への応募、ポートフォリオや営業の相談、編集者同士の情報交換などを行う予定です。第1期20名は参加費が永久無料です。案件獲得を保証するものではなく、案件ごとに募集条件・選考が発生する場合があります。</p>
+                  <p>最終課題の「納品OK」確認後に参加できます。講座で学んだ内容を活かして、動画を最後まで1本完成させていただきます。提出後は添削・修正を行い、講師が実案件での納品を想定した品質に達していると確認した方を、案件獲得コミュニティへご案内します。</p><p>第1期先着20名は、参加条件を満たした後のコミュニティ参加費が永久無料です。</p><p>※コミュニティへの参加は、案件獲得・採用・収益を保証するものではありません。 教材の視聴完了だけで自動参加にはなりません。案件ごとに募集条件・選考が発生する場合があります。</p>
                 </div>
               </div>
             </article>
@@ -972,10 +813,10 @@
                 <div class="answer-tape">
                   <span class="answer-label">ANSWER PLAYBACK</span>
                   <div class="pc-requirements">
-                    <p>プレエディでは、1080pのMP4素材を使用し、4人分の複数音声・複数視点、フルテロップ、BGM・SE・ズーム・エフェクトなどを取り入れた実践編集を行います。メモリ16GBでも受講・編集は可能ですが、より快適に進めたい場合は32GB以上を推奨します。</p>
+                    <p>プレエディでは、1080pのMP4素材を使用し、4人分の複数音声・複数視点、フルテロップ、BGM・SE・ズーム・エフェクトなどを取り入れた実践編集を行います。メモリ16GBを目安とし、より快適に進めたい場合は32GB以上を推奨します。ただし、メモリ容量だけで動作を保証するものではありません。OS・CPU・GPU・空き容量・Premiere Proのバージョンや素材により、動作は異なります。</p>
                     <div class="pc-spec-grid">
                       <section>
-                        <h3>Windows｜受講可能な目安</h3>
+                        <h3>Windows｜講座の編集環境の目安</h3>
                         <ul>
                           <li><strong>OS：</strong>Windows 11 64bit</li>
                           <li><strong>CPU：</strong>Intel第11世代以降、またはAMD Ryzen 3000シリーズ以降</li>
@@ -996,14 +837,21 @@
                         </ul>
                       </section>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-    </main>
+<div class="compatibility-note"><h3>Macでの受講について</h3><p>Premiere Proの必要環境はバージョンごとに異なります。<a href="https://helpx.adobe.com/jp/premiere-pro/system-requirements.html">Adobe公式のMac必要システム構成</a>を確認し、お使いのMac・OS・Premiere Proのバージョンを添えて事前にご相談ください。</p><p class="setup-pending" data-release-blocker="mac-testing">確認版：本講座の素材を使ったMacの動作確認済み構成を確認中です。</p><h3>自作AIツール・プラグインについて</h3><p>Premiere Pro本体の対応環境と、配布ツール・プラグインの対応環境は別です。すべてのPC・Macでの動作を保証するものではありません。</p><p class="setup-pending" data-release-blocker="tool-testing">確認版：ツール名・バージョン別の動作確認済みOS／Premiere Pro環境を確認中です。</p></div>
+</div></div></div></article>
+<article class="faq-item"><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-6"><span class="question-copy"><span>Q 06</span>無料特典と無料個別相談は、どう申し込めますか？</span></button><div class="faq-answer" id="faq-answer-6" hidden><div class="answer-tape"><p>LINE追加後、無料5大特典は「興味あります」、個別相談は「個別相談希望」と送ってください。個別相談は無料・オンライン約20分で、その場で申込みを決める必要はありません。</p></div></div></article>
+</div></div></section>
+<section class="enrollment-footer section-band" id="enrollment"><div class="section-inner"><p class="scene-label">プレエディ / お申込み・ご相談</p><h2><span>受講する。</span><span>まずは相談する。</span></h2><div class="enrollment-options" aria-label="受講申込みと無料個別相談">
+<div class="enrollment-option"><h3>受講を決めている方へ</h3>
+<button class="enroll-button purchase-button" type="button" disabled data-purchase-link data-release-blocker="purchase-url" aria-describedby="footer-purchase-note">今すぐ受講を申し込む</button>
+<p class="consult-instructions">LINE登録や個別相談を挟まず、お申込み・決済ページへ進めます。</p>
+<p class="setup-pending" id="footer-purchase-note">確認版：申込み・決済URLの設定待ち</p></div>
+<div class="enrollment-option"><h3>相談してから決めたい方へ</h3>
+<a class="enroll-button consult-button" href="https://utage-system.com/line/open/0CJLkc0Iv7Bt" data-line-link aria-describedby="footer-consult-note">LINEで無料個別相談</a>
+<p class="consult-instructions" id="footer-consult-note">LINE追加後に「個別相談希望」と送ってください。日程予約フォームをご案内します。</p><p class="consult-terms">相談は無料・オンライン約20分。その場で申込みを決める必要はありません。</p></div></div><p class="gift-separate"><a href="#contact">LINEで無料5大特典を受け取る</a></p></div></section>
+</main>
+<footer class="sales-footer"><div class="sales-footer-inner"><strong>プレエディ</strong><nav aria-label="販売条件・個人情報の取り扱い"><button type="button" disabled data-release-blocker="legal-url">特定商取引法に基づく表記（確認中）</button><button type="button" disabled data-release-blocker="terms-url">利用規約（確認中）</button><button type="button" disabled data-release-blocker="privacy-url">プライバシーポリシー（確認中）</button></nav><p class="setup-pending">確認版：販売者情報・支払方法と時期・教材提供開始時期・解約と返金条件・追加費用の有無を確認後、各ページへのリンクを設定します。</p></div></footer>
+  <aside class="draft-banner" data-release-blocker="draft">公開確認版｜購入URL・税表記・販売条件などを確認中</aside>
   <script src="scripts.js?v=20260905-ux-anchor"></script>
   <script type="module" src="js/cinematic-background.js?v=20260904-restored-base"></script>
 </body>
