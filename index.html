@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="ux-cleanup.css?v=20260905-1">
   <link rel="stylesheet" href="hero-refined.css?v=20260906-2">
   <link rel="stylesheet" href="sales-refinement.css?v=20260910-1">
+  <link rel="stylesheet" href="hero-video.css?v=20260912-1">
   <meta name="robots" content="noindex, nofollow" data-release-blocker="draft">
   <script type="importmap">
   {
@@ -77,6 +78,10 @@
 
     <main id="top">
       <section class="hero section-dark hero-startup hero-refined" aria-labelledby="hero-title">
+        <div class="hero-video-background" aria-hidden="true">
+          <video id="hero-background-video" class="hero-background-video" muted loop playsinline preload="none" poster="assets/hero-fourcut-poster.jpg" data-src="assets/hero-fourcut.mp4" tabindex="-1"></video>
+        </div>
+        <button class="hero-video-toggle" type="button" aria-controls="hero-background-video" hidden>背景動画を再生</button>
         <div class="hero-inner">
           <div class="hero-copy">
             <img class="hero-logo" src="assets/preedi-wordmark.svg" width="600" height="205" alt="プレエディ@エンタメ動画編集スクール">
@@ -624,6 +629,7 @@
 <footer class="sales-footer"><div class="sales-footer-inner"><strong>プレエディ@エンタメ動画編集スクール</strong><nav aria-label="販売条件・個人情報の取り扱い"><button type="button" disabled data-release-blocker="legal-url">特定商取引法に基づく表記（確認中）</button><button type="button" disabled data-release-blocker="terms-url">利用規約（確認中）</button><button type="button" disabled data-release-blocker="privacy-url">プライバシーポリシー（確認中）</button></nav><p class="setup-pending">確認版：販売者情報・支払方法と時期・教材提供開始時期・解約と返金条件・追加費用の有無を確認後、各ページへのリンクを設定します。</p></div></footer>
   <aside class="draft-banner" data-release-blocker="draft">公開確認版｜購入URL・税表記・販売条件などを確認中</aside>
   <script src="scripts.js?v=20260905-ux-anchor"></script>
+  <script src="js/hero-video.js?v=20260912-1"></script>
   <script type="module" src="js/cinematic-background.js?v=20260904-restored-base"></script>
 </body>
 </html>

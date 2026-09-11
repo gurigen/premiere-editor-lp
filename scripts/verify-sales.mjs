@@ -16,6 +16,10 @@ assert(!/id="works"|id="works-focus"|講師・クリックスchのサムネイ�
 const hero = html.slice(html.indexOf('<section class="hero '), html.indexOf('<section class="offer '));
 assert(!/data-purchase-link|consult-button|hero-purchase-note|hero-consult-note/.test(hero), 'Top enrollment paths must stay removed');
 assert(hero.includes('hero-logo') && hero.includes('href="#contact"'), 'Preserve logo and separate gift link');
+assert(hero.includes('muted loop playsinline preload="none"'), 'Background video must be silent, inline, and lazy-started');
+assert(hero.includes('hero-video-toggle'), 'Provide a background motion control');
+assert(existsSync(resolve(root, 'assets/hero-fourcut.mp4')));
+assert(existsSync(resolve(root, 'assets/hero-fourcut-poster.jpg')));
 for (const anchor of html.matchAll(/<a\b[^>]*data-line-link[^>]*>/g)) {
   assert(anchor[0].includes(`href="${lineUrl}"`), 'LINE destination mismatch');
 }
